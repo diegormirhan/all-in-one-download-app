@@ -3,7 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  html {
     @apply bg-main-bg-color;
+    @apply scroll-smooth;
+    @apply select-none;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
 }

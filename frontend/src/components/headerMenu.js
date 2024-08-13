@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { MenuContent } from "./menuContent";
-import { Button } from "./ui/button";
 
 import {
   Drawer,
@@ -41,7 +40,7 @@ export function HeaderMenu() {
         <DrawerContent>
           <DrawerHeader>
             <DrawerTitle>Explore</DrawerTitle>
-            <DrawerDescription>Search for other Social Media Platforms.</DrawerDescription>
+            <DrawerDescription>Search for other Social Media Platforms</DrawerDescription>
           </DrawerHeader>
           {menuContent}
         </DrawerContent>
@@ -54,14 +53,12 @@ export function HeaderMenu() {
                 <img className="w-8" src="/menu.svg"></img>
             </div>
           </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="flex flex-col overflow-auto">
           <SheetHeader>
             <SheetTitle>Explore</SheetTitle>
-            <SheetDescription>Explore other Social Media Platforms</SheetDescription>
+            <SheetDescription>Search for other Social Media Platforms</SheetDescription>
           </SheetHeader>
           {menuContent}
-          <SheetFooter>
-          </SheetFooter>
         </SheetContent>
       </Sheet>
         </>

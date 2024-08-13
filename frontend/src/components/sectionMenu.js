@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { MenuContent } from "./menuContent";
-import { Button } from "./ui/button";
 
 import {
   Drawer,
@@ -39,15 +38,12 @@ export function SectionMenu() {
             <img src="/arrow_right.svg" className="ml-1 w-7 h-7 transform transition-transform duration-200 group-hover:translate-x-2"></img>
           </button>
         </DrawerTrigger>
-        <DrawerContent >
+        <DrawerContent>
           <DrawerHeader>
-            <DrawerTitle>Menu</DrawerTitle>
-            <DrawerDescription>Select an Option.</DrawerDescription>
+            <DrawerTitle>Explore</DrawerTitle>
+            <DrawerDescription>Search for other Social Media Platforms</DrawerDescription>
           </DrawerHeader>
           {menuContent}
-          <DrawerClose asChild>
-            <Button variant="outline">Close</Button>
-          </DrawerClose>
         </DrawerContent>
       </Drawer>
 
@@ -59,17 +55,12 @@ export function SectionMenu() {
             <img src="/arrow_right.svg" className="ml-1 w-7 h-7 transform transition-transform duration-200 group-hover:translate-x-2"></img>
           </button>
           </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="flex flex-col overflow-auto fade-bottom">
           <SheetHeader>
-            <SheetTitle>Menu</SheetTitle>
-            <SheetDescription>Select an Option.</SheetDescription>
+            <SheetTitle>Explore</SheetTitle>
+            <SheetDescription>Search for other Social Media Platforms</SheetDescription>
           </SheetHeader>
           {menuContent}
-          <SheetFooter>
-            <SheetClose asChild>
-              <Button variant="outline">Close</Button>
-            </SheetClose>
-          </SheetFooter>
         </SheetContent>
       </Sheet>
         </>

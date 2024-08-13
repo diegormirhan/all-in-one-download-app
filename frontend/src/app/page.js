@@ -1,6 +1,8 @@
+import { SectionMenu } from "@/components/sectionMenu";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center p-8">
+    <main className="min-h-screen flex flex-col items-center p-4 pt-28">
       {/* Main Section */}
       <section className="w-full flex justify-between mb-4">
         {/* Anúncios na lateral esquerda*/}
@@ -37,10 +39,7 @@ export default function Home() {
           </div>
 
           {/* Botão para explorar mais */}
-          <button className="flex items-center bg-main-color text-white rounded-lg py-3 px-6 shadow-md shadow-main-color mb-10 m-auto text-left md:text-center group ease-in-out transition-all hover:scale-105">
-            Explore All Social Media We Support
-            <img src="/arrow_right.svg" className="ml-1 w-7 h-7 transform transition-transform duration-200 group-hover:translate-x-2"></img>
-          </button>
+          <SectionMenu/>
 
           {/* Anúncios no inferior */}
           <div className="flex bg-gray-300 h-32 w-4/5 items-center justify-center rounded-lg font-semibold m-auto">
@@ -62,7 +61,6 @@ export default function Home() {
 
       {/* Card Section */}
       <section>
-
       </section>
     </main>
   );

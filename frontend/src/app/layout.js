@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+import { HeaderMenu } from "@/components/headerMenu"
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,14 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-          <header className="flex items-center justify-between bg-main-color p-4 rounded-b-2xl">
+          <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-4 rounded-b-2xl w-full">
             {/* Ícone do Menu */}
-            <div className="">
-              <img className="w-8" src="/menu.svg"></img>
-            </div>
+            <HeaderMenu/>
 
             {/* Título do Meio */}
-            <h1 className="text-xl md:text-2xl font-medium text-white">All In One Download</h1>
+            <Link href="/">
+              <h1 className="text-xl md:text-2xl font-medium text-white cursor-pointer">
+                All In One Download
+              </h1>
+            </Link>
             {/* Ícone da direita */}
             <div className="">
               <img className="w-8" src="/logo.svg"></img>

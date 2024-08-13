@@ -1,44 +1,130 @@
-// src/components/menu.js (ou Sidebar.js)
 "use client";
 
-import { useState, createContext, useContext } from 'react';
+import * as React from "react";
+import { Minus, Plus } from "lucide-react";
+import { Bar, BarChart, ResponsiveContainer } from "recharts";
+import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
-// Cria um contexto para gerenciar a visibilidade do Sidebar
-const SidebarContext = createContext();
+const data = [
+  // Dados para o gráfico
+  { goal: 400 }, { goal: 300 }, { goal: 200 }, { goal: 300 },
+  { goal: 200 }, { goal: 278 }, { goal: 189 }, { goal: 239 },
+  { goal: 300 }, { goal: 200 }, { goal: 278 }, { goal: 189 },
+  { goal: 349 },
+];
 
-export const useSidebar = () => useContext(SidebarContext);
+export function ResponsiveMenu() {
+  const [goal, setGoal] = React.useState(350);
 
-export default function SidebarProvider({ children }) {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  function onClick(adjustment) {
+    setGoal(Math.max(200, Math.min(400, goal + adjustment)));
+  }
 
-  const openSidebar = () => setIsSidebarOpen(true);
-  const closeSidebar = () => setIsSidebarOpen(false);
+  const menuContent = (
+    <div className="mx-auto w-full max-w-sm">
+      <div className="p-4 pb-0">
+        <div className="flex items-center justify-center space-x-2">
+          <Button
+            variant="outline"
+            size="icon"
+            className="h-8 w-8 shrink-0 rounded-full"
+            onClick={() => onClick(-10)}
+            disabled={goal <= 200}
+          >
+            <Minus className="h-4 w-4" />
+            <span className="sr-only">Decrease</span>
+          </Button>
+          <div className="flex-1 text-center">
+            <div className="text-7xl font-bold tracking-tighter">
+              {goal}
+            </div>
+            <div className="text-[0.70rem] uppercase text-muted-foreground">
+              Calories/day
+            </div>
+          </div>
+          <Button
+            variant="outline"
+            size="icon"
+            className="h-8 w-8 shrink-0 rounded-full"
+            onClick={() => onClick(10)}
+            disabled={goal >= 400}
+          >
+            <Plus className="h-4 w-4" />
+            <span className="sr-only">Increase</span>
+          </Button>
+        </div>
+        <div className="mt-3 h-[120px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={data}>
+              <Bar dataKey="goal" style={{ fill: "hsl(var(--foreground))", opacity: 0.9 }} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
-    <SidebarContext.Provider value={{ isSidebarOpen, openSidebar, closeSidebar }}>
-      {children}
+    <>
+      {/* Drawer (Mobile) */}
+      <Drawer>
+        <DrawerTrigger asChild>
+          <Button variant="outline" className="lg:hidden">Open Mobile Menu</Button>
+        </DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle>Move Goal</DrawerTitle>
+            <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+          </DrawerHeader>
+          {menuContent}
+          <DrawerFooter>
+            <Button>Submit</Button>
+            <DrawerClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
 
-      {/* Sidebar */}
-      <div
-        className={`fixed top-0 left-0 w-64 h-full bg-gray-800 text-white transform ${
-          isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out z-40`}
-      >
-        <button onClick={closeSidebar} className="text-right p-4">
-          X
-        </button>
-        <ul className="p-4">
-          <li className="py-2">Menu Item 1</li>
-          <li className="py-2">Menu Item 2</li>
-          <li className="py-2">Menu Item 3</li>
-          <li className="py-2">Menu Item 4</li>
-        </ul>
-      </div>
-
-      {/* Overlay */}
-      {isSidebarOpen && (
-        <div onClick={closeSidebar} className="fixed inset-0 bg-black opacity-50 z-30"></div>
-      )}
-    </SidebarContext.Provider>
+      {/* Sheet (Desktop) */}
+      <Sheet>
+        <SheetTrigger asChild>
+          <Button variant="outline" className="hidden lg:inline">Open Desktop Menu</Button>
+        </SheetTrigger>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle>Move Goal</SheetTitle>
+            <SheetDescription>Set your daily activity goal.</SheetDescription>
+          </SheetHeader>
+          {menuContent}
+          <SheetFooter>
+            <Button>Submit</Button>
+            <SheetClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </SheetClose>
+          </SheetFooter>
+        </SheetContent>
+      </Sheet>
+    </>
   );
 }

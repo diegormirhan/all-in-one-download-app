@@ -1,7 +1,3 @@
-"use client";
-
-import * as React from "react";
-
 export function MenuContent() {
   return (
     <div className="mx-auto w-full">

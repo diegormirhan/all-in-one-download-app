@@ -1,14 +1,9 @@
-"use client";
-
-import * as React from "react";
 import { MenuContent } from "./menuContent";
 
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -16,10 +11,8 @@ import {
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,

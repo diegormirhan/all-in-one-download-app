@@ -9,7 +9,7 @@ import {
 export function FAQAccordion() {
     return (
         <>
-        <Accordion type="single" collapsible className="w-11/12 md:w-3/5 m-auto space-y-5">
+        <Accordion type="single" collapsible className="w-11/12 md:w-3/5 m-auto space-y-5 mb-8">
             <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
             <AccordionItem value="item-1">
                 <AccordionTrigger>

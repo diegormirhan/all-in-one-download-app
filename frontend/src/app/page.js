@@ -1,7 +1,9 @@
-import { SectionMenu } from "@/components/sectionMenu";
-import { Cards } from "@/components/cards";
+import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
 import { CarouselCards } from "@/components/carouselCards";
+import { HowToUse } from "@/components/howToUse";
+import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
+import { ImportantTips } from "@/components/importantTips";
 
 export default function Home() {
   return (
@@ -10,12 +12,7 @@ export default function Home() {
       <section className="w-full flex justify-between mb-4">
         {/* Anúncios na lateral esquerda*/}
         <div className="space-y-6">
-          <div className="hidden lg:flex bg-gray-300 h-96 w-40 items-center justify-center rounded-lg font-semibold">
-            GOOGLE ADS
-          </div>
-          <div className="hidden lg:flex bg-gray-300 h-40 w-40 items-center justify-center rounded-lg font-semibold">
-            GOOGLE ADS
-          </div>
+          <VerticalAds />
         </div>
 
         {/* Conteúdo Principal */}
@@ -26,7 +23,7 @@ export default function Home() {
           <div className="relative mb-8 w-11/12 md:w-2/3 mx-auto">
             <input type="text" placeholder="Insert your link here" className="w-full p-3 pl-6 pr-12 border-0 rounded-lg drop-shadow-lg focus:outline-none focus:ring-2 focus:ring-main-color ease-in-out transition-all duration-100"></input>
             <div className="absolute right-3 top-0 bottom-0 flex items-center">
-              <img src="/paste.svg" alt="Paste your link" className="w-6 h-6"></img>
+              <img src="/paste.svg" alt="Paste your link" className="w-6 h-6 cursor-pointer"></img>
             </div>
           </div>
 
@@ -45,27 +42,26 @@ export default function Home() {
           <SectionMenu />
 
           {/* Anúncios no inferior */}
-          <div className="flex bg-gray-300 h-32 w-4/5 items-center justify-center rounded-lg font-semibold m-auto">
-            GOOGLE ADS
-          </div>
+          <HorizontalAds />
         </div>
 
         {/* Anúncios na lateral direita*/}
         <div className="space-y-6">
-          <div className="hidden lg:flex bg-gray-300 h-96 w-40 items-center justify-center rounded-lg font-semibold">
-            GOOGLE ADS
-          </div>
-          <div className="hidden lg:flex bg-gray-300 h-40 w-40 items-center justify-center rounded-lg font-semibold">
-            GOOGLE ADS
-          </div>
+          <VerticalAds />
         </div>
 
       </section>
 
       {/* Card Section */}
-      <section className="">
-        <CarouselCards />
-        <FAQAccordion />
+      <section>
+      <CarouselCards />
+      <ImportantTips />
+
+        <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
+          <FAQAccordion />
+          <HowToUse socialMedia="Social Media" mediaType="video" className="" />
+        </div>
+        
       </section>
     </main>
   );

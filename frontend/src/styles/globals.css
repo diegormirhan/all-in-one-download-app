@@ -7,6 +7,7 @@
     @apply bg-main-bg-color;
     @apply scroll-smooth;
     @apply select-none;
+    @apply overflow-x-hidden;
   }
 }
 

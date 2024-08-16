@@ -1,61 +1,63 @@
+import Image from 'next/image'
+
 export function MenuContent() {
   return (
     <div className="mx-auto w-full">
       <ul className="p-8 md:pl-0 md:pr-4 space-y-4">
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/instagram.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/instagram.svg"></Image>
           Instagram
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/facebook.svg"></img>
+          <Image className="mr-2"width={32} height={32} src="/socialMediaIcons/facebook.svg"></Image>
           Facebook
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/tiktok.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/tiktok.svg"></Image>
           Tiktok
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/youtube.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/youtube.svg"></Image>
           Youtube
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/twitter.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/twitter.svg"></Image>
           Twitter
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/pinterest.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/pinterest.svg"></Image>
           Pinterest
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/reddit.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/reddit.svg"></Image>
           Reddit
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/snapchat.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/snapchat.svg"></Image>
           Snapchat
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/vimeo.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/vimeo.svg"></Image>
           Vimeo
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/spotify.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/spotify.svg"></Image>
           Spotify
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
         <li className="py-3 px-4 rounded-lg bg-white flex items-center font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
-          <img className="w-8 h-8 mr-2" src="/socialMediaIcons/soundcloud.svg"></img>
+          <Image className="mr-2" width={32} height={32} src="/socialMediaIcons/soundcloud.svg"></Image>
           SoundCloud
-          <img className="w-7 h-7 absolute right-4" src="/arrow-up-right.svg"></img>
+          <Image className="absolute right-4" width={28} height={28} src="/arrow-up-right.svg"></Image>
         </li>
       </ul>
     </div>

@@ -5,6 +5,7 @@ import { HowToUse } from "@/components/howToUse";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
 
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center p-4 pt-28">
@@ -54,14 +55,14 @@ export default function Home() {
 
       {/* Card Section */}
       <section>
-      <CarouselCards />
-      <ImportantTips />
+        <CarouselCards />
+        <ImportantTips />
 
         <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
           <FAQAccordion />
           <HowToUse socialMedia="Social Media" mediaType="video" className="" />
         </div>
-        
+
       </section>
     </main>
   );

@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           <div className="">
             <img className="w-8 cursor-pointer" src="/translate.svg"></img>
           </div>
-          <Adsense pId="pub-8038191677774356"/>
+          <Adsense/>
         </header>
 
         {children}

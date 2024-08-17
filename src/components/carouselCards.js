@@ -24,7 +24,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -41,7 +41,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -58,7 +58,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -75,7 +75,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -92,7 +92,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -109,7 +109,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -126,7 +126,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -143,7 +143,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>
@@ -160,7 +160,7 @@ export function CarouselCards() {
               <Card className="bg-transparent border-none active:scale-90 transition-transform rounded-2xl bg-[#FF3A54] cursor-pointer lg:hover:scale-95 group shadow-inner">
                 <CardContent className="px-8 pt-6 pb-0 text-white flex space-between">
                 <div className="lg:space-y-1">
-                        <h2 class="text-xl xl:text-3xl font-extrabold">Instagram</h2>
+                        <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
                         <p className="text-sm lg:text-md">A famous social media that is capable to connect you to the world</p>
                         <img src="/arrow_right.svg" className="hidden md:block md:w-10 xl:w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></img>
                     </div>

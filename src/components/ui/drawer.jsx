@@ -39,7 +39,7 @@ const DrawerContent = React.forwardRef(({ className, children, ...props }, ref) 
       {...props}>
       <div
         className="top-10 mx-auto mt-4 h-2 w-[100px] rounded-full bg-neutral-200 dark:bg-neutral-800" />
-      <div className="flex flex-col max-h-[55vh] min-h-[55vh] overflow-auto">
+      <div className="overflow-y-auto max-h-[55vh] min-h-[55vh]">
         {children}
       </div>
     </DrawerPrimitive.Content>

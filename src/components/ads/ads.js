@@ -13,7 +13,7 @@ export function HorizontalAds() {
 
   return (
     <>
-      <div className="flex bg-gray-300 h-40 w-96 items-center justify-center rounded-lg font-semibold m-auto">
+      <div className="flex bg-gray-300 h-32 w-4/5 items-center justify-center rounded-lg font-semibold m-auto">
         GOOGLE ADS
       </div>
     </>

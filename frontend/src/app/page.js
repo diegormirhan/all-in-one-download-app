@@ -4,6 +4,7 @@ import { CarouselCards } from "@/components/carouselCards";
 import { HowToUse } from "@/components/howToUse";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
+import { DownloadButton } from "@/components/downloadButton";
 
 
 export default function Home() {
@@ -29,9 +30,7 @@ export default function Home() {
           </div>
 
           {/* Botão de Download */}
-          <button className="bg-main-color text-white py-2 px-10 rounded-full mb-10 shadow shadow-main-color hover:shadow-md hover:shadow-main-color hover:bg-secondary-bg-color hover:font-semibold transition-all ease-in duration-200">
-            Download Media
-          </button>
+          <DownloadButton />
 
           {/* Texto explicativo */}
           <div className="mb-10 text-sm w-full mx-auto text-left font-semibold md:text-center md:w-4/5 md:font-medium">

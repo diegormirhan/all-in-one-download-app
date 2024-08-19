@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { HeaderMenu } from "@/components/menu/headerMenu"
 import Link from "next/link";
 import { Adsense } from "@/components/ads/adsense";
+import { TranslationCard } from "@/components/translationCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,9 +26,7 @@ export default function RootLayout({ children }) {
             </h1>
           </Link>
           {/* Ícone da direita */}
-          <div className="">
-            <img className="w-8 cursor-pointer" src="/translate.svg"></img>
-          </div>
+          <TranslationCard />
           <Adsense/>
         </header>
 

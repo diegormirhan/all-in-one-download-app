@@ -24,7 +24,7 @@ export default function Home() {
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords/></h1>
           {/* Campo de Input para link */}
           <div className="relative mb-8 w-11/12 md:w-2/3 mx-auto">
-            <input type="text" placeholder="Insert your link here" className="w-full p-3 pl-6 pr-12 border-0 rounded-lg drop-shadow-lg focus:outline-none focus:ring-2 focus:ring-main-color ease-in-out transition-all duration-100"></input>
+            <input type="text" id="input link" placeholder="Insert your link here" className="w-full p-3 pl-6 pr-12 border-0 rounded-lg drop-shadow-lg focus:outline-none focus:ring-2 focus:ring-main-color ease-in-out transition-all duration-100"></input>
             <div className="absolute right-3 top-0 bottom-0 flex items-center">
               <Image src="/paste.svg" width={24} height={24} alt="Paste your link" className="cursor-pointer"></Image>
             </div>

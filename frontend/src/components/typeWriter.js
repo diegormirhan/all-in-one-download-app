@@ -23,8 +23,6 @@ export function TypeWriterWords() {
                 2000,
                 "Pinterest",
                 2000,
-                "all Social Media",
-                2000
             ]}
             repeat={Infinity}
             className="text-main-color"

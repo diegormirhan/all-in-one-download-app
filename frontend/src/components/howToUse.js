@@ -14,7 +14,7 @@ export function HowToUse({ socialMedia, mediaType }) {
                         2. Click on the three dots on the top of the {mediaType}.
                     </p>
                     <p className="text-gray-600">
-                        3. Select "Copy Link" from the menu that appears. This action will copy the {mediaType} url to your clipboard.
+                        3. Select &quot;Copy Link&quot; from the menu that appears. This action will copy the {mediaType} url to your clipboard.
                     </p>
                 </div>
 
@@ -26,10 +26,10 @@ export function HowToUse({ socialMedia, mediaType }) {
                         1. Go to the this website in your browser.
                     </p>
                     <p className="text-gray-600">
-                        2. Find the text box on the homepage that says "Insert your link here."
+                        2. Find the text box on the homepage that says &quot;Insert your link here.&quot;
                     </p>
                     <p className="text-gray-600">
-                        3. Paste {socialMedia} {mediaType} link you copied. You can do this by clicking on the "Paste" button, by right-clicking and selecting "Paste" or by pressing "Ctrl + V" or your keyboard (or "Cmd + V" on Mac).
+                        3. Paste {socialMedia} {mediaType} link you copied. You can do this by clicking on the &quot;Paste&quot; button, by right-clicking and selecting &quot;Paste&quot; or by pressing &quot;Ctrl + V&quot; or your keyboard (or &quot;Cmd + V&quot; on Mac).
                     </p>
                 </div>
 
@@ -38,7 +38,7 @@ export function HowToUse({ socialMedia, mediaType }) {
                         Step 3: Start the Download
                     </h2>
                     <p className="text-gray-600">
-                        1. After pasting the link, click the "Download" button below the text box.
+                        1. After pasting the link, click the &quot;Download&quot; button below the text box.
                     </p>
                     <p className="text-gray-600">
                         2. Wait a few seconds while the site processes the link and prepares the {mediaType} for download.

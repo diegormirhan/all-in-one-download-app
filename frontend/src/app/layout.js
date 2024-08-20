@@ -4,6 +4,7 @@ import { HeaderMenu } from "@/components/menu/headerMenu"
 import Link from "next/link";
 import { Adsense } from "@/components/ads/adsense";
 import { TranslationCard } from "@/components/translationCard";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <Adsense/>
+      </Head>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-4 rounded-b-2xl w-full">
           {/* Ícone do Menu */}
@@ -27,7 +31,6 @@ export default function RootLayout({ children }) {
           </Link>
           {/* Ícone da direita */}
           <TranslationCard />
-          <Adsense/>
         </header>
 
         {children}

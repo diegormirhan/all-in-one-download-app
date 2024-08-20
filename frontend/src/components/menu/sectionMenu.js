@@ -17,6 +17,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from "next/image";
 
 const menuContent = MenuContent()
 
@@ -28,7 +29,7 @@ export function SectionMenu() {
         <DrawerTrigger asChild>
         <button className="flex md:hidden items-center bg-main-color text-white rounded-lg py-3 px-6 shadow-md shadow-main-color mb-10 m-auto text-left md:text-center group ease-in-out transition-all hover:scale-105">
             Explore All Social Media We Support
-            <img src="/arrow_right.svg" className="ml-1 w-7 h-7 transform transition-transform duration-200 group-hover:translate-x-2"></img>
+            <Image src="/arrow_right.svg" width={28} height={28} alt="arrow right icon svg" className="ml-1 transform transition-transform duration-200 group-hover:translate-x-2"></Image>
           </button>
         </DrawerTrigger>
         <DrawerContent>
@@ -45,7 +46,7 @@ export function SectionMenu() {
       <SheetTrigger asChild>
       <button className="hidden md:flex  items-center bg-main-color text-white rounded-lg py-3 px-6 shadow-md shadow-main-color mb-10 m-auto text-left md:text-center group ease-in-out transition-all hover:scale-105">
             Explore All Social Media We Support
-            <img src="/arrow_right.svg" className="ml-1 w-7 h-7 transform transition-transform duration-200 group-hover:translate-x-2"></img>
+            <Image src="/arrow_right.svg" width={28} height={28} alt="arrow right icon svg" className="ml-1 transform transition-transform duration-200 group-hover:translate-x-2"></Image>
           </button>
           </SheetTrigger>
         <SheetContent className="flex flex-col overflow-auto fade-bottom">

@@ -18,17 +18,19 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+import Image from "next/image";
+
 const menuContent = MenuContent()
 
 export function HeaderMenu() {
-    return (
-        <>
-        {/* Drawer Mobile */}
+  return (
+    <>
+      {/* Drawer Mobile */}
       <Drawer>
         <DrawerTrigger asChild>
-            <div className="md:hidden cursor-pointer">
-                <img className="w-8" src="/menu.svg"></img>
-            </div>
+          <div className="md:hidden cursor-pointer">
+            <Image width={32} height={32} alt="menu icon svg" src="/menu.svg"></Image>
+          </div>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
@@ -41,11 +43,11 @@ export function HeaderMenu() {
 
       {/* Sheet Desktop */}
       <Sheet>
-      <SheetTrigger asChild>
+        <SheetTrigger asChild>
           <div className="hidden md:inline cursor-pointer">
-                <img className="w-8" src="/menu.svg"></img>
-            </div>
-          </SheetTrigger>
+            <Image width={32} height={32} alt="menu icon svg" src="/menu.svg"></Image>
+          </div>
+        </SheetTrigger>
         <SheetContent className="flex flex-col overflow-auto">
           <SheetHeader>
             <SheetTitle>Explore</SheetTitle>
@@ -54,6 +56,6 @@ export function HeaderMenu() {
           {menuContent}
         </SheetContent>
       </Sheet>
-        </>
-    );
+    </>
+  );
 }

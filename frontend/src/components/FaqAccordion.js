@@ -43,7 +43,7 @@ export function FAQAccordion() {
                         Is it legal to download videos from Instagram?
                     </AccordionTrigger>
                     <AccordionContent>
-                        Downloading videos from Instagram for personal use is generally allowed, but it's important to respect copyright laws and the terms of service of Instagram. Do not redistribute or use the downloaded videos for commercial purposes without permission from the content owner.
+                        Downloading videos from Instagram for personal use is generally allowed, but it &apos;s important to respect copyright laws and the terms of service of Instagram. Do not redistribute or use the downloaded videos for commercial purposes without permission from the content owner.
                     </AccordionContent>
                 </AccordionItem>
 
@@ -61,7 +61,7 @@ export function FAQAccordion() {
                         Where are the downloaded videos saved?
                     </AccordionTrigger>
                     <AccordionContent>
-                        After downloading, the video is usually saved in your device's default downloads folder. On mobile devices, it may be saved in the gallery or video app, depending on your settings.
+                        After downloading, the video is usually saved in your device &apos;s default downloads folder. On mobile devices, it may be saved in the gallery or video app, depending on your settings.
                     </AccordionContent>
                 </AccordionItem>
 
@@ -70,7 +70,7 @@ export function FAQAccordion() {
                         What formats are supported for downloads?
                     </AccordionTrigger>
                     <AccordionContent>
-                        [Your Site Name] typically allows you to download videos in MP4 format, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original video's resolution.
+                        [Your Site Name] typically allows you to download videos in MP4 format, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original video &apos;s resolution.
                     </AccordionContent>
                 </AccordionItem>
 
@@ -88,7 +88,7 @@ export function FAQAccordion() {
                         Can I download videos from other social media platforms?
                     </AccordionTrigger>
                     <AccordionContent>
-                        [Your Site Name] typically allows you to download videos in MP4 format, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original video's resolution.
+                        [Your Site Name] typically allows you to download videos in MP4 format, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original video &apos;s resolution.
                     </AccordionContent>
                 </AccordionItem>
 
@@ -106,7 +106,7 @@ export function FAQAccordion() {
                         How can I contact support if I have issues?
                     </AccordionTrigger>
                     <AccordionContent>
-                        If you encounter any problems or have questions that aren't answered in this FAQ, you can reach out to our support team via the contact form on our website or by emailing [support@yourwebsite.com].
+                        If you encounter any problems or have questions that aren &apos;t answered in this FAQ, you can reach out to our support team via the contact form on our website or by emailing [support@yourwebsite.com].
                     </AccordionContent>
                 </AccordionItem>
 

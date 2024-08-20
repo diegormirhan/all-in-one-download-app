@@ -1,13 +1,13 @@
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 
 export function TranslationCard() {
@@ -15,7 +15,7 @@ export function TranslationCard() {
         <>
             <Dialog>
                 <DialogTrigger>
-                    <img className="w-8 cursor-pointer" src="/translate.svg"></img>
+                    <Image width={32} height={32} className="cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
                 </DialogTrigger>
                 <DialogContent>
                     <DialogHeader>

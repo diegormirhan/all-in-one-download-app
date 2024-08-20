@@ -6,6 +6,7 @@ import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
 import { DownloadButton } from "@/components/downloadButton";
 import { TypeWriterWords } from "@/components/typeWriter";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
           <div className="relative mb-8 w-11/12 md:w-2/3 mx-auto">
             <input type="text" placeholder="Insert your link here" className="w-full p-3 pl-6 pr-12 border-0 rounded-lg drop-shadow-lg focus:outline-none focus:ring-2 focus:ring-main-color ease-in-out transition-all duration-100"></input>
             <div className="absolute right-3 top-0 bottom-0 flex items-center">
-              <img src="/paste.svg" alt="Paste your link" className="w-6 h-6 cursor-pointer"></img>
+              <Image src="/paste.svg" width={24} height={24} alt="Paste your link" className="cursor-pointer"></Image>
             </div>
           </div>
 

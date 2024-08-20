@@ -5,7 +5,7 @@ import { HowToUse } from "@/components/howToUse";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
 import { DownloadButton } from "@/components/downloadButton";
-
+import { TypeWriterWords } from "@/components/typeWriter";
 
 export default function Home() {
   return (
@@ -19,8 +19,8 @@ export default function Home() {
 
         {/* Conteúdo Principal */}
         <div className="p-4 w-full max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">Download any video from all Social Media</h1>
-
+          <h1 className="text-4xl font-extrabold mb-2 md:text-5xl">Download any media from</h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords/></h1>
           {/* Campo de Input para link */}
           <div className="relative mb-8 w-11/12 md:w-2/3 mx-auto">
             <input type="text" placeholder="Insert your link here" className="w-full p-3 pl-6 pr-12 border-0 rounded-lg drop-shadow-lg focus:outline-none focus:ring-2 focus:ring-main-color ease-in-out transition-all duration-100"></input>

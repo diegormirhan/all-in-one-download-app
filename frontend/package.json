@@ -20,6 +20,7 @@
     "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-type-animation": "^3.2.0",
     "recharts": "^2.12.7",
     "tailwind-gradient-mask-image": "^1.2.0",
     "tailwind-merge": "^2.5.1",

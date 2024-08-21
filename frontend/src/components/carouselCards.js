@@ -17,7 +17,7 @@ import Image from "next/image"
 export function CarouselCards() {
     return (
         <>
-            <div className="px-4 w-screen sm:px-0 sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl m-auto my-10">
+            <div className="px-4 w-screen sm:px-0 sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl m-auto mb-10">
                 <Carousel opts={{ align: "center", loop: true, }} plugins={[Autoplay({ delay: 3000, })]}>
                     <CarouselContent>
 

@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.2.5",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -22,9 +22,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-type-animation": "^3.2.0",
-    "recharts": "^2.12.7",
     "sharp": "^0.33.5",
-    "tailwind-gradient-mask-image": "^1.2.0",
     "tailwind-merge": "^2.5.1",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.1"
@@ -32,7 +30,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "eslint": "8.57.0",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "^0.2.4",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.9"
   }

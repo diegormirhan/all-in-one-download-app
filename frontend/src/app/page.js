@@ -6,13 +6,12 @@ import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
 import { DownloadButton } from "@/components/downloadButton";
 import { TypeWriterWords } from "@/components/typeWriter";
-import Image from "next/image";
 import { InputLink } from "@/components/inputLink";
 
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen flex flex-col items-center p-4 pt-28">
+      <main className="min-h-screen flex flex-col items-center p-4 pt-24">
         {/* Main Section */}
         <section className="w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}

@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
           <HeaderMenu />
           {/* Título do Meio */}
           <Link href="/">
-            <h1 className="text-xl md:text-2xl font-medium text-white cursor-pointer">
+            <h1 className="text-lg md:text-2xl font-medium text-white cursor-pointer">
               Best Video Download
             </h1>
           </Link>
@@ -57,26 +57,32 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <footer className="bg-main-color p-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 text-center md:text-left space-y-6 md:space-y-0 justify-items-center text-white">
+        <footer className="bg-main-color p-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 text-center md:text-left space-y-6 md:space-y-0 justify-items-center text-white px-16">
             <div className="space-y-1">
-              <h3 className="font-bold text-xl mb-2">Company</h3>
-              <p className="hover:underline text-md"><Link href="/">About Us</Link></p>
-              <p className="hover:underline text-md"><Link href="/">Contact Us</Link></p>
+              <h3 className="font-bold text-lg mb-2">Company</h3>
+              <p className="hover:underline text-sm"><Link href="/">About Us</Link></p>
+              <p className="hover:underline text-sm"><Link href="/">Contact Us</Link></p>
             </div>
+
+            <div className="hidden md:block w-[1px] bg-white opacity-60"></div>
+
             <div className="space-y-1">
-              <h3 className="font-bold text-xl mb-2">Support</h3>
-              <p className="hover:underline text-md"><Link href="/">Help Center</Link></p>
-              <p className="hover:underline text-md"><Link href="/">Feedback</Link></p>
+              <h3 className="font-bold text-lg mb-2">Support</h3>
+              <p className="hover:underline text-sm"><Link href="/">Help Center</Link></p>
+              <p className="hover:underline text-sm"><Link href="/">Feedback</Link></p>
             </div>
+
+            <div className="hidden md:block w-[1px] bg-white opacity-60"></div>
+
             <div className="space-y-1">
-              <h3 className="font-bold text-xl mb-2">Legal</h3>
-              <p className="hover:underline text-md"><Link href="/">Privacy Policy</Link></p>
-              <p className="hover:underline text-md"><Link href="/">Terms and Conditions</Link></p>
+              <h3 className="font-bold text-lg mb-2">Legal</h3>
+              <p className="hover:underline text-sm"><Link href="/">Privacy Policy</Link></p>
+              <p className="hover:underline text-sm"><Link href="/">Terms and Conditions</Link></p>
             </div>
           </div>
-          <div className="h-0.5 w-full bg-white mt-6 mb-3"></div>
-          <p className="text-white">© 2024 Best Video Download. All Rights Reserved</p>
+          <div className="h-[1px] w-full bg-white mt-6 mb-3"></div>
+          <p className="text-white text-center md:text-left">© 2024 Best Video Download. All Rights Reserved</p>
         </footer>
       </body>
     </html>

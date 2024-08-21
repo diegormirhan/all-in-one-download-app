@@ -28,7 +28,7 @@ export function HeaderMenu() {
       {/* Drawer Mobile */}
       <Drawer>
         <DrawerTrigger asChild>
-            <Image width={32} height={32} alt="menu icon svg" src="/menu.svg" className="md:hidden cursor-pointer"></Image>
+            <Image width={28} height={28} alt="menu icon svg" src="/menu.svg" className="md:hidden cursor-pointer"></Image>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>

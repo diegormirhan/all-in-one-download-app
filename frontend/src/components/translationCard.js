@@ -1,62 +1,55 @@
 import {
-    Dialog,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from "@/components/ui/dialog"
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
 
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 
 export function TranslationCard() {
     return (
         <>
-            <Dialog>
-                <DialogTrigger>
-                    <Image width={32} height={32} className="cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
-                </DialogTrigger>
-                <DialogContent>
-                    <DialogHeader>
-                        <DialogTitle>Select another language</DialogTitle>
-                    </DialogHeader>
-                    <div className="grid grid-cols-3 gap-3 lg:grid-cols-5 lg:gap-4 max-h-80 lg:max-h-full overflow-y-scroll ">
-                        <Button variant="ghost">English</Button>
-                        <Button variant="ghost">Español</Button>
-                        <Button variant="ghost">Français</Button>
-                        <Button variant="ghost">Deutsch</Button>
-                        <Button variant="ghost">Português</Button>
-                        <Button variant="ghost">Italiano</Button>
-                        <Button variant="ghost">中文</Button>
-                        <Button variant="ghost">日本語</Button>
-                        <Button variant="ghost">한국어</Button>
-                        <Button variant="ghost">Русский</Button>
-                        <Button variant="ghost">العربية</Button>
-                        <Button variant="ghost">हिन्दी</Button>
-                        <Button variant="ghost">Nederlands</Button>
-                        <Button variant="ghost">Svenska</Button>
-                        <Button variant="ghost">Norsk</Button>
-                        <Button variant="ghost">Dansk</Button>
-                        <Button variant="ghost">Suomi</Button>
-                        <Button variant="ghost">Türkçe</Button>
-                        <Button variant="ghost">Ελληνικά</Button>
-                        <Button variant="ghost">Polski</Button>
-                        <Button variant="ghost">עברית</Button>
-                        <Button variant="ghost">ไทย</Button>
-                        <Button variant="ghost">Bahasa</Button>
-                        <Button variant="ghost">ภาษาไทย</Button>
-                        <Button variant="ghost">Magyar</Button>
-                        <Button variant="ghost">Čeština</Button>
-                        <Button variant="ghost">Română</Button>
-                        <Button variant="ghost">Українська</Button>
-                        <Button variant="ghost">Tiếng Việt</Button>
-                        <Button variant="ghost">বাংলা</Button>
-                    </div>
-                </DialogContent>
-            </Dialog>
 
-
+            <Select>
+                <SelectTrigger>
+                    <Image width={28} height={28} className="md:w-8 md:h- cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
+                </SelectTrigger>
+                <SelectContent>
+                    <SelectItem value="en">English</SelectItem>
+                    <SelectItem value="es">Español</SelectItem>
+                    <SelectItem value="fr">Français</SelectItem>
+                    <SelectItem value="de">Deutsch</SelectItem>
+                    <SelectItem value="pt">Português</SelectItem>
+                    <SelectItem value="it">Italiano</SelectItem>
+                    <SelectItem value="zh">中文</SelectItem>
+                    <SelectItem value="ja">日本語</SelectItem>
+                    <SelectItem value="ko">한국어</SelectItem>
+                    <SelectItem value="ru">Русский</SelectItem>
+                    <SelectItem value="ar">العربية</SelectItem>
+                    <SelectItem value="hi">हिन्दी</SelectItem>
+                    <SelectItem value="nl">Nederlands</SelectItem>
+                    <SelectItem value="sv">Svenska</SelectItem>
+                    <SelectItem value="no">Norsk</SelectItem>
+                    <SelectItem value="da">Dansk</SelectItem>
+                    <SelectItem value="fi">Suomi</SelectItem>
+                    <SelectItem value="tr">Türkçe</SelectItem>
+                    <SelectItem value="el">Ελληνικά</SelectItem>
+                    <SelectItem value="pl">Polski</SelectItem>
+                    <SelectItem value="he">עברית</SelectItem>
+                    <SelectItem value="th">ไทย</SelectItem>
+                    <SelectItem value="id">Bahasa Indonesia</SelectItem>
+                    <SelectItem value="th">ภาษาไทย</SelectItem>
+                    <SelectItem value="hu">Magyar</SelectItem>
+                    <SelectItem value="cs">Čeština</SelectItem>
+                    <SelectItem value="ro">Română</SelectItem>
+                    <SelectItem value="uk">Українська</SelectItem>
+                    <SelectItem value="vi">Tiếng Việt</SelectItem>
+                    <SelectItem value="bn">বাংলা</SelectItem>
+                </SelectContent>
+            </Select>
         </>
     )
 }

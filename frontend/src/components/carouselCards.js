@@ -28,9 +28,9 @@ export function CarouselCards() {
                                         <div className="grid content-between">
                                             <div>
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Instagram</h2>
-                                                <p className="text-sm lg:text-md">Share your moments with the world through photos and videos.</p>
+                                                <p className="text-sm lg:text-md">Share your moments with the world with photos and videos.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/instagram.webp" width={112} height="0" alt="instagram video feed image" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -49,7 +49,7 @@ export function CarouselCards() {
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Facebook</h2>
                                                 <p className="text-sm lg:text-md">Connect with friends, share updates, and stay informed.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/facebook.webp" width={112} height="0" alt="facebook video feed image" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -66,9 +66,9 @@ export function CarouselCards() {
                                         <div className="grid content-between">
                                             <div>
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Tiktok</h2>
-                                                <p className="text-sm lg:text-md">Create and explore short videos that entertain and inspire.</p>
+                                                <p className="text-sm lg:text-md">Create and explore videos that entertain and inspire.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/tiktok.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -85,9 +85,9 @@ export function CarouselCards() {
                                         <div className="grid content-between">
                                             <div>
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Youtube</h2>
-                                                <p className="text-sm lg:text-md">Watch and share videos on any topic, from entertainment to education.</p>
+                                                <p className="text-sm lg:text-md">Watch and share videos from entertainment to education.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/youtube.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -106,7 +106,7 @@ export function CarouselCards() {
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Pinterest</h2>
                                                 <p className="text-sm lg:text-md">Discover and save creative ideas for every aspect of your life.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/pinterest.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -123,9 +123,9 @@ export function CarouselCards() {
                                         <div className="grid content-between">
                                             <div>
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Twitter</h2>
-                                                <p className="text-sm lg:text-md">Stay updated on global news and share your thoughts instantly.</p>
+                                                <p className="text-sm lg:text-md">Stay updated on global news and share posts.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/twitter.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -142,9 +142,9 @@ export function CarouselCards() {
                                         <div className="grid content-between">
                                             <div>
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Spotify</h2>
-                                                <p className="text-sm lg:text-md">Stream your favorite music and podcasts anytime, anywhere.</p>
+                                                <p className="text-sm lg:text-md">Stream your fav music and podcasts anytime.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/spotify.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -161,9 +161,9 @@ export function CarouselCards() {
                                         <div className="grid content-between">
                                             <div>
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Reddit</h2>
-                                                <p className="text-sm lg:text-md">Dive into communities and discussions on any topic imaginable.</p>
+                                                <p className="text-sm lg:text-md">Dive into communities, discussions on any topic imaginable.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/reddit.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>
@@ -182,7 +182,7 @@ export function CarouselCards() {
                                                 <h2 className="text-xl xl:text-3xl font-extrabold">Linkedin</h2>
                                                 <p className="text-sm lg:text-md">Professional networking to grow your career and business.</p>
                                             </div>
-                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-6 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
+                                            <Image src="/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>
                                         </div>
                                         <div className="ml-4 flex-shrink-0">
                                             <Image src="/socialMediaPrints/linkedin.webp" alt="tiktok video feed image" width={112} height="0" className="rounded-t-2xl h-auto w-auto lg:w-32"></Image>

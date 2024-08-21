@@ -21,11 +21,9 @@ export const metadata = {
     }
   },
   robots: {
-    index: false,
     follow: true,
     noCache: false,
     googleBot: {
-      index: false,
       follow: true,
       noImageIndex: false,
       'max-video-review': -1,

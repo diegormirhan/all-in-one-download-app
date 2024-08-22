@@ -1,10 +1,13 @@
 import { Inter } from "next/font/google";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import { HeaderMenu } from "@/components/menu/headerMenu"
 import Link from "next/link";
 import { Adsense } from "@/components/ads/adsense";
-import { TranslationCard } from "@/components/translationCard";
+import { TranslationToggle } from "@/components/translationToggle";
 import Head from "next/head";
+
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,11 +38,14 @@ export const metadata = {
 
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params: { locale } }) {
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <Head>
-        <Adsense/>
+        <Adsense />
       </Head>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-4 rounded-b-2xl w-full">
@@ -52,11 +58,11 @@ export default function RootLayout({ children }) {
             </h1>
           </Link>
           {/* Ícone da direita */}
-          <TranslationCard />
+          <TranslationToggle />
         </header>
-
-        {children}
-
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
         <footer className="bg-main-color p-6">
           <div className="grid grid-cols-1 md:grid-cols-5 text-center md:text-left space-y-6 md:space-y-0 justify-items-center text-white px-16">
             <div className="space-y-1">

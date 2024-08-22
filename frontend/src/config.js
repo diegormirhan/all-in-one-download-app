@@ -1,0 +1,2 @@
+// A list of all locales that are supported
+export const locales = ['en', 'es', 'fr', 'de', 'pt', 'it', 'zh', 'ja', 'ko', 'ru', 'ar', 'hi', 'nl', 'sv', 'no', 'da', 'fi', 'tr', 'el', 'pl', 'he', 'th', 'id', 'hu', 'cs', 'ro', 'uk', 'vi', 'bn'];

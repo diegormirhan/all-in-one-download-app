@@ -1,3 +1,5 @@
+"use client"
+
 import {
     Select,
     SelectContent,
@@ -8,14 +10,20 @@ import {
 
 import Image from "next/image"
 
+import { usePathname, useRouter} from '@/navigation'
 
-export function TranslationCard() {
+export function TranslationToggle() {
+    const pathname = usePathname();
+    const router = useRouter();
+
+    const handleLanguageChange = (value) => {
+        router.replace(pathname, { locale: value });
+      };
     return (
         <>
-
-            <Select>
-                <SelectTrigger>
-                    <Image width={28} height={28} className="md:w-8 md:h- cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
+            <Select onValueChange={handleLanguageChange}>
+                <SelectTrigger aria-label="Select language">
+                    <Image width={28} height={28} className="md:w-8 md:h-8 cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
                 </SelectTrigger>
                 <SelectContent>
                     <SelectItem value="en">English</SelectItem>
@@ -39,7 +47,6 @@ export function TranslationCard() {
                     <SelectItem value="el">Ελληνικά</SelectItem>
                     <SelectItem value="pl">Polski</SelectItem>
                     <SelectItem value="he">עברית</SelectItem>
-                    <SelectItem value="th">ไทย</SelectItem>
                     <SelectItem value="id">Bahasa Indonesia</SelectItem>
                     <SelectItem value="th">ภาษาไทย</SelectItem>
                     <SelectItem value="hu">Magyar</SelectItem>

@@ -10,7 +10,7 @@ export function FAQAccordion() {
     return (
         <>
             <Accordion type="single" collapsible defaultValue={["item-1",]} className="w-full space-y-5">
-                <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
                 <AccordionItem value="item-1">
                     <AccordionTrigger>
                         What is [Your Site Name]?

@@ -1,27 +1,33 @@
 "use client"
 
+import { useRouter, usePathname as usePathname } from '@/navigation'
+import { usePathname as customUsePathname } from 'next/navigation';
+import { locales } from '@/config';
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
-    SelectValue,
 } from "@/components/ui/select"
 
 import Image from "next/image"
 
-import { usePathname, useRouter} from '@/navigation'
-
 export function TranslationToggle() {
     const pathname = usePathname();
+    const custompathname = customUsePathname();
     const router = useRouter();
 
+    const pathParts = custompathname.split('/');
+    let currentLocale = pathParts[1]
+    if(currentLocale.length !== 2) currentLocale = 'en'
+
     const handleLanguageChange = (value) => {
-        router.replace(pathname, { locale: value });
-      };
+            router.replace(pathname, { locale: value });
+    };
+    
     return (
         <>
-            <Select onValueChange={handleLanguageChange}>
+            <Select defaultValue={currentLocale} onValueChange={handleLanguageChange}>
                 <SelectTrigger aria-label="Select language">
                     <Image width={28} height={28} className="md:w-8 md:h-8 cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
                 </SelectTrigger>

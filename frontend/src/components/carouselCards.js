@@ -13,7 +13,7 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "@/navigation"
 
 export function CarouselCards() {
     return (
@@ -22,7 +22,7 @@ export function CarouselCards() {
                 <Carousel opts={{ align: "center", loop: true, }} plugins={[Autoplay({ delay: 3000, })]}>
                     <CarouselContent>
                         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Link href="/">
+                            <Link href="/instagram">
                                 <Card className="border-none active:scale-90 transition-transform rounded-2xl bg-gradient-instagram cursor-pointer lg:hover:scale-95 group shadow-inner">
                                     <CardContent className="px-8 pt-6 pb-0 text-white flex">
                                         <div className="grid content-between">

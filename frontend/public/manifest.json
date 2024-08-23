@@ -1,10 +1,31 @@
 {
+    "id": "1",  
     "name": "Best Video Save",
     "short_name": "Video Save",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
-    "description": "Download videos, images, and music from social media platforms instantly."
+    "description": "Download videos, images, and music from social media platforms instantly.",
+    "orientation": "portrait",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/logo.png",
+        "sizes": "500x500",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/logo.png",
+        "sizes": "500x500",
+        "type": "image/png"
+      },
+      {
+        "src": "/logo.png",
+        "sizes": "500x500",
+        "type": "image/png"
+      }
+    ]
   }
   

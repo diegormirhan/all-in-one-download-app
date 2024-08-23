@@ -8,7 +8,7 @@ export function HowToUse({ socialMedia, mediaType }) {
                         Step 1: Access {socialMedia} and find the desired {mediaType}
                     </h2>
                     <p className="text-gray-600">
-                        1. Open {socialMedia} on your prefered device or browser and navigate to the video you want to download.
+                        1. Open your {socialMedia} on your prefered device or browser and navigate to the {mediaType} you want to download.
                     </p>
                     <p className="text-gray-600">
                         2. Click on the three dots on the top of the {mediaType}.

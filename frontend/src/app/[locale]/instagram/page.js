@@ -1,20 +1,20 @@
-import { SectionMenu } from "@/components/menu/sectionMenu";
-import { FAQAccordion } from "@/components/FaqAccordion";
-import { CarouselCards } from "@/components/carouselCards";
-import { HowToUse } from "@/components/howToUse";
-import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
-import { ImportantTips } from "@/components/importantTips";
-import { DownloadButton } from "@/components/downloadButton";
-import { TypeWriterWords } from "@/components/typeWriter";
-import { InputLink } from "@/components/inputLink";
-
 import {useTranslations} from 'next-intl';
+import { VerticalAds } from "@/components/ads/ads";
+import { InputLink } from "@/components/inputLink";
+import { DownloadButton } from "@/components/downloadButton";
+import { HorizontalAds } from "@/components/ads/ads";
+import {SectionMenu} from "@/components/menu/sectionMenu";
+import { CarouselCards } from "@/components/carouselCards";
+import { ImportantTips } from "@/components/importantTips";
+import { FAQAccordion } from "@/components/FaqAccordion";
+import { HowToUse } from "@/components/howToUse";
 
-export default function Home() {
-  const t = useTranslations('Translations');
-  return (
-    <>
-      <main className="min-h-screen flex flex-col items-center p-4 pt-24">
+
+export default function Instagram() {
+    const t = useTranslations('Translations');
+    return (
+        <>
+        <main className="min-h-screen flex flex-col items-center p-4 pt-24">
         {/* Main Section */}
         <section className="w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}
@@ -23,13 +23,13 @@ export default function Home() {
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
             <h1 className="text-4xl font-extrabold mb-2 md:text-5xl">{t('h1-title-video')}</h1>
-            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords/></h1>
+            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">Social Media</h1>
 
             {/* Campo de Input para link */}
             <InputLink />
 
             {/* Botão de Download */}
-            <DownloadButton/>
+            <DownloadButton />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -41,11 +41,12 @@ export default function Home() {
             </div>
 
             {/* Botão para explorar mais */}
-            <SectionMenu/>
+            <SectionMenu />
           </div>
 
           {/* Anúncios na lateral direita*/}
             <VerticalAds />
+
         </section>
 
         {/* Card Section */}
@@ -60,6 +61,6 @@ export default function Home() {
 
         </section>
       </main>
-    </>
-  );
+        </>
+    )
 }

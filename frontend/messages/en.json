@@ -1,5 +1,8 @@
 {
-  "HomePage": {
-    "title": "Download any media from"
+  "Translations": {
+    "h1-title-video": "Download any video from",
+    "h1-title-music": "Download any music from",
+    "h1-title-image": "Download any image from",
+    "h1-title-stream": "Download any stream from"
   }
 }

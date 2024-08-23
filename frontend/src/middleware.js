@@ -4,10 +4,11 @@ import {locales, /* ... */} from './config';
 export default createMiddleware({
   locales,
   defaultLocale: 'en',
-  localePrefix: 'as-needed'
+  localePrefix: 'as-needed',
+  localeDetection: false,
 });
  
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(en|es|fr|de|pt|it|zh|ja|ko|ru|ar|hi|nl|sv|no|da|fi|tr|el|pl|he|th|id|hu|cs|ro|uk|vi|bn)/:path*']
+  matcher: [ "/((?!api|_next|_vercel|.*\\..*).*)",],
 };

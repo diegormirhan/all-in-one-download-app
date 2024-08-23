@@ -1,9 +1,11 @@
-export function HowToUse({ socialMedia, mediaType }) {
+export function HowToUse({ socialMedia, mediaType, classes }) {
     return (
         <>
-            <div className="space-y-6 w-full px-2 md:px-0">
-                <h2 className="text-3xl font-bold mb-4">How To Download Any Media</h2>
-                <div className="space-y-4">
+            <div className="space-y-4 w-full px-2 md:px-0">
+                <div className={`inline-block font-bold text-2xl lg:text-3xl mb-2 border-b-4 ${classes}`}>
+                    How to download any {mediaType}
+                </div>
+                <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
                         Step 1: Access {socialMedia} and find the desired {mediaType}
                     </h2>
@@ -18,7 +20,7 @@ export function HowToUse({ socialMedia, mediaType }) {
                     </p>
                 </div>
 
-                <div className="space-y-4">
+                <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
                         Step 2: Paste the Link on this Website
                     </h2>
@@ -33,7 +35,7 @@ export function HowToUse({ socialMedia, mediaType }) {
                     </p>
                 </div>
 
-                <div className="space-y-4">
+                <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
                         Step 3: Start the Download
                     </h2>
@@ -48,7 +50,7 @@ export function HowToUse({ socialMedia, mediaType }) {
                     </p>
                 </div>
 
-                <div className="space-y-4">
+                <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
                         Step 4: Save the {mediaType} to your device.
                     </h2>

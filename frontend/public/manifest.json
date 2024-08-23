@@ -11,19 +11,19 @@
     "scope": "/",
     "icons": [
       {
-        "src": "/logo.png",
+        "src": "/icons/logo/png/logo-500.png",
         "sizes": "500x500",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/logo.png",
-        "sizes": "500x500",
+        "src": "/icons/logo/png/logo-375.png",
+        "sizes": "375x375",
         "type": "image/png"
       },
       {
-        "src": "/logo.png",
-        "sizes": "500x500",
+        "src": "/icons/logo/png/logo-250.png",
+        "sizes": "250x250",
         "type": "image/png"
       }
     ]

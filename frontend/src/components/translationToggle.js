@@ -29,7 +29,7 @@ export function TranslationToggle() {
         <>
             <Select defaultValue={currentLocale} onValueChange={handleLanguageChange}>
                 <SelectTrigger aria-label="Select language">
-                    <Image width={28} height={28} className="md:w-8 md:h-8 cursor-pointer" alt="translate icon svg" src="/translate.svg"></Image>
+                    <Image width={28} height={28} className="md:w-8 md:h-8 cursor-pointer" alt="translate icon svg" src="/icons/translate.svg"></Image>
                 </SelectTrigger>
                 <SelectContent>
                     <SelectItem value="en">English</SelectItem>

@@ -1,13 +1,13 @@
 import { Inter } from "next/font/google";
 import "../../styles/globals.css";
 import { HeaderMenu } from "@/components/menu/headerMenu"
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { Adsense } from "@/components/ads/adsense";
 import { TranslationToggle } from "@/components/translationToggle";
 import Head from "next/head";
-import { locales } from "@/config";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -45,15 +45,13 @@ export default async function RootLayout({ children, params: { locale } }) {
       <Head>
         <Adsense />
       </Head>
-      <body className={inter.className}>
-        <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-4 rounded-b-2xl w-full">
+      <body className={`bg-main-bg-color `}>
+        <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}
           <HeaderMenu />
           {/* Título do Meio */}
           <Link href="/">
-            <h1 className="text-lg md:text-2xl font-medium text-white cursor-pointer">
-              Best Video Download
-            </h1>
+            <Image src="/icons/logo/webp/logo-outline-white-500.webp" width={32} height={32} className="md:w-8 md:h-8"></Image>
           </Link>
           {/* Ícone da direita */}
           <TranslationToggle />

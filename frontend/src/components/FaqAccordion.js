@@ -6,12 +6,16 @@ import {
 } from "@/components/ui/accordion"
 
 
-export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
+export function FAQAccordion({ mediaType, mediaTypes, socialMedia, classes }) {
     return (
         <>
-            <Accordion type="single" collapsible defaultValue={["item-1",]} className="w-full space-y-5">
-                <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
-                <AccordionItem value="item-1">
+            <Accordion type="single" collapsible className="w-full space-y-5">
+                <div className="w-full text-left">
+                    <div className={`inline-block font-bold text-2xl lg:text-3xl mb-2 ml-1 border-b-4 ${classes}`}>
+                        Frequently Asked Questions
+                    </div>
+                </div>
+                <AccordionItem value="item-1" className={`${classes}`}>
                     <AccordionTrigger>
                         What is Best Video Download?
                     </AccordionTrigger>
@@ -20,7 +24,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-2">
+                <AccordionItem value="item-2" className={`${classes}`}>
                     <AccordionTrigger>
                         Do I need to create an account to download the {mediaTypes}?
                     </AccordionTrigger>
@@ -29,7 +33,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-3">
+                <AccordionItem value="item-3" className={`${classes}`}>
                     <AccordionTrigger>
                         Can I download {mediaTypes} from private {socialMedia} accounts?
                     </AccordionTrigger>
@@ -38,7 +42,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-4">
+                <AccordionItem value="item-4" className={`${classes}`}>
                     <AccordionTrigger>
                         Is it legal to download any {mediaType} from {socialMedia}?
                     </AccordionTrigger>
@@ -47,7 +51,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-5">
+                <AccordionItem value="item-5" className={`${classes}`}>
                     <AccordionTrigger>
                         On which devices can I use Best Video Download?
                     </AccordionTrigger>
@@ -56,7 +60,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6">
+                <AccordionItem value="item-6" className={`${classes}`}>
                     <AccordionTrigger>
                         Where are the downloaded {mediaTypes} saved?
                     </AccordionTrigger>
@@ -65,7 +69,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-7">
+                <AccordionItem value="item-7" className={`${classes}`}>
                     <AccordionTrigger>
                         What formats are supported for downloads?
                     </AccordionTrigger>
@@ -74,7 +78,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-8">
+                <AccordionItem value="item-8" className={`${classes}`}>
                     <AccordionTrigger>
                         How many {mediaTypes} can I download?
                     </AccordionTrigger>
@@ -83,7 +87,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-9">
+                <AccordionItem value="item-9" className={`${classes}`}>
                     <AccordionTrigger>
                         Can I download {mediaType} from other social media platforms?
                     </AccordionTrigger>
@@ -92,7 +96,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-10">
+                <AccordionItem value="item-10" className={`${classes}`}>
                     <AccordionTrigger>
                         Is Best Video Download free to use?
                     </AccordionTrigger>
@@ -101,7 +105,7 @@ export function FAQAccordion({ mediaType, mediaTypes, socialMedia }) {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-11">
+                <AccordionItem value="item-11" className={`${classes}`}>
                     <AccordionTrigger>
                         How can I contact support if I have issues?
                     </AccordionTrigger>

@@ -8,7 +8,7 @@ import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
 export default function Instagram() {
-  const socialMedia = "Home"
+  const socialMedia = "Instagram"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)
   return (
     <>

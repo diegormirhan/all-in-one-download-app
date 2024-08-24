@@ -1,3 +1,5 @@
+
+
 import { MenuContent } from "./menuContent";
 
 import {
@@ -19,10 +21,13 @@ import {
 } from "@/components/ui/sheet"
 
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 const menuContent = MenuContent()
 
 export function HeaderMenu() {
+  const tDefault = useTranslations('Translations-Default');
+
   return (
     <>
       {/* Drawer Mobile */}
@@ -32,8 +37,8 @@ export function HeaderMenu() {
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
-            <DrawerTitle>Explore</DrawerTitle>
-            <DrawerDescription>Search for other Social Media Platforms</DrawerDescription>
+            <DrawerTitle>{tDefault('menu-title')}</DrawerTitle>
+            <DrawerDescription>{tDefault('menu-description')}</DrawerDescription>
           </DrawerHeader>
           {menuContent}
         </DrawerContent>
@@ -46,8 +51,8 @@ export function HeaderMenu() {
         </SheetTrigger>
         <SheetContent className="flex flex-col overflow-auto">
           <SheetHeader>
-            <SheetTitle>Explore</SheetTitle>
-            <SheetDescription>Search for other Social Media Platforms</SheetDescription>
+            <SheetTitle>{tDefault('menu-title')}</SheetTitle>
+            <SheetDescription>{tDefault('menu-description')}</SheetDescription>
           </SheetHeader>
           {menuContent}
         </SheetContent>

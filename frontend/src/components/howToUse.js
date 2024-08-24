@@ -1,67 +1,72 @@
-export function HowToUse({ socialMedia, mediaType, classes }) {
+import { useTranslations } from 'next-intl'
+
+export function HowToUse({ classes, namespace }) {
+    const tDynamic = useTranslations(`Translations-${namespace}`)
+    const tDefault = useTranslations('Translations-Default')
+
     return (
         <>
             <div className="space-y-4 w-full px-2 md:px-0">
                 <div className={`inline-block font-bold text-2xl lg:text-3xl mb-2 border-b-4 ${classes}`}>
-                    How to download any {mediaType}
+                    {tDefault('howToUse-title')}
                 </div>
                 <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
-                        Step 1: Access {socialMedia} and find the desired {mediaType}
+                        {tDynamic('howToUse-step1-title')}
                     </h2>
                     <p className="text-gray-600">
-                        1. Open your {socialMedia} on your prefered device or browser and navigate to the {mediaType} you want to download.
+                        {tDynamic('howToUse-step1-item1')}
                     </p>
                     <p className="text-gray-600">
-                        2. Click on the three dots on the top of the {mediaType}.
+                        {tDynamic('howToUse-step1-item2')}
                     </p>
                     <p className="text-gray-600">
-                        3. Select &quot;Copy Link&quot; from the menu that appears. This action will copy the {mediaType} url to your clipboard.
-                    </p>
-                </div>
-
-                <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
-                    <h2 className="text-xl font-semibold text-gray-700">
-                        Step 2: Paste the Link on this Website
-                    </h2>
-                    <p className="text-gray-600">
-                        1. Go to the this website in your browser.
-                    </p>
-                    <p className="text-gray-600">
-                        2. Find the text box on the homepage that says &quot;Insert your link here.&quot;
-                    </p>
-                    <p className="text-gray-600">
-                        3. Paste {socialMedia} {mediaType} link you copied. You can do this by clicking on the &quot;Paste&quot; button, by right-clicking and selecting &quot;Paste&quot; or by pressing &quot;Ctrl + V&quot; or your keyboard (or &quot;Cmd + V&quot; on Mac).
+                        {tDynamic('howToUse-step1-item3')}
                     </p>
                 </div>
 
                 <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
-                        Step 3: Start the Download
+                        {tDynamic('howToUse-step2-title')}
                     </h2>
                     <p className="text-gray-600">
-                        1. After pasting the link, click the &quot;Download&quot; button below the text box.
+                        {tDynamic('howToUse-step2-item1')}
                     </p>
                     <p className="text-gray-600">
-                        2. Wait a few seconds while the site processes the link and prepares the {mediaType} for download.
+                        {tDynamic('howToUse-step2-item2')}
                     </p>
                     <p className="text-gray-600">
-                        3. When the {mediaType} is ready, you will be redirected to the page where you can choose which {mediaType} quality you want to download.
+                        {tDynamic('howToUse-step2-item3')}
                     </p>
                 </div>
 
                 <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
                     <h2 className="text-xl font-semibold text-gray-700">
-                        Step 4: Save the {mediaType} to your device.
+                        {tDynamic('howToUse-step3-title')}
                     </h2>
                     <p className="text-gray-600">
-                        1. Click in the download button that appears on the page or if you want, choose the {mediaType} quality you want to download.
+                        {tDynamic('howToUse-step3-item1')}
                     </p>
                     <p className="text-gray-600">
-                        2. Depending on your browser, the {mediaType} will either save automatically to your downloads folder or prompt you to choose a location.
+                        {tDynamic('howToUse-step3-item2')}
                     </p>
                     <p className="text-gray-600">
-                        3. Done! You now have {socialMedia} {mediaType} saved on your device, ready to watch and share with your frineds and family anytime.
+                        {tDynamic('howToUse-step3-item3')}
+                    </p>
+                </div>
+
+                <div className={`space-y-2 border-b-2 pb-4 ${classes}`}>
+                    <h2 className="text-xl font-semibold text-gray-700">
+                        {tDynamic('howToUse-step4-title')}
+                    </h2>
+                    <p className="text-gray-600">
+                        {tDynamic('howToUse-step4-item1')}
+                    </p>
+                    <p className="text-gray-600">
+                        {tDynamic('howToUse-step4-item2')}
+                    </p>
+                    <p className="text-gray-600">
+                        {tDynamic('howToUse-step4-item3')}
                     </p>
                 </div>
             </div>

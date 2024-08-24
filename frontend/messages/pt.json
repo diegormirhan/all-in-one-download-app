@@ -1,8 +1,125 @@
 {
-  "Translations": {
-    "h1-title-video": "Baixe qualquer video de",
-    "h1-title-music": "Download any music from",
-    "h1-title-image": "Download any image from",
-    "h1-title-stream": "Download any stream from"
+  "Translations-Default": {
+    "menu-title": "Explore",
+    "menu-description": "Search for other Social Media Platforms",
+
+    "introduction-input": "Insert your link here",
+    "introduction-button": "Download",
+
+    "explore-button": "Explore All Social Media We Support",
+
+    "carousel-title": "Most Popular Platforms",
+
+    "carousel-card-instagram": "Share your moments with the world with photos and videos.",
+    "carousel-card-facebook": "Connect with friends, share updates, and stay informed.",
+    "carousel-card-tiktok": "Create and explore videos that entertain and inspire.",
+    "carousel-card-youtube": "Watch and share videos from entertainment to education.",
+    "carousel-card-pinterest": "Discover and save creative ideas for every aspect of your life.",
+    "carousel-card-twitter": "Stay updated on global news and share posts.",
+    "carousel-card-spotify": "Stream your fav music and podcasts anytime.",
+    "carousel-card-reddit": "Dive into communities, discussions on any topic imaginable.",
+    "carousel-card-linkedin": "Dive into communities, discussions on any topic imaginable.",
+
+    "tips-title": "Important Tips",
+
+    "faq-title": "Frequently Asked Questions",
+
+    "howToUse-title": "How to download any media"
+  },
+  "Translations-Home": {
+    "introduction-title": "Download any media from",
+
+    "description-item1": "Best Video Downloader gives you the tool to download any video, image or music from most of the social media platforms that exists today.",
+    "description-item2": "Start by inserting the link of your media above or click on the right icon to paste directly in the box to start downloading your media entirely for free!",
+
+    "tips-item1-key": "Ensure that the social media profile is public: ",
+    "tips-item2-key": "Check your internet connection:",
+    "tips-item3-key": "Respect copyrights:",
+
+    "tips-item1-value": "Media from private accounts cannot be downloaded.",
+    "tips-item2-value": "Downloads may fail if the connection is unstable.",
+    "tips-item3-value": "Use the downloaded media for personal use only and do not redistribute without permission.",
+
+    "faq-item1-title": "What is Best Video Download?",
+    "faq-item2-title": "Do I need to create an account to download the media?",
+    "faq-item3-title": "Can I download media from private social media accounts?",
+    "faq-item4-title": "Is it legal to download any media from social medias?",
+    "faq-item5-title": "On which devices can I use Best Video Download?",
+    "faq-item6-title": "Where are the downloaded media saved?",
+    "faq-item7-title": "What formats are supported for downloads?",
+    "faq-item8-title": "How many medias can I download?",
+    "faq-item9-title": "Can I download medias from other social media platforms?",
+    "faq-item10-title": "Is Best Video Download free to use?",
+    "faq-item11-title": "How can I contact support if I have issues?",
+
+    "faq-item1-content": "Best Video Download is a free online tool that allows you to download medias from social medias directly to your device. Whether you want to save a media for offline viewing or to keep a copy for personal use, our platform makes it easy and quick.",
+    "faq-item2-content": "No, you do not need to create an account to use Best Video Download. The service is completely free and does not require any sign-up or personal information.",
+    "faq-item3-content": "No, Best Video Download only allows you to download medias from public social media accounts. Medias from private accounts are not accessible due to privacy restrictions.",
+    "faq-item4-content": "Downloading medias from social medias for personal use is generally allowed, but it&apos;s important to respect copyright laws and the terms of service of the social media. Do not redistribute or use the downloaded media for commercial purposes without permission from the content owner.",
+    "faq-item5-content": "Best Video Download is compatible with all devices, including smartphones, tablets, and desktops. It works on any web browser, so you can download media on the go or from the comfort of your home.",
+    "faq-item6-content": "After downloading, the media is usually saved in your device&apos;s default downloads folder. On mobile devices, it may be saved in the gallery or documents app, depending on your settings.",
+    "faq-item7-content": "Best Video Download typically allows you to download media in many different formats you can choose, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original media quality.",
+    "faq-item8-content": "There is no limit to the number of medias you can download using Best Video Download. Feel free to download as many medias as you like.",
+    "faq-item9-content": "Best Video Download typically allows you to download medias in many different formats you want, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original media quality.",
+    "faq-item10-content": " Yes, Best Video Download is completely free to use. There are no hidden fees, and you can download as many medias as you want without any charges.",
+    "faq-item11-content": "If you encounter any problems or have questions that aren&apos;t answered in this FAQ, you can reach out to our support team via the contact form on our website or by emailing [support@bestvideosdownload.com].",
+
+    "howToUse-step1-title": "Step 1: Access Social Media and find the desired media",
+    "howToUse-step2-title": "Step 2: Paste the Link on this Website",
+    "howToUse-step3-title": "Step 3: Start the Download",
+    "howToUse-step4-title": "Step 4: Save the media to your device.",
+
+    "howToUse-step1-item1": "1. Open your Social Media on your prefered device or browser and navigate to the media you want to download.",
+    "howToUse-step1-item2": "2. Click on the three dots on the top of the media.",
+    "howToUse-step1-item3": "3. Select &quot;Copy Link&quot; from the menu that appears. This action will copy the media url to your clipboard.",
+
+    "howToUse-step2-item1": "1. Go to the this website in your browser.",
+    "howToUse-step2-item2": "2. Find the text box on the homepage that says &quot;Insert your link here&quot;.",
+    "howToUse-step2-item3": "3. Paste Social Media media link you copied. You can do this by clicking on the &quot;Paste&quot; button, by right-clicking and selecting &quot;Paste&quot; or by pressing &quot;Ctrl + V&quot; or your keyboard (or &quot;Cmd + V&quot; on Mac).",
+
+    "howToUse-step3-item1": "1. After pasting the link, click the &quot;Download&quot; button below the text box.",
+    "howToUse-step3-item2": "2. Wait a few seconds while the site processes the link and prepares the media for download.",
+    "howToUse-step3-item3": "3. When the media is ready, you will be redirected to the page where you can choose which media quality you want to download.",
+
+    "howToUse-step4-item1": "1. Click in the download button that appears on the page or if you want, choose the media quality you want to download.",
+    "howToUse-step4-item2": "2. Depending on your browser, the media will either save automatically to your downloads folder or prompt you to choose a location.",
+    "howToUse-step4-item3": "3. Done! You now have Social Media media saved on your device, ready to watch and share with your friends and family anytime."
+  },
+  "Translations-Instagram": {
+    "introduction-title": "Baixe reels, stories e videos do"
+  },
+  "Translations-Tiktok": {
+    
+  },
+  "Translations-Facebook": {
+    
+  },
+  "Translations-Youtube": {
+    
+  },
+  "Translations-Twitter": {
+    
+    
+  },
+  "Translations-Reddit": {
+    
+  },
+  "Translations-Snapchat": {
+
+  },
+  "Translations-Pinterest": {
+
+  },
+  "Translations-Linkedin": {
+
+  },
+  "Translations-Spotify": {
+
+  },
+  "Translations-Soundcloud": {
+
+  },
+  "Translations-Threads ": {
+
   }
 }

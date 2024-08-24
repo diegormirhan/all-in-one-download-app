@@ -1,25 +1,15 @@
 {
-  "Translations-Menu": {
+  "Translations-Default": {
     "menu-title": "Explore",
-    "menu-description": "Search for other Social Media Platforms"
-  },
-  "Translations-Introduction": {
-    "introduction-h1-title-video": "Download any video from",
-    "introduction-h1-title-music": "Download any music from",
-    "introduction-h1-title-image": "Download any image from",
-    "introduction-h1-title-stream": "Download any stream from",
+    "menu-description": "Search for other Social Media Platforms",
+
     "introduction-input": "Insert your link here",
-    "introduction-button": "Download"
-  },
-  "Translations-Description": {
-    "description-first-default": "Best Video Downloader gives you the tool to download any video, image or music from most of the social media platforms that exists today.",
-    "description-second-default": "Start by inserting the link of your media above or click on the right icon to paste directly in the box to start downloading your media entirely for free!"
-  },
-  "Translations-Explore": {
-    "explore-button": "Explore All Social Media We Support"
-  },
-  "Translations-Carousel": {
+    "introduction-button": "Download",
+
+    "explore-button": "Explore All Social Media We Support",
+
     "carousel-title": "Most Popular Platforms",
+
     "carousel-card-instagram": "Share your moments with the world with photos and videos.",
     "carousel-card-facebook": "Connect with friends, share updates, and stay informed.",
     "carousel-card-tiktok": "Create and explore videos that entertain and inspire.",
@@ -28,40 +18,719 @@
     "carousel-card-twitter": "Stay updated on global news and share posts.",
     "carousel-card-spotify": "Stream your fav music and podcasts anytime.",
     "carousel-card-reddit": "Dive into communities, discussions on any topic imaginable.",
-    "carousel-card-linkedin": "Dive into communities, discussions on any topic imaginable."
-  },
-  "Translations-Tips": {
+    "carousel-card-linkedin": "Dive into communities, discussions on any topic imaginable.",
+
     "tips-title": "Important Tips",
-    "tips-first-default": "<strong>Ensure that the social media profile is public:</strong> media from private accounts cannot be downloaded.",
-    "tips-second-default": "<strong>Check your internet connection:</strong> Downloads may fail if the connection is unstable.",
-    "tips-third-default": "<strong>Respect copyrights:</strong> Use the downloaded media for personal use only and do not redistribute without permission."
-  },
-  "Translations-Faq": {
+
     "faq-title": "Frequently Asked Questions",
+
+    "howToUse-title": "How to download any media"
+  },
+  "Translations-Home": {
+    "introduction-title": "Download any media from",
+
+    "description-item1": "Best Video Downloader gives you the tool to download any video, image or music from most of the social media platforms that exists today.",
+    "description-item2": "Start by inserting the link of your media above or click on the right icon to paste directly in the box to start downloading your media entirely for free!",
+
+    "tips-item1-key": "Ensure that the social media profile is public: ",
+    "tips-item2-key": "Check your internet connection:",
+    "tips-item3-key": "Respect copyrights:",
+
+    "tips-item1-value": "Media from private accounts cannot be downloaded.",
+    "tips-item2-value": "Downloads may fail if the connection is unstable.",
+    "tips-item3-value": "Use the downloaded media for personal use only and do not redistribute without permission.",
+
     "faq-item1-title": "What is Best Video Download?",
-    "faq-item2-title": "Do I need to create an account to download the {mediaTypes}?",
-    "faq-item3-title": "Can I download {mediaTypes} from private {socialMedia} accounts?",
-    "faq-item4-title": "Is it legal to download any {mediaType} from {socialMedia}?",
+    "faq-item2-title": "Do I need to create an account to download the media?",
+    "faq-item3-title": "Can I download media from private social media accounts?",
+    "faq-item4-title": "Is it legal to download any media from social medias?",
     "faq-item5-title": "On which devices can I use Best Video Download?",
-    "faq-item6-title": "Where are the downloaded {mediaTypes} saved?",
+    "faq-item6-title": "Where are the downloaded media saved?",
     "faq-item7-title": "What formats are supported for downloads?",
-    "faq-item8-title": "How many {mediaTypes} can I download?",
-    "faq-item9-title": "Can I download {mediaType} from other social media platforms?",
+    "faq-item8-title": "How many medias can I download?",
+    "faq-item9-title": "Can I download medias from other social media platforms?",
     "faq-item10-title": "Is Best Video Download free to use?",
     "faq-item11-title": "How can I contact support if I have issues?",
-    "faq-item1-content-default": "Best Video Download is a free online tool that allows you to download {mediaTypes} from {socialMedia} directly to your device. Whether you want to save a {mediaType} for offline viewing or to keep a copy for personal use, our platform makes it easy and quick.",
-    "faq-item2-content-default": "No, you do not need to create an account to use Best Video Download. The service is completely free and does not require any sign-up or personal information.",
-    "faq-item3-content-default": "No, Best Video Download only allows you to download {mediaTypes} from public {socialMedia} accounts. {mediaTypes} from private accounts are not accessible due to privacy restrictions.",
-    "faq-item4-content-default": "Downloading {mediaType} from {socialMedia} for personal use is generally allowed, but it&apos;s important to respect copyright laws and the terms of service of the {socialMedia}. Do not redistribute or use the downloaded {mediaType} for commercial purposes without permission from the content owner.",
-    "faq-item5-content-default": "Best Video Download is compatible with all devices, including smartphones, tablets, and desktops. It works on any web browser, so you can download {mediaType} on the go or from the comfort of your home.",
-    "faq-item6-content-default": "After downloading, the {mediaType} is usually saved in your device&apos;s default downloads folder. On mobile devices, it may be saved in the gallery or documents app, depending on your settings.",
-    "faq-item7-content-default": "Best Video Download typically allows you to download {mediaTypes} in many different formats you can choose, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original {mediaType} quality.",
-    "faq-item8-content-default": "There is no limit to the number of {mediaTypes} you can download using Best Video Download. Feel free to download as many {mediaTypes} as you like.",
-    "faq-item9-content-default": "Best Video Download typically allows you to download {mediaType} in many different formats you want, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original {mediaType} quality.",
-    "faq-item10-content-default": " Yes, Best Video Download is completely free to use. There are no hidden fees, and you can download as many {mediaTypes} as you want without any charges.",
-    "faq-item11-content-default": "If you encounter any problems or have questions that aren&apos;t answered in this FAQ, you can reach out to our support team via the contact form on our website or by emailing [support@bestvideosdownload.com]."
-  },
-  "Translations-HowToUse": {
 
+    "faq-item1-content": "Best Video Download is a free online tool that allows you to download medias from social medias directly to your device. Whether you want to save a media for offline viewing or to keep a copy for personal use, our platform makes it easy and quick.",
+    "faq-item2-content": "No, you do not need to create an account to use Best Video Download. The service is completely free and does not require any sign-up or personal information.",
+    "faq-item3-content": "No, Best Video Download only allows you to download medias from public social media accounts. Medias from private accounts are not accessible due to privacy restrictions.",
+    "faq-item4-content": "Downloading medias from social medias for personal use is generally allowed, but it&apos;s important to respect copyright laws and the terms of service of the social media. Do not redistribute or use the downloaded media for commercial purposes without permission from the content owner.",
+    "faq-item5-content": "Best Video Download is compatible with all devices, including smartphones, tablets, and desktops. It works on any web browser, so you can download media on the go or from the comfort of your home.",
+    "faq-item6-content": "After downloading, the media is usually saved in your device&apos;s default downloads folder. On mobile devices, it may be saved in the gallery or documents app, depending on your settings.",
+    "faq-item7-content": "Best Video Download typically allows you to download media in many different formats you can choose, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original media quality.",
+    "faq-item8-content": "There is no limit to the number of medias you can download using Best Video Download. Feel free to download as many medias as you like.",
+    "faq-item9-content": "Best Video Download typically allows you to download medias in many different formats you want, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original media quality.",
+    "faq-item10-content": " Yes, Best Video Download is completely free to use. There are no hidden fees, and you can download as many medias as you want without any charges.",
+    "faq-item11-content": "If you encounter any problems or have questions that aren&apos;t answered in this FAQ, you can reach out to our support team via the contact form on our website or by emailing [support@bestvideosdownload.com].",
+
+    "howToUse-step1-title": "Step 1: Access Social Media and find the desired media",
+    "howToUse-step2-title": "Step 2: Paste the Link on this Website",
+    "howToUse-step3-title": "Step 3: Start the Download",
+    "howToUse-step4-title": "Step 4: Save the media to your device.",
+
+    "howToUse-step1-item1": "1. Open your Social Media on your prefered device or browser and navigate to the media you want to download.",
+    "howToUse-step1-item2": "2. Click on the three dots on the top of the media.",
+    "howToUse-step1-item3": "3. Select 'Copy Link' from the menu that appears. This action will copy the media url to your clipboard.",
+
+    "howToUse-step2-item1": "1. Go to the this website in your browser.",
+    "howToUse-step2-item2": "2. Find the text box on the homepage that says 'Insert your link here'.",
+    "howToUse-step2-item3": "3. Paste Social Media media link you copied. You can do this by clicking on the 'Paste' button, by right-clicking and selecting 'Paste' or by pressing 'Ctrl + V' or your keyboard (or 'Cmd + V' on Mac).",
+
+    "howToUse-step3-item1": "1. After pasting the link, click the 'Download' button below the text box.",
+    "howToUse-step3-item2": "2. Wait a few seconds while the site processes the link and prepares the media for download.",
+    "howToUse-step3-item3": "3. When the media is ready, you will be redirected to the page where you can choose which media quality you want to download.",
+
+    "howToUse-step4-item1": "1. Click in the download button that appears on the page or if you want, choose the media quality you want to download.",
+    "howToUse-step4-item2": "2. Depending on your browser, the media will either save automatically to your downloads folder or prompt you to choose a location.",
+    "howToUse-step4-item3": "3. Done! You now have Social Media media saved on your device, ready to watch and share with your friends and family anytime."
+  },
+  "Translations-Instagram": {
+    "introduction-title": "Dowload reels, stories and videos for",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Tiktok": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Facebook": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Youtube": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Twitter": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Reddit": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Snapchat": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Pinterest": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Linkedin": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Spotify": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Soundcloud": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
+  },
+  "Translations-Threads ": {
+    "introduction-title": "",
+
+    "description-item1": "",
+    "description-item2": "",
+
+    "tips-item1": "",
+    "tips-item2": "",
+    "tips-item3": "",
+
+    "faq-item1-title": "",
+    "faq-item2-title": "",
+    "faq-item3-title": "",
+    "faq-item4-title": "",
+    "faq-item5-title": "",
+    "faq-item6-title": "",
+    "faq-item7-title": "",
+    "faq-item8-title": "",
+    "faq-item9-title": "",
+    "faq-item10-title": "",
+    "faq-item11-title": "",
+
+    "faq-item1-content": "",
+    "faq-item2-content": "",
+    "faq-item3-content": "",
+    "faq-item4-content": "",
+    "faq-item5-content": "",
+    "faq-item6-content": "",
+    "faq-item7-content": "",
+    "faq-item8-content": "",
+    "faq-item10-content": "",
+    "faq-item11-content": "",
+
+    "howToUse-step1-title": "",
+    "howToUse-step2-title": "",
+    "howToUse-step3-title": "",
+    "howToUse-step4-title": "",
+
+    "howToUse-step1-item1": "",
+    "howToUse-step1-item2": "",
+    "howToUse-step1-item3": "",
+
+    "howToUse-step2-item1": "",
+    "howToUse-step2-item2": "",
+    "howToUse-step2-item3": "",
+
+    "howToUse-step3-item1": "",
+    "howToUse-step3-item2": "",
+    "howToUse-step3-item3": "",
+    
+    "howToUse-step4-item1": "",
+    "howToUse-step4-item2": "",
+    "howToUse-step4-item3": ""
   }
 }

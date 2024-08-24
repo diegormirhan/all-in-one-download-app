@@ -1,8 +1,67 @@
 {
-  "Translations": {
-    "h1-title-video": "Download any video from",
-    "h1-title-music": "Download any music from",
-    "h1-title-image": "Download any image from",
-    "h1-title-stream": "Download any stream from"
+  "Translations-Menu": {
+    "menu-title": "Explore",
+    "menu-description": "Search for other Social Media Platforms"
+  },
+  "Translations-Introduction": {
+    "introduction-h1-title-video": "Download any video from",
+    "introduction-h1-title-music": "Download any music from",
+    "introduction-h1-title-image": "Download any image from",
+    "introduction-h1-title-stream": "Download any stream from",
+    "introduction-input": "Insert your link here",
+    "introduction-button": "Download"
+  },
+  "Translations-Description": {
+    "description-first-default": "Best Video Downloader gives you the tool to download any video, image or music from most of the social media platforms that exists today.",
+    "description-second-default": "Start by inserting the link of your media above or click on the right icon to paste directly in the box to start downloading your media entirely for free!"
+  },
+  "Translations-Explore": {
+    "explore-button": "Explore All Social Media We Support"
+  },
+  "Translations-Carousel": {
+    "carousel-title": "Most Popular Platforms",
+    "carousel-card-instagram": "Share your moments with the world with photos and videos.",
+    "carousel-card-facebook": "Connect with friends, share updates, and stay informed.",
+    "carousel-card-tiktok": "Create and explore videos that entertain and inspire.",
+    "carousel-card-youtube": "Watch and share videos from entertainment to education.",
+    "carousel-card-pinterest": "Discover and save creative ideas for every aspect of your life.",
+    "carousel-card-twitter": "Stay updated on global news and share posts.",
+    "carousel-card-spotify": "Stream your fav music and podcasts anytime.",
+    "carousel-card-reddit": "Dive into communities, discussions on any topic imaginable.",
+    "carousel-card-linkedin": "Dive into communities, discussions on any topic imaginable."
+  },
+  "Translations-Tips": {
+    "tips-title": "Important Tips",
+    "tips-first-default": "<strong>Ensure that the social media profile is public:</strong> media from private accounts cannot be downloaded.",
+    "tips-second-default": "<strong>Check your internet connection:</strong> Downloads may fail if the connection is unstable.",
+    "tips-third-default": "<strong>Respect copyrights:</strong> Use the downloaded media for personal use only and do not redistribute without permission."
+  },
+  "Translations-Faq": {
+    "faq-title": "Frequently Asked Questions",
+    "faq-item1-title": "What is Best Video Download?",
+    "faq-item2-title": "Do I need to create an account to download the {mediaTypes}?",
+    "faq-item3-title": "Can I download {mediaTypes} from private {socialMedia} accounts?",
+    "faq-item4-title": "Is it legal to download any {mediaType} from {socialMedia}?",
+    "faq-item5-title": "On which devices can I use Best Video Download?",
+    "faq-item6-title": "Where are the downloaded {mediaTypes} saved?",
+    "faq-item7-title": "What formats are supported for downloads?",
+    "faq-item8-title": "How many {mediaTypes} can I download?",
+    "faq-item9-title": "Can I download {mediaType} from other social media platforms?",
+    "faq-item10-title": "Is Best Video Download free to use?",
+    "faq-item11-title": "How can I contact support if I have issues?",
+    "faq-item1-content-default": "Best Video Download is a free online tool that allows you to download {mediaTypes} from {socialMedia} directly to your device. Whether you want to save a {mediaType} for offline viewing or to keep a copy for personal use, our platform makes it easy and quick.",
+    "faq-item2-content-default": "No, you do not need to create an account to use Best Video Download. The service is completely free and does not require any sign-up or personal information.",
+    "faq-item3-content-default": "No, Best Video Download only allows you to download {mediaTypes} from public {socialMedia} accounts. {mediaTypes} from private accounts are not accessible due to privacy restrictions.",
+    "faq-item4-content-default": "Downloading {mediaType} from {socialMedia} for personal use is generally allowed, but it&apos;s important to respect copyright laws and the terms of service of the {socialMedia}. Do not redistribute or use the downloaded {mediaType} for commercial purposes without permission from the content owner.",
+    "faq-item5-content-default": "Best Video Download is compatible with all devices, including smartphones, tablets, and desktops. It works on any web browser, so you can download {mediaType} on the go or from the comfort of your home.",
+    "faq-item6-content-default": "After downloading, the {mediaType} is usually saved in your device&apos;s default downloads folder. On mobile devices, it may be saved in the gallery or documents app, depending on your settings.",
+    "faq-item7-content-default": "Best Video Download typically allows you to download {mediaTypes} in many different formats you can choose, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original {mediaType} quality.",
+    "faq-item8-content-default": "There is no limit to the number of {mediaTypes} you can download using Best Video Download. Feel free to download as many {mediaTypes} as you like.",
+    "faq-item9-content-default": "Best Video Download typically allows you to download {mediaType} in many different formats you want, which is compatible with most devices and media players. We focus on providing high-quality downloads that maintain the original {mediaType} quality.",
+    "faq-item10-content-default": " Yes, Best Video Download is completely free to use. There are no hidden fees, and you can download as many {mediaTypes} as you want without any charges.",
+    "faq-item11-content-default": "If you encounter any problems or have questions that aren&apos;t answered in this FAQ, you can reach out to our support team via the contact form on our website or by emailing [support@bestvideosdownload.com]."
+  },
+  "Translations-HowToUse": {
+
   }
 }

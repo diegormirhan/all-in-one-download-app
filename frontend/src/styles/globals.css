@@ -2,19 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    @apply scroll-smooth;
-    @apply select-none;
-    @apply overflow-x-hidden;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #888;
-  border-radius: 5px;
 }

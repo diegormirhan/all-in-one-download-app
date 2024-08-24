@@ -102,7 +102,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='tumblr icon svg' width={32} height={32} src="/socialMediaIcons/tumblr.svg"></Image>
               Tumblr
@@ -110,7 +110,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='bilibili icon svg' width={32} height={32} src="/socialMediaIcons/bilibili.svg"></Image>
               Bilibili
@@ -118,7 +118,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='capcut icon svg' width={32} height={32} src="/socialMediaIcons/capcut.svg"></Image>
               Capcut
@@ -126,7 +126,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='dailymotion icon svg' width={32} height={32} src="/socialMediaIcons/dailymotion.svg"></Image>
               Dailymotion
@@ -134,7 +134,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='douyin icon svg' width={32} height={32} src="/socialMediaIcons/tiktok.svg"></Image>
               Douyin
@@ -142,7 +142,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='weibo icon svg' width={32} height={32} src="/socialMediaIcons/weibo.svg"></Image>
               Weibo
@@ -150,7 +150,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='xiaohongshu icon svg' width={32} height={32} src="/socialMediaIcons/xiaohongshu.svg"></Image>
               Xiaohongshu
@@ -158,7 +158,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='rumble icon svg' width={32} height={32} src="/socialMediaIcons/rumble.svg"></Image>
               Rumble
@@ -166,7 +166,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='9gag icon svg' width={32} height={32} src="/socialMediaIcons/9gag.svg"></Image>
               9GAG
@@ -174,7 +174,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='likee icon svg' width={32} height={32} src="/socialMediaIcons/likee.svg"></Image>
               Likee
@@ -182,7 +182,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='ifunny icon svg' width={32} height={32} src="/socialMediaIcons/ifunny.svg"></Image>
               Ifunny
@@ -190,7 +190,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='vimeo icon svg' width={32} height={32} src="/socialMediaIcons/vimeo.svg"></Image>
               Vimeo
@@ -198,7 +198,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='hipi icon svg' width={32} height={32} src="/socialMediaIcons/hipi.svg"></Image>
               Hipi
@@ -206,7 +206,7 @@ export function MenuContent() {
             </Link>
           </li>
 
-          <li className="py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
+          <li className="hidden py-3 px-4 rounded-lg bg-white font-semibold shadow-xl relative active:scale-90 active:bg-slate-50 transition cursor-pointer">
             <Link href="/" className="flex items-center w-full">
               <Image className="mr-2" alt='ted icon svg' width={32} height={32} src="/socialMediaIcons/ted.svg"></Image>
               Ted
@@ -217,6 +217,3 @@ export function MenuContent() {
     </div>
   )
 }
-
-
-

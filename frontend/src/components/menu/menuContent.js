@@ -15,7 +15,7 @@ export function MenuContent() {
 
               <MenuItem href="/youtube" iconSrc="/socialMediaIcons/youtube.svg" text="Youtube" />
 
-              <MenuItem href="/twitter" iconSrc="/socialMediaIcons/twitter.svg" text="Twitter" />
+              <MenuItem href="/twitter" iconSrc="/socialMediaIcons/twitter.svg" text="X (Twitter)" />
 
               <MenuItem href="/reddit" iconSrc="/socialMediaIcons/reddit.svg" text="Reddit" />
 

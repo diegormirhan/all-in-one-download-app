@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <main className="min-h-screen flex flex-col items-center p-4 pt-24">
         {/* Main Section */}
-        <section className=" m-auto mb-4">
+        <section className="lg:w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}
-          
+          <VerticalAds />
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
@@ -27,7 +27,7 @@ export default function Home() {
               <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
 
             {/* Anúncios no inferior */}
-            
+            <HorizontalAds />
 
             {/* Texto explicativo */}
             <div className="my-10 text-sm w-full mx-auto text-left font-semibold md:text-center md:w-4/5 md:font-medium space-y-4">
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           {/* Anúncios na lateral direita*/}
-          
+          <VerticalAds />
         </section>
 
         {/* Card Section */}

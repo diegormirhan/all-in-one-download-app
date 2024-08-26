@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <main className="min-h-screen flex flex-col items-center p-4 pt-24">
         {/* Main Section */}
-        <section className="lg:w-full flex justify-between mb-4">
+        <section className=" m-auto mb-4">
           {/* Anúncios na lateral esquerda*/}
           
 

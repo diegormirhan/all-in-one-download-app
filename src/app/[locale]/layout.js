@@ -39,7 +39,7 @@ export default async function RootLayout({ children, params: { locale } }) {
       <Head>
         <Adsense />
       </Head>
-      <body className={`bg-main-bg-color scroll-smooth overflow-x-hidden ${inter.className}`}>
+      <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}
           <HeaderMenu />

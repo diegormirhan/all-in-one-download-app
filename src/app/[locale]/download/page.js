@@ -1,15 +1,42 @@
+"use client"
+
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { DownloadButton } from "@/components/downloadButton";
 
+import { useEffect } from "react";
+import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from "next/navigation";
 
-export default function Home() {
-    const tDynamic = useTranslations('Translations-Home')
+export default function DownloadPage() {
+    const tDynamic = useTranslations('Translations-Home');
+    const router = useRouter();
+
+    const searchParams = useSearchParams()
+
+    useEffect(() => {
+        const storedData = JSON.parse(localStorage.getItem('downloadedData'));
+        const id = searchParams.get('id')
+
+        if (storedData) {
+            const currentTime = new Date().getTime();
+
+            if (storedData.uuid === id && storedData.expirationTime > currentTime) {
+                console.log(storedData.data);
+            } else {
+                localStorage.removeItem('downloadData');
+                router.push('/');
+            }
+        } else {
+            router.push('/');
+        }
+    }, [])
+
     return (
         <>
-            <main className="min-h-screen flex flex-col items-center p-4 pt-24">
+            <main className="min-h-screen flex flex-col items-center pt-24">
                 {/* Main Section */}
                 <section className="lg:w-full flex justify-between mb-4">
                     {/* Anúncios na lateral esquerda*/}

@@ -1,12 +1,18 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { useTranslations } from 'next-intl';
+import { fetchData } from "@/api/server";
+import { Loader2 } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { useRouter } from "@/navigation";
 
 export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
   const tDefault = useTranslations('Translations-Default');
+  const router = useRouter()
 
   const [link, setLink] = useState("");
+  const [isPending, startTransition] = useTransition();
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
@@ -23,12 +29,22 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (link) {
       console.log("Submitted link:", link);
-      //
-  
-      
+      startTransition(async () => {
+        const response = await fetchData(link);
+
+        // Generate a unique UUID
+        const uuid = crypto.randomUUID();
+
+        // Store the data in local storage with a 30-minute expiration timestamp
+        const expirationTime = new Date().getTime() + (30 * 60 * 1000);
+        localStorage.setItem('downloadedData', JSON.stringify({ data: response, uuid, expirationTime }))
+        const local = localStorage.getItem('downloadedData')
+
+        router.push(`/download/?id=${uuid}`);
+      })
     }
   };
 
@@ -41,10 +57,19 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         </div>
       </div>
 
-      <button type="button" onClick={handleSubmit} className={`flex items-center m-auto ${buttonClasses} bg-transparent text-lg font-semibold py-2 px-6 rounded-full mb-10 border-2  duration-600 transform transition-all active:scale-90 group`}>
-        <p className="group-hover:text-white transition-colors duration-300">{tDefault('introduction-button')}</p>
-        <svg xmlns="http://www.w3.org/2000/svg" className="group-hover:fill-white ml-4 w-5 h-5 transition-colors duration-300" viewBox="0 0 512 512"><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" /></svg>
-      </button>
+      <Button disabled={isPending} onClick={handleSubmit} className={`flex items-center m-auto ${buttonClasses} bg-transparent text-lg font-semibold py-2 px-6 rounded-lg mb-10 border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}>
+        {isPending ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Please wait
+          </>
+        ) : (
+          <>
+            <p className="group-hover:text-white transition-colors duration-300">{tDefault('introduction-button')}</p>
+            <svg xmlns="http://www.w3.org/2000/svg" className="group-hover:fill-white ml-4 w-5 h-5 transition-colors duration-300" viewBox="0 0 512 512"><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" /></svg>
+          </>
+        )}
+      </Button>
     </>
-  )
-}
+  );
+};

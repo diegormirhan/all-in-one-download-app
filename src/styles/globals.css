@@ -5,7 +5,6 @@
 @layer base {
   body {
     @apply scroll-smooth;
-    @apply select-none;
     @apply overflow-x-hidden;
     @apply bg-main-bg-color;
   }

@@ -12,7 +12,7 @@ export default function Home() {
   const tDynamic = useTranslations('Translations-Home')
   return (
     <>
-      <main className="min-h-screen flex flex-col items-center p-4 pt-24">
+      <main className="min-h-screen flex flex-col items-center lg:px-4 py-4 pt-24">
         {/* Main Section */}
         <section className="lg:w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}

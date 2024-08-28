@@ -33,7 +33,7 @@ export function HeaderMenu() {
       {/* Drawer Mobile */}
       <Drawer>
         <DrawerTrigger asChild>
-            <Image width={28} height={28} alt="menu icon svg" src="/icons/menu.svg" className="md:hidden cursor-pointer"></Image>
+            <Image width={28} height={28} alt="mobile menu icon svg" src="/icons/menu-mobile.svg" className="md:hidden cursor-pointer"></Image>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
@@ -47,7 +47,7 @@ export function HeaderMenu() {
       {/* Sheet Desktop */}
       <Sheet>
         <SheetTrigger asChild>
-          <Image width={32} height={32} alt="menu icon svg" src="/icons/menu.svg" className="hidden md:inline cursor-pointer"></Image>
+          <Image width={40} height={40} alt="desktop menu icon svg" src="/icons/menu-desktop.svg" className="hidden md:inline cursor-pointer"></Image>
         </SheetTrigger>
         <SheetContent className="flex flex-col overflow-auto">
           <SheetHeader>

@@ -61,7 +61,7 @@ export function FAQAccordion({ classes, namespace }) {
                         {tDynamic('faq-item5-title')}
                     </AccordionTrigger>
                     <AccordionContent>
-                        {tDynamic('faq-item6-content')}
+                        {tDynamic('faq-item5-content')}
                     </AccordionContent>
                 </AccordionItem>
 

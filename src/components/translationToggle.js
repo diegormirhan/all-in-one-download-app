@@ -42,14 +42,14 @@ export function TranslationToggle() {
                     <SelectItem value="ja">日本語</SelectItem>
                     <SelectItem value="ko">한국어</SelectItem>
                     <SelectItem value="ru">Русский</SelectItem>
+                    <SelectItem value="hi">हिन्दी</SelectItem>
+                    <SelectItem value="tr">Türkçe</SelectItem>
                     <SelectItem value="ar" className="hidden">العربية</SelectItem>
-                    <SelectItem value="hi" className="hidden">हिन्दी</SelectItem>
                     <SelectItem value="nl" className="hidden">Nederlands</SelectItem>
                     <SelectItem value="sv" className="hidden">Svenska</SelectItem>
                     <SelectItem value="no" className="hidden">Norsk</SelectItem>
                     <SelectItem value="da" className="hidden">Dansk</SelectItem>
-                    <SelectItem value="fi" className="hidden">Suomi</SelectItem>
-                    <SelectItem value="tr" className="hidden">Türkçe</SelectItem>
+                    <SelectItem value="fi" className="hidden">Suomi</SelectItem> 
                     <SelectItem value="el" className="hidden">Ελληνικά</SelectItem>
                     <SelectItem value="pl" className="hidden">Polski</SelectItem>
                     <SelectItem value="he" className="hidden">עברית</SelectItem>

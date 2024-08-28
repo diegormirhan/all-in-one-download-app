@@ -26,6 +26,8 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
   const handleSubmit = () => {
     if (link) {
       console.log("Submitted link:", link);
+      //
+  
       
     }
   };

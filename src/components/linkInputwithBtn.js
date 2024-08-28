@@ -26,7 +26,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
   const handleSubmit = () => {
     if (link) {
       console.log("Submitted link:", link);
-      // Adicione a lógica de envio aqui, como redirecionar ou processar o link
+      
     }
   };
 

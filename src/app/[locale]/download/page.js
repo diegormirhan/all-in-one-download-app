@@ -3,14 +3,13 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
-import { DownloadButton } from "@/components/downloadButton";
 
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
-
+import { saveAs } from "file-saver";
 
 export default function DownloadPage() {
     const [downloadButtons, setDownloadButtons] = useState([]);
@@ -30,23 +29,22 @@ export default function DownloadPage() {
             if (storedData.uuid === id && storedData.expirationTime > currentTime) {
                 setThumbnail(`${storedData.data.thumbnail}` || "/icons/arrow_right.svg");
 
-                const buttons = storedData.data.medias.map((media, index) => (
-                    <a
-                        className={`flex items-center justify-center bg-main-color shadow-main-color w-1/4 text-white rounded-lg py-3 px-6 shadow-md group ease-in-out transition-all hover:scale-105`}
-                        href={media.url}
-                        key={index}
-                        download="test"
+                const buttons = storedData.data.medias.map((media) => (
+                    
+                    <button
+                        className={`flex items-center justify-center bg-main-color shadow-main-color w-1/3 text-white rounded-lg py-3 px-6 shadow-md group ease-in-out transition-all hover:scale-105`}
+                        onClick={() => saveAs(media.url)}
                     >
-                        {media.quality}
-                    </a>
+                        Download {media.quality}
+                    </button>
                 ))
                 setDownloadButtons(buttons);
             } else {
                 localStorage.removeItem('downloadData');
-                // router.push('/');
+                router.push('/');
             }
         } else {
-            // router.push('/');
+            router.push('/');
         }
     }, [searchParams])
 
@@ -63,7 +61,7 @@ export default function DownloadPage() {
                         <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">Download your media below</h1>
                         <h2 className="text-lg font-semibold mb-10">Choose your prefered format to download</h2>
 
-                        <div className="relative m-auto w-full h-2/6 md:w-2/3 md:h-1/2 rounded-xl overflow-hidden flex items-center justify-center shadow-xl" style={{ height: 'calc(100vh * 0.2)' }}>
+                        <div className="relative m-auto w-full h-2/6 md:w-2/3 md:h-2/3 rounded-xl overflow-hidden flex items-center justify-center shadow-xl" style={{ height: 'calc(100vh * 0.3)' }}>
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <Image
                                     src={thumbnail}

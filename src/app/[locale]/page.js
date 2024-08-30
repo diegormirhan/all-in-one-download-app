@@ -21,10 +21,10 @@ export default function Home() {
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
             <h1 className="text-4xl font-extrabold mb-2 md:text-5xl">{tDynamic('introduction-title')}</h1>
-            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords/></h1>
+            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords /></h1>
 
-              {/* Campo de Input para link e Botão de Download */}
-              <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
+            {/* Campo de Input para link e Botão de Download */}
+            <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -46,11 +46,11 @@ export default function Home() {
         {/* Card Section */}
         <section>
           <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace="Home"/>
+          <ImportantTips classes="border-main-color" namespace="Home" />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace="Home"/>
-            <HowToUse classes="border-main-color" namespace="Home"/>
+            <FAQAccordion classes="border-main-color" namespace="Home" />
+            <HowToUse classes="border-main-color" namespace="Home" />
           </div>
 
         </section>

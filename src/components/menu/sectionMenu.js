@@ -49,7 +49,7 @@ export function SectionMenu({ classes }) {
       <Sheet>
         <SheetTrigger asChild>
           <button className={`hidden md:flex  items-center ${classes} text-white rounded-lg py-3 px-6 shadow-md mb-10 m-auto text-left md:text-center group ease-in-out transition-all hover:scale-105`}>
-          {tDefault('explore-button')}
+            {tDefault('explore-button')}
             <Image src="/icons/arrow_right.svg" width={28} height={28} alt="arrow right icon svg" className="ml-1 transform transition-transform duration-200 group-hover:translate-x-2"></Image>
           </button>
         </SheetTrigger>

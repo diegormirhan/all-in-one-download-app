@@ -12,6 +12,7 @@ import Image from "next/image";
 import { saveAs } from "file-saver";
 
 export default function DownloadPage() {
+    const [downloadButtons, setDownloadButtons] = useState([]);
     const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg"); // Default thumbnail
     const tDynamic = useTranslations('Translations-Home');
     const router = useRouter();

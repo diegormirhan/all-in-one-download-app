@@ -12,7 +12,6 @@ import Image from "next/image";
 import { saveAs } from "file-saver";
 
 export default function DownloadPage() {
-    const [downloadButtons, setDownloadButtons] = useState([]);
     const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg"); // Default thumbnail
     const tDynamic = useTranslations('Translations-Home');
     const router = useRouter();
@@ -29,11 +28,12 @@ export default function DownloadPage() {
             if (storedData.uuid === id && storedData.expirationTime > currentTime) {
                 setThumbnail(`${storedData.data.thumbnail}` || "/icons/arrow_right.svg");
 
-                const buttons = storedData.data.medias.map((media) => (
+                const buttons = storedData.data.medias.map((media, index) => (
                     
                     <button
                         className={`flex items-center justify-center bg-main-color shadow-main-color w-1/3 text-white rounded-lg py-3 px-6 shadow-md group ease-in-out transition-all hover:scale-105`}
                         onClick={() => saveAs(media.url)}
+                        key={index}
                     >
                         Download {media.quality}
                     </button>
@@ -46,7 +46,7 @@ export default function DownloadPage() {
         } else {
             router.push('/');
         }
-    }, [searchParams])
+    }, [router, searchParams])
 
     return (
         <>

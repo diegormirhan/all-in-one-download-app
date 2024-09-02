@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useTransition } from "react";
 import { useTranslations } from "next-intl";
-import { fetchData } from "@/api/server.js";
+import { fetchData } from "@/app/api/server.js";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "@/navigation";

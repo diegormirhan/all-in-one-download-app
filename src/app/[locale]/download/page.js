@@ -8,7 +8,7 @@ import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
-import handleDownload from "@/api/stream";
+import { downloadFile } from "@/app/api/download";
 
 export default function DownloadPage() {
     const [downloadButtons, setDownloadButtons] = useState([]);
@@ -34,7 +34,7 @@ export default function DownloadPage() {
 
                     <button
                         className={`p-1 bg-transparent font-semibold w-1/1 md:w-1/2 lg:w-1/3 text-main-color rounded-md border-2 border-main-color ease-in-out transition-all hover:text-white hover:bg-main-color active:scale-95`}
-                        onClick={() => handleDownload(media.url, `${media.quality}-${storedDataFromStorage.data.title}-${storedDataFromStorage.data.source}`)}
+                        onClick={() => downloadFile(media.url, `${media.quality}-${storedDataFromStorage.data.title}-${storedDataFromStorage.data.source}`)}
                         key={index}
                     >
                         Download {media.quality}
@@ -75,6 +75,7 @@ export default function DownloadPage() {
                                         style={{ objectFit: "cover" }}
                                         quality={100}
                                         className="blur-sm"
+                                        alt="Thumbnail blur"
                                     />
                                 </div>
                                 <div className="h-full">
@@ -83,6 +84,7 @@ export default function DownloadPage() {
                                         fill={true}
                                         style={{ objectFit: "contain" }}
                                         quality={100}
+                                        alt="Thumbnail"
                                     />
                                 </div>
                             </div>

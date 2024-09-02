@@ -3,41 +3,43 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
-
+import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
-import { saveAs } from "file-saver";
+import handleDownload from "@/api/stream";
 
 export default function DownloadPage() {
     const [downloadButtons, setDownloadButtons] = useState([]);
     const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg"); // Default thumbnail
+    const [storedData, setStoredData] = useState(null);
     const tDynamic = useTranslations('Translations-Home');
     const router = useRouter();
 
     const searchParams = useSearchParams()
 
-    useEffect(() => {
-        const storedData = JSON.parse(localStorage.getItem('downloadedData'));
-        const id = searchParams.get('id')
 
-        if (storedData) {
+    useEffect(() => {
+        const id = searchParams.get('id')
+        const storedDataFromStorage = JSON.parse(localStorage.getItem('downloadedData'));
+        if (storedDataFromStorage) {
             const currentTime = new Date().getTime();
 
-            if (storedData.uuid === id && storedData.expirationTime > currentTime) {
-                setThumbnail(`${storedData.data.thumbnail}` || "/icons/arrow_right.svg");
+            if (storedDataFromStorage.uuid === id && storedDataFromStorage.expirationTime > currentTime) {
+                setStoredData(storedDataFromStorage);
+                setThumbnail(`${storedDataFromStorage.data.thumbnail}` || "/icons/arrow_right.svg");
 
-                const buttons = storedData.data.medias.map((media, index) => (
-                    
-                    <button
-                        className={`flex items-center justify-center bg-main-color shadow-main-color w-1/3 text-white rounded-lg py-3 px-6 shadow-md group ease-in-out transition-all hover:scale-105`}
-                        onClick={() => saveAs(media.url)}
+                const buttons = storedDataFromStorage.data.medias.map((media, index) => (
+
+                    <Button
+                        className={`p-1 bg-transparent font-semibold w-1/1 md:w-1/2 lg:w-1/3 text-main-color rounded-md border-2 border-main-color ease-in-out transition-all hover:text-white hover:bg-main-color active:scale-95`}
+                        onClick={() => handleDownload(media.url, `${media.quality}-${storedData.data.title}-${storedData.data.source}`)}
                         key={index}
                     >
                         Download {media.quality}
-                    </button>
+                    </Button>
                 ))
                 setDownloadButtons(buttons);
             } else {
@@ -62,26 +64,34 @@ export default function DownloadPage() {
                         <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">Download your media below</h1>
                         <h2 className="text-lg font-semibold mb-10">Choose your prefered format to download</h2>
 
-                        <div className="relative m-auto w-full h-2/6 md:w-2/3 md:h-2/3 rounded-xl overflow-hidden flex items-center justify-center shadow-xl" style={{ height: 'calc(100vh * 0.3)' }}>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <Image
-                                    src={thumbnail}
-                                    fill={true}
-                                    className="blur-sm"
-                                    style={{ objectFit: "cover" }}
-                                    alt="Thumbnail Image"
-                                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (min-width: 769px) 33vw"
-                                    quality={90}
-                                />
+                        <div className="w-full flex flex-col items-center ">
+                            <div className="bg-white w-full lg:w-2/3 h-10 rounded-t-lg font-semibold flex justify-center items-center">
+                                {storedData?.data?.title || 'No title available'}
+                            </div>
+                            <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
+                                <div className="absolute inset-0 z-0">
+                                    <Image
+                                        src={thumbnail}
+                                        fill={true}
+                                        style={{ objectFit: "cover" }}
+                                        quality={100}
+                                        className="blur-sm"
+                                    />
+                                </div>
+                                <div className="h-full">
+                                    <Image
+                                        src={thumbnail}
+                                        fill={true}
+                                        style={{ objectFit: "contain" }}
+                                        quality={100}
+                                    />
+                                </div>
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap justify-center my-10 gap-4">
+                        <div className="flex flex-wrap justify-center my-10 gap-2 md:gap-4">
                             {downloadButtons}
                         </div>
-
-
-
 
                         <HorizontalAds />
 

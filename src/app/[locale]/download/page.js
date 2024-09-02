@@ -3,7 +3,6 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
-import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
@@ -33,13 +32,13 @@ export default function DownloadPage() {
 
                 const buttons = storedDataFromStorage.data.medias.map((media, index) => (
 
-                    <Button
+                    <button
                         className={`p-1 bg-transparent font-semibold w-1/1 md:w-1/2 lg:w-1/3 text-main-color rounded-md border-2 border-main-color ease-in-out transition-all hover:text-white hover:bg-main-color active:scale-95`}
-                        onClick={() => handleDownload(media.url, `${media.quality}-${storedData.data.title}-${storedData.data.source}`)}
+                        onClick={() => handleDownload(media.url, `${media.quality}-${storedDataFromStorage.data.title}-${storedDataFromStorage.data.source}`)}
                         key={index}
                     >
                         Download {media.quality}
-                    </Button>
+                    </button>
                 ))
                 setDownloadButtons(buttons);
             } else {

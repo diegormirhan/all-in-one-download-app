@@ -1,25 +1,44 @@
 "use server";
+import { Agent } from 'http';
 
-export async function fetchData(url) {
+const httpAgent = new Agent({
+  keepAlive: true,
+  maxSockets: Infinity,
+});
+
+function getOptions(url) {
+    return {
+        method: 'POST',
+        headers: {
+            'x-rapidapi-key': process.env.RAPID_API_KEY,
+            'x-rapidapi-host': 'auto-download-all-in-one-big.p.rapidapi.com',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({url}),
+        agent: httpAgent
+    };
+}
+
+export async function fetchData(url, maxRetries = 5, delay = 50) {
     try {
-        const response = await fetch('https://xfpyn8mcmh.execute-api.us-east-1.amazonaws.com/prod/api/download', {
-            method: 'POST',
-            headers: {
-                'x-api-key': '14385290384753948782304123840928315740986',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                url: url
-            })
-        });
+        const endpoint = 'https://auto-download-all-in-one-big.p.rapidapi.com/v1/social/autolink';
+        const options = getOptions(url);
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        for (let attempt = 1; attempt <= maxRetries; attempt++) {
+            try {
+                const response = await fetch(endpoint, options);
+                if (response.status === 200) {
+                    const data = await response.json();
+                    return data;
+                } else {
+                    console.log(`Tentativa ${attempt} falhou. Status: ${response.statusCode}`);
+                }
+            } catch (error) {
+                console.log(`Erro na tentativa ${attempt}: ${error.message}`)
+            }
+            await new Promise(resolve => setTimeout(resolve, delay))
         }
-
-        const data = await response.json();
-        console.log(data);
-        return data;
+        throw new Error(`Falhou após ${maxRetries} tentativas`);
     } catch (error) {
         throw error;
     }

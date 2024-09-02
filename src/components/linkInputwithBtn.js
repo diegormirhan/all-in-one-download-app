@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useTransition } from "react";
 import { useTranslations } from "next-intl";
-import { fetchData } from "@/api/server";
+import { fetchData } from "@/api/server.js";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "@/navigation";
@@ -38,6 +38,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
     const link = values.link;
     startTransition(async () => {
       const response = await fetchData(link);
+      console.log("Fetched data:", response);
 
       // Generate a unique UUID
       const uuid = crypto.randomUUID();
@@ -48,7 +49,6 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         "downloadedData",
         JSON.stringify({ data: response, uuid, expirationTime })
       );
-
       router.push(`/download/?id=${uuid}`);
     });
   };

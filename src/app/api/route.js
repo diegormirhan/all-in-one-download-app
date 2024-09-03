@@ -1,17 +1,27 @@
-import stream from 'stream';
-import { promisify } from 'util';
-import fetch from 'node-fetch';
+import { NextResponse } from "next/server";
 
-const pipeline = promisify(stream.pipeline);
-const url = 'https://w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
+export async function GET(req) {
+  // Obter a URL do parâmetro de consulta usando `req.nextUrl.searchParams`
+  const url = req.nextUrl.searchParams.get('url');
 
-const handler = async (req, res) => {
-  const response = await fetch(url); // replace this with your API call & options
-  if (!response.ok) throw new Error(`unexpected response ${response.statusText}`);
+  if (!url) {
+    return NextResponse.json({ error: 'URL is required' }, { status: 400 });
+  }
 
-  res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'attachment; filename=dummy.pdf');
-  await pipeline(response.body, res);
-};
+  try {
+    // Usar 'HEAD' para obter apenas os cabeçalhos da resposta
+    const response = await fetch(url, { method: 'HEAD' });
 
-export default handler;
+    if (!response.ok) {
+      throw new Error(`Failed to fetch headers: ${response.statusText}`);
+    }
+
+    let contentType = response.headers.get('content-type');
+
+    // Retornar o tipo de conteúdo na resposta JSON
+    return NextResponse.json({ fileType: contentType }, { status: 200 });
+  } catch (error) {
+    console.error('Error detecting file type:', error);
+    return NextResponse.json({ error: 'An error occurred while detecting the file type' }, { status: 500 });
+  }
+}

@@ -8,46 +8,76 @@ import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
-import { downloadFile } from "@/app/api/download";
 
 export default function DownloadPage() {
+
     const [downloadButtons, setDownloadButtons] = useState([]);
+    const [mediaPlayer, setMediaPlayer] = useState("");
     const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg"); // Default thumbnail
     const [storedData, setStoredData] = useState(null);
-    const tDynamic = useTranslations('Translations-Home');
-    const router = useRouter();
 
+    const tDynamic = useTranslations('Translations-Home');
+
+    const router = useRouter();
     const searchParams = useSearchParams()
 
+    const handleMedia = async (mediaLink) => {
+        const response = await fetch(`/api?url=${encodeURIComponent(mediaLink)}`);
+        const data = await response.json();
+        const mediaType = data.fileType;
+
+        const uniqueKey = `${mediaLink}-${new Date().getTime()}`;
+
+        if (mediaType.includes('video')) {
+            setMediaPlayer(
+                <video key={uniqueKey} controls className="mx-auto w-full md:h-96 mb-10 rounded-md">
+                    <source src={mediaLink} type="video/mp4" />
+                </video>
+            );
+        } else if (mediaType.includes('audio')) {
+            setMediaPlayer(
+                <audio key={uniqueKey} controls className="w-full h-full">
+                    <source src={mediaLink} type="audio/mpeg" />
+                </audio>
+            )
+        }
+    }
 
     useEffect(() => {
-        const id = searchParams.get('id')
         const storedDataFromStorage = JSON.parse(localStorage.getItem('downloadedData'));
-        if (storedDataFromStorage) {
-            const currentTime = new Date().getTime();
 
-            if (storedDataFromStorage.uuid === id && storedDataFromStorage.expirationTime > currentTime) {
-                setStoredData(storedDataFromStorage);
-                setThumbnail(`${storedDataFromStorage.data.thumbnail}` || "/icons/arrow_right.svg");
-
-                const buttons = storedDataFromStorage.data.medias.map((media, index) => (
-
-                    <button
-                        className={`p-1 bg-transparent font-semibold w-1/1 md:w-1/2 lg:w-1/3 text-main-color rounded-md border-2 border-main-color ease-in-out transition-all hover:text-white hover:bg-main-color active:scale-95`}
-                        onClick={() => downloadFile(media.url, `${media.quality}-${storedDataFromStorage.data.title}-${storedDataFromStorage.data.source}`)}
-                        key={index}
-                    >
-                        Download {media.quality}
-                    </button>
-                ))
-                setDownloadButtons(buttons);
-            } else {
-                localStorage.removeItem('downloadData');
-                router.push('/');
-            }
-        } else {
+        if (!storedDataFromStorage) {
             router.push('/');
+            return null;
         }
+
+        const currentTime = new Date().getTime();
+        const queryId = searchParams.get('id');
+
+        const uuid = storedDataFromStorage.uuid;
+        const expirationTime = storedDataFromStorage.expirationTime;
+
+        if (uuid !== queryId && expirationTime < currentTime) {
+            localStorage.removeItem('downloadData');
+            router.push('/');
+            return null;
+        }
+
+        setStoredData(storedDataFromStorage);
+        setThumbnail(`${storedDataFromStorage.data.thumbnail}` || "/icons/arrow_right.svg");
+
+        const buttons = storedDataFromStorage.data.medias.map((media, index) => (
+            <button
+                className={`flex items-center justify-center py-2 px-4 font-semibold lowercase w-3/4 md:w-1/4 rounded-lg border-2 ease-in-out transition-all text-white bg-main-color active:scale-95`}
+                onClick={() => handleMedia(media.url)}
+                key={index}
+            >
+                Download<br></br>{media.quality}
+            </button>
+        ))
+
+        setDownloadButtons(buttons);
+
     }, [router, searchParams])
 
     return (
@@ -63,8 +93,8 @@ export default function DownloadPage() {
                         <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">Download your media below</h1>
                         <h2 className="text-lg font-semibold mb-10">Choose your prefered format to download</h2>
 
-                        <div className="w-full flex flex-col items-center ">
-                            <div className="bg-white w-full lg:w-2/3 h-10 rounded-t-lg font-semibold flex justify-center items-center">
+                        <div className="w-full flex flex-col items-center">
+                            <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold max-w-xs overflow-hidden whitespace-nowrap text-ellipsis text-center leading-[2.5rem]">
                                 {storedData?.data?.title || 'No title available'}
                             </div>
                             <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
@@ -93,6 +123,8 @@ export default function DownloadPage() {
                         <div className="flex flex-wrap justify-center my-10 gap-2 md:gap-4">
                             {downloadButtons}
                         </div>
+
+                        {mediaPlayer && <div className="my-4">{mediaPlayer}</div>}
 
                         <HorizontalAds />
 

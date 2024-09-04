@@ -22,18 +22,23 @@ export default function DownloadPage() {
     const searchParams = useSearchParams()
 
     const handleMedia = async (mediaLink, mediaType) => {
+        const response = await fetch(`/api?url=${encodeURIComponent(mediaLink)}`);
+        const blob = await response.blob();
+        const downloadUrl = URL.createObjectURL(blob);
+        console.log(downloadUrl)
+
         const uniqueKey = `${mediaLink}-${new Date().getTime()}`;
 
         if (mediaType.includes('mp4')) {
             setMediaPlayer(
                 <video key={uniqueKey} controls className="mx-auto w-full md:h-96 mb-10 rounded-md">
-                    <source src={mediaLink} type="video/mp4" />
+                    <source src={downloadUrl} type="video/mp4" />
                 </video>
             );
         } else if (mediaType.includes('mp3')) {
             setMediaPlayer(
                 <audio key={uniqueKey} controls className="w-full h-full">
-                    <source src={mediaLink} type="audio/mpeg" />
+                    <source src={downloadUrl} type="audio/mpeg" />
                 </audio>
             )
         }
@@ -44,7 +49,6 @@ export default function DownloadPage() {
 
         if (!storedDataFromStorage) {
             router.push('/');
-            return null;
         }
 
         const currentTime = new Date().getTime();
@@ -56,7 +60,6 @@ export default function DownloadPage() {
         if (uuid !== queryId && expirationTime < currentTime) {
             localStorage.removeItem('downloadData');
             router.push('/');
-            return null;
         }
 
         setStoredData(storedDataFromStorage);

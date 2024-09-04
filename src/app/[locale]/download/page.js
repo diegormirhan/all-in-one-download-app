@@ -21,20 +21,16 @@ export default function DownloadPage() {
     const router = useRouter();
     const searchParams = useSearchParams()
 
-    const handleMedia = async (mediaLink) => {
-        const response = await fetch(`/api?url=${encodeURIComponent(mediaLink)}`);
-        const data = await response.json();
-        const mediaType = data.fileType;
-
+    const handleMedia = async (mediaLink, mediaType) => {
         const uniqueKey = `${mediaLink}-${new Date().getTime()}`;
 
-        if (mediaType.includes('video')) {
+        if (mediaType.includes('mp4')) {
             setMediaPlayer(
                 <video key={uniqueKey} controls className="mx-auto w-full md:h-96 mb-10 rounded-md">
                     <source src={mediaLink} type="video/mp4" />
                 </video>
             );
-        } else if (mediaType.includes('audio')) {
+        } else if (mediaType.includes('mp3')) {
             setMediaPlayer(
                 <audio key={uniqueKey} controls className="w-full h-full">
                     <source src={mediaLink} type="audio/mpeg" />
@@ -69,7 +65,7 @@ export default function DownloadPage() {
         const buttons = storedDataFromStorage.data.medias.map((media, index) => (
             <button
                 className={`flex items-center justify-center py-2 px-4 font-semibold lowercase w-3/4 md:w-1/4 rounded-lg border-2 ease-in-out transition-all text-white bg-main-color active:scale-95`}
-                onClick={() => handleMedia(media.url)}
+                onClick={() => handleMedia(media.url, media.extension)}
                 key={index}
             >
                 Download<br></br>{media.quality}

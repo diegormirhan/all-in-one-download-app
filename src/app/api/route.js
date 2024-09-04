@@ -15,13 +15,14 @@ export async function GET(req) {
       throw new Error(`Failed to fetch: ${response.statusText}`);
     }
 
-    const data = await response.arrayBuffer();
     const headers = new Headers({
       'Content-Type': response.headers.get('Content-Type'),
       'Content-Disposition': `attachment; filename="all-in-one-media"`,
+      'Access-Control-Allow-Origin': '*'
     });
 
-    return new Response(data, { headers });
+    return new NextResponse(response.body, { headers });
+
   } catch (error) {
     return NextResponse.json({ error: 'Error fetching file' }, { status: 500 });
   }

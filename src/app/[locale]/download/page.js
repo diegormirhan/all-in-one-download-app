@@ -47,6 +47,7 @@ export default function DownloadPage() {
                 className={`flex items-center justify-center py-2 px-4 font-semibold lowercase w-3/4 md:w-1/4 rounded-lg border-2 ease-in-out transition-all text-white bg-main-color active:scale-95`}
                 href={media.url}
                 target="_blank"
+                rel="noopener noreferrer"
                 key={index}
             >
                 Download<br></br>{media.quality}

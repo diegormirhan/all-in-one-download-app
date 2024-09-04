@@ -21,29 +21,6 @@ export default function DownloadPage() {
     const router = useRouter();
     const searchParams = useSearchParams()
 
-    const handleMedia = async (mediaLink, mediaType) => {
-        const response = await fetch(`/api?url=${encodeURIComponent(mediaLink)}`);
-        const blob = await response.blob();
-        const downloadUrl = URL.createObjectURL(blob);
-        console.log(downloadUrl)
-
-        const uniqueKey = `${mediaLink}-${new Date().getTime()}`;
-
-        if (mediaType.includes('mp4')) {
-            setMediaPlayer(
-                <video key={uniqueKey} controls className="mx-auto w-full md:h-96 mb-10 rounded-md">
-                    <source src={downloadUrl} type="video/mp4" />
-                </video>
-            );
-        } else if (mediaType.includes('mp3')) {
-            setMediaPlayer(
-                <audio key={uniqueKey} controls className="w-full h-full">
-                    <source src={downloadUrl} type="audio/mpeg" />
-                </audio>
-            )
-        }
-    }
-
     useEffect(() => {
         const storedDataFromStorage = JSON.parse(localStorage.getItem('downloadedData'));
 
@@ -66,13 +43,14 @@ export default function DownloadPage() {
         setThumbnail(`${storedDataFromStorage.data.thumbnail}` || "/icons/arrow_right.svg");
 
         const buttons = storedDataFromStorage.data.medias.map((media, index) => (
-            <button
+            <a
                 className={`flex items-center justify-center py-2 px-4 font-semibold lowercase w-3/4 md:w-1/4 rounded-lg border-2 ease-in-out transition-all text-white bg-main-color active:scale-95`}
-                onClick={() => handleMedia(media.url, media.extension)}
+                href={media.url}
+                target="_blank"
                 key={index}
             >
                 Download<br></br>{media.quality}
-            </button>
+            </a>
         ))
 
         setDownloadButtons(buttons);

@@ -10,6 +10,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const tDynamic = useTranslations('Translations-Home')
+
   return (
     <>
       <main className="min-h-screen flex flex-col items-center lg:px-4 py-4 pt-24">

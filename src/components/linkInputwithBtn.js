@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useTransition } from "react";
+import { useTransition, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { fetchData } from "@/app/api/server.js";
 import { Loader2 } from "lucide-react";
@@ -8,12 +8,13 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "@/navigation";
 import { useFormik } from "formik";
 import basicSchema from "./validationSchema";
-
+import { useSearchParams } from "next/navigation";
 
 
 export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
   const tDefault = useTranslations("Translations-Default");
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [isPending, startTransition] = useTransition();
 
@@ -60,6 +61,13 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
       validationSchema: basicSchema,
       onSubmit: submitHandler,
     });
+
+    useEffect(() => {
+      const linkFromUrl = searchParams.get('link');
+      if (linkFromUrl) {
+        setFieldValue('link', decodeURIComponent(linkFromUrl));  // Decodifica o valor da URL e define no campo
+      }
+    }, [searchParams, setFieldValue])
 
   return (
     <>

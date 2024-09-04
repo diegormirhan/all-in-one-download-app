@@ -27,7 +27,8 @@ export async function fetchData(url, maxRetries = 5, delay = 50) {
         for (let attempt = 1; attempt <= maxRetries; attempt++) {
             try {
                 const response = await fetch(endpoint, options);
-                if (response.status === 200) {
+
+                if (response.ok) {
                     const data = await response.json();
                     return data;
                 } else {
@@ -38,8 +39,7 @@ export async function fetchData(url, maxRetries = 5, delay = 50) {
             }
             await new Promise(resolve => setTimeout(resolve, delay))
         }
-        throw new Error(`Falhou após ${maxRetries} tentativas`);
     } catch (error) {
-        throw error;
+        throw new Error(error);
     }
 }

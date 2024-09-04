@@ -28,7 +28,6 @@ export const metadata = {
     }
   },
   manifest: '/manifest.json',
-
 };
 
 export default async function RootLayout({ children, params: { locale } }) {

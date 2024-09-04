@@ -36,8 +36,10 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
 
   const submitHandler = (values) => {
     const link = values.link;
+
     startTransition(async () => {
       const response = await fetchData(link);
+      if (response.error) return;
 
       // Generate a unique UUID
       const uuid = crypto.randomUUID();
@@ -49,7 +51,9 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         JSON.stringify({ data: response, uuid, expirationTime })
       );
       router.push(`/download/?id=${uuid}`);
+
     });
+
   };
 
 
@@ -62,12 +66,12 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
       onSubmit: submitHandler,
     });
 
-    useEffect(() => {
-      const linkFromUrl = searchParams.get('link');
-      if (linkFromUrl) {
-        setFieldValue('link', decodeURIComponent(linkFromUrl));  // Decodifica o valor da URL e define no campo
-      }
-    }, [searchParams, setFieldValue])
+  useEffect(() => {
+    const linkFromUrl = searchParams.get('link');
+    if (linkFromUrl) {
+      setFieldValue('link', decodeURIComponent(linkFromUrl));  // Decodifica o valor da URL e define no campo
+    }
+  }, [searchParams, setFieldValue])
 
   return (
     <>
@@ -103,7 +107,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         <Button
           type="submit"
           disabled={isPending}
-          className={`flex items-center m-auto ${buttonClasses} bg-transparent text-lg font-semibold py-2 px-6 rounded-lg mb-10 border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}
+          className={`flex items-center m-auto ${buttonClasses} bg-transparent active:bg-transparent text-lg font-semibold py-2 px-6 rounded-lg mb-10 border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}
         >
           {isPending ? (
             <>

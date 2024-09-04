@@ -12,8 +12,7 @@ import Image from "next/image";
 export default function DownloadPage() {
 
     const [downloadButtons, setDownloadButtons] = useState([]);
-    const [mediaPlayer, setMediaPlayer] = useState("");
-    const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg"); // Default thumbnail
+    const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg");
     const [storedData, setStoredData] = useState(null);
 
     const tDynamic = useTranslations('Translations-Home');
@@ -44,7 +43,7 @@ export default function DownloadPage() {
 
         const buttons = storedDataFromStorage.data.medias.map((media, index) => (
             <a
-                className={`flex items-center justify-center py-2 px-4 font-semibold lowercase w-3/4 md:w-1/4 rounded-lg border-2 ease-in-out transition-all text-white bg-main-color active:scale-95`}
+                className={`flex items-center justify-center py-2 px-4 font-semibold lowercase w-full md:w-1/4 rounded-lg ease-in-out transition-all bg-transparent ring-2 ring-main-color text-main-color hover:bg-main-color hover:text-white active:scale-95`}
                 href={media.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -72,37 +71,41 @@ export default function DownloadPage() {
                         <h2 className="text-lg font-semibold mb-10">Choose your prefered format to download</h2>
 
                         <div className="w-full flex flex-col items-center">
-                            <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold max-w-xs overflow-hidden whitespace-nowrap text-ellipsis text-center leading-[2.5rem]">
-                                {storedData?.data?.title || 'No title available'}
-                            </div>
-                            <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
-                                <div className="absolute inset-0 z-0">
-                                    <Image
-                                        src={thumbnail}
-                                        fill={true}
-                                        style={{ objectFit: "cover" }}
-                                        quality={100}
-                                        className="blur-sm"
-                                        alt="Thumbnail blur"
-                                    />
-                                </div>
-                                <div className="h-full">
-                                    <Image
-                                        src={thumbnail}
-                                        fill={true}
-                                        style={{ objectFit: "contain" }}
-                                        quality={100}
-                                        alt="Thumbnail"
-                                    />
-                                </div>
-                            </div>
+                                    <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
+                                        {storedData?.data?.title || 'No title available'}
+                                    </div>
+                                    <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
+                                        <div className="absolute inset-0 z-0">
+                                            <Image
+                                                src={thumbnail}
+                                                fill={true}
+                                                sizes="100vw"
+                                                style={{ objectFit: "cover" }}
+                                                quality={100}
+                                                className="blur-sm"
+                                                alt="Thumbnail blur"
+                                                priority={true}
+                                            />
+                                        </div>
+                                        <div className="h-full relative">
+                                            <Image
+                                                src={thumbnail}
+                                                fill={true}
+                                                sizes="100vw"
+                                                style={{ objectFit: "contain" }}
+                                                quality={100}
+                                                alt="Thumbnail"
+                                                priority={true}
+                                            />
+                                        </div>
+                                    </div>
                         </div>
 
-                        <div className="flex flex-wrap justify-center my-10 gap-2 md:gap-4">
+                        <div className="text-center mt-5 mb-10 font-semibold text-md underline">After choosing an option below, you will be redirected to another page to download the media</div>
+
+                        <div className="flex flex-wrap justify-center mb-10 gap-5">
                             {downloadButtons}
                         </div>
-
-                        {mediaPlayer && <div className="my-4">{mediaPlayer}</div>}
 
                         <HorizontalAds />
 

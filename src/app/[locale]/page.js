@@ -9,7 +9,8 @@ import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
-  const tDynamic = useTranslations('Translations-Home')
+  const socialMedia = "Home"
+  const tDynamic = useTranslations(`Translations-${socialMedia}`)
 
   return (
     <>
@@ -47,11 +48,11 @@ export default function Home() {
         {/* Card Section */}
         <section>
           <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace="Home" />
+          <ImportantTips classes="border-main-color" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace="Home" />
-            <HowToUse classes="border-main-color" namespace="Home" />
+            <FAQAccordion classes="border-main-color" namespace={socialMedia} />
+            <HowToUse classes="border-main-color" namespace={socialMedia} />
           </div>
 
         </section>

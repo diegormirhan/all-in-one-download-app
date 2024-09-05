@@ -2,44 +2,47 @@
 
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
+import { DownloadCards } from "@/components/downloadCards";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
+import defaultThumbnail from "../../../../public/icons/logo/png/gradient-logo.png"
 
 export default function DownloadPage() {
 
     const [downloadButtons, setDownloadButtons] = useState([]);
-    const [thumbnail, setThumbnail] = useState("/icons/arrow_right.svg");
+    const [thumbnail, setThumbnail] = useState(defaultThumbnail);
     const [storedData, setStoredData] = useState(null);
 
-    const tDynamic = useTranslations('Translations-Home');
+    const tDefault = useTranslations('Translations-Default');
 
     const router = useRouter();
     const searchParams = useSearchParams()
 
     useEffect(() => {
-        const storedDataFromStorage = JSON.parse(localStorage.getItem('downloadedData'));
+        const storedDataFromStorage = JSON.parse(localStorage.getItem('downloadedData')) || false;
+        const queryId = searchParams.get('id') || false;
 
-        if (!storedDataFromStorage) {
+        if (!storedDataFromStorage || !queryId) {
             router.push('/');
+            return;
         }
 
         const currentTime = new Date().getTime();
-        const queryId = searchParams.get('id');
-
         const uuid = storedDataFromStorage.uuid;
         const expirationTime = storedDataFromStorage.expirationTime;
 
-        if (uuid !== queryId && expirationTime < currentTime) {
+        if (uuid !== queryId || expirationTime < currentTime) {
             localStorage.removeItem('downloadData');
             router.push('/');
+            return;
         }
 
         setStoredData(storedDataFromStorage);
-        setThumbnail(`${storedDataFromStorage.data.thumbnail}` || "/icons/arrow_right.svg");
+        setThumbnail(storedDataFromStorage.data.thumbnail || defaultThumbnail)
 
         const buttons = storedDataFromStorage.data.medias.map((media, index) => (
             <a
@@ -49,12 +52,11 @@ export default function DownloadPage() {
                 rel="noopener noreferrer"
                 key={index}
             >
-                Download<br></br>{media.quality}
+                {tDefault('download-button-option')}<br></br>{media.quality}
             </a>
         ))
 
-        setDownloadButtons(buttons);
-
+        setDownloadButtons(buttons)
     }, [router, searchParams])
 
     return (
@@ -67,19 +69,19 @@ export default function DownloadPage() {
 
                     {/* Conteúdo Principal */}
                     <div className="p-4 w-full max-w-3xl text-center">
-                        <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">Download your media below</h1>
-                        <h2 className="text-lg font-semibold mb-10">Choose your prefered format to download</h2>
+                        <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">{tDefault('download-title')}</h1>
+                        <h2 className="text-lg font-semibold mb-10">{tDefault('download-subtitle')}</h2>
 
                         <div className="w-full flex flex-col items-center">
                                     <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
-                                        {storedData?.data?.title || 'No title available'}
+                                        {storedData?.data?.title || tDefault('download-thumbnail-title')}
                                     </div>
                                     <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
                                         <div className="absolute inset-0 z-0">
                                             <Image
                                                 src={thumbnail}
                                                 fill={true}
-                                                sizes="100vw"
+                                                sizes="(max-width: 768px) 100vw, 50vw"
                                                 style={{ objectFit: "cover" }}
                                                 quality={100}
                                                 className="blur-sm"
@@ -91,7 +93,7 @@ export default function DownloadPage() {
                                             <Image
                                                 src={thumbnail}
                                                 fill={true}
-                                                sizes="100vw"
+                                                sizes="(max-width: 768px) 100vw, 50vw"
                                                 style={{ objectFit: "contain" }}
                                                 quality={100}
                                                 alt="Thumbnail"
@@ -101,7 +103,7 @@ export default function DownloadPage() {
                                     </div>
                         </div>
 
-                        <div className="text-center mt-5 mb-10 font-semibold text-md underline">After choosing an option below, you will be redirected to another page to download the media</div>
+                        <div className="text-center mt-5 mb-10 font-semibold text-md underline">{tDefault('download-description')}</div>
 
                         <div className="flex flex-wrap justify-center mb-10 gap-5">
                             {downloadButtons}
@@ -120,6 +122,7 @@ export default function DownloadPage() {
                 {/* Card Section */}
                 <section>
                     <CarouselCards classes="border-main-color" />
+                    <DownloadCards/>
                 </section>
             </main>
         </>

@@ -4,15 +4,16 @@ import { CarouselCards } from "@/components/carouselCards";
 import { HowToUse } from "@/components/howToUse";
 import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
-import { TypeWriterWords } from "@/components/typeWriter";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
 export default function Linkedin() {
-  const tDynamic = useTranslations('Translations-Home')
+  const socialMedia = "Linkedin"
+  const tDynamic = useTranslations(`Translations-${socialMedia}`)
+
   return (
     <>
-      <main className="min-h-screen flex flex-col items-center p-4 pt-24">
+      <main className="min-h-screen flex flex-col items-center lg:px-4 py-4 pt-24">
         {/* Main Section */}
         <section className="lg:w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}
@@ -20,11 +21,10 @@ export default function Linkedin() {
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
-            <h1 className="text-4xl font-extrabold mb-2 md:text-5xl">{tDynamic('introduction-title')}</h1>
-            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords/></h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-main-color">{socialMedia}</span></h1>
 
-              {/* Campo de Input para link e Botão de Download */}
-              <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
+            {/* Campo de Input para link e Botão de Download */}
+            <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -46,11 +46,11 @@ export default function Linkedin() {
         {/* Card Section */}
         <section>
           <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace="Home"/>
+          <ImportantTips classes="border-main-color" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace="Home"/>
-            <HowToUse classes="border-main-color" namespace="Home"/>
+            <FAQAccordion classes="border-main-color" namespace={socialMedia} />
+            <HowToUse classes="border-main-color" namespace={socialMedia} />
           </div>
 
         </section>

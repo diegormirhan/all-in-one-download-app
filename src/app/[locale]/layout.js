@@ -12,14 +12,37 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Best Video Download",
-  description: "Download any video, image or music from any social media platform that exists today. Best Video Download is the best media download app for all devices ans its completely free.",
+  description: 'Download videos, reels, stories, and posts from Instagram, TikTok, Facebook, Youtube, and more.',
   applicationName: "Best Video Download",
   referrer: "origin-when-cross-origin",
+  viewport: 'width=device-width, initial-scale=1.0',
+  themeColor: '#4044FC',
+  charset: "utf-8",
   metadataBase: new URL("https://bestvideosdownload.com"),
+  alternates: {
+    canonical: "https://bestvideosdownload.com"
+  },
+  openGraph: {
+    title: "Best Video Download",
+    description: "Download Videos, Musics and Images from any social media platforms.",
+    url: "https://bestvideosdownload.com",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
   robots: {
+    index: false,
     follow: true,
     noCache: false,
     googleBot: {
+      index: false,
       follow: true,
       noImageIndex: false,
       'max-video-review': -1,

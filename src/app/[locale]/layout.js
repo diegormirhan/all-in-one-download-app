@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: "Best Video Download",
     description: "Download Videos, Musics and Images from any social media platforms.",
-    url: "https://bestvideosdownload.com",
+    url: "https://master.dt0c010mqhuhl.amplifyapp.com/",
     siteName: "Best Video Download",
     images: [
       {

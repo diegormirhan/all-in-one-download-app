@@ -31,8 +31,8 @@ export const metadata = {
 };
 
 
-export default function SoundCloud() {
-  const socialMedia = "SoundCloud"
+export default function Soundcloud() {
+  const socialMedia = "Soundcloud"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)
 
   return (

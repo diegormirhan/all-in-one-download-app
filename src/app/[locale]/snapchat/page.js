@@ -45,10 +45,10 @@ export default function Snapchat() {
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FFFC00]">{socialMedia}</span></h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FFD000]">{socialMedia}</span></h1>
 
             {/* Campo de Input para link e Botão de Download */}
-            <LinkInputwithBtn inputClasses="focus:ring-[#FFFC00]" buttonClasses="text-[#FFFC00] fill-[#FFFC00] border-[#FFFC00] hover:bg-[#FFFC00]" />
+            <LinkInputwithBtn inputClasses="focus:ring-[#FFD000]" buttonClasses="text-[#FFD000] fill-[#FFD000] border-[#FFD000] hover:bg-[#FFD000]" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -60,7 +60,7 @@ export default function Snapchat() {
             </div>
 
             {/* Botão para explorar mais */}
-            <SectionMenu classes="bg-[#FFFC00] shadow-[#FFFC00]" />
+            <SectionMenu classes="bg-[#FFD000] shadow-[#FFD000]" />
           </div>
 
           {/* Anúncios na lateral direita*/}
@@ -69,12 +69,12 @@ export default function Snapchat() {
 
         {/* Card Section */}
         <section>
-          <CarouselCards classes="border-[#FFFC00]" />
-          <ImportantTips classes="border-[#FFFC00]" namespace={socialMedia} />
+          <CarouselCards classes="border-[#FFD000]" />
+          <ImportantTips classes="border-[#FFD000]" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-[#FFFC00]" namespace={socialMedia} />
-            <HowToUse classes="border-[#FFFC00]" namespace={socialMedia} />
+            <FAQAccordion classes="border-[#FFD000]" namespace={socialMedia} />
+            <HowToUse classes="border-[#FFD000]" namespace={socialMedia} />
           </div>
 
         </section>

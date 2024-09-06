@@ -5,7 +5,7 @@ export function MenuContent() {
     <>
 
           <div className="mx-auto w-full select-none">
-            <ul className="p-8 md:pl-0 md:pr-4 space-y-4">
+            <ul className="px-8 pb-5 md:pl-0 md:pr-4 space-y-4">
               
               <MenuItem href="/instagram" iconSrc="/socialMediaIcons/instagram.svg" text="Instagram" />
 

@@ -18,18 +18,18 @@ export const metadata = {
   viewport: 'width=device-width, initial-scale=1.0',
   themeColor: '#4044FC',
   charset: "utf-8",
-  metadataBase: new URL("https://bestvideosdownload.com"),
+  metadataBase: new URL("https://master.dt0c010mqhuhl.amplifyapp.com"),
   alternates: {
-    canonical: "https://bestvideosdownload.com"
+    canonical: "/"
   },
   openGraph: {
     title: "Best Video Download",
     description: "Download Videos, Musics and Images from any social media platforms.",
-    url: "https://master.dt0c010mqhuhl.amplifyapp.com/",
+    url: "/",
     siteName: "Best Video Download",
     images: [
       {
-        url: "https://master.dt0c010mqhuhl.amplifyapp.com/openGraph/opengraph-logo.png",
+        url: "/openGraph/opengraph-logo.png",
         width: 1200,
         height: 630,
         alt: "Best Video Download Card"

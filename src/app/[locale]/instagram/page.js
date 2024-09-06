@@ -10,19 +10,13 @@ import { useTranslations } from 'next-intl';
 export const metadata = {
   title: "Instagram Reels, Stories and Posts | Best Video Download",
   description: 'Download Reels, Stories, IGTV, Lives and Posts from Instagram fast and for free',
-  applicationName: "Best Video Download",
-  referrer: "origin-when-cross-origin",
-  viewport: 'width=device-width, initial-scale=1.0',
-  themeColor: '#4044FC',
-  charset: "utf-8",
-  metadataBase: new URL("https://bestvideosdownload.com"),
   alternates: {
-    canonical: "https://bestvideosdownload.com"
+    canonical: "/instagram"
   },
   openGraph: {
     title: "Instagram Reels, Stories and Posts | Best Video Download",
     description: "Download Reels, Stories, IGTV, Lives and Posts from Instagram fast and for free.",
-    url: "https://bestvideosdownload.com/instagram",
+    url: "/instagram",
     siteName: "Best Video Download",
     images: [
       {
@@ -34,7 +28,6 @@ export const metadata = {
     ],
     type: "website"
   },
-  manifest: '/manifest.json',
 };
 
 export default function Instagram() {

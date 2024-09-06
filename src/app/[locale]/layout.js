@@ -10,13 +10,17 @@ import { getMessages } from 'next-intl/server';
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#4044FC',
+}
+
 export const metadata = {
   title: "Best Video Download",
   description: 'Download videos, reels, stories, and posts from Instagram, TikTok, Facebook, Youtube, and more.',
   applicationName: "Best Video Download",
   referrer: "origin-when-cross-origin",
-  viewport: 'width=device-width, initial-scale=1.0',
-  themeColor: '#4044FC',
   charset: "utf-8",
   metadataBase: new URL("https://master.dt0c010mqhuhl.amplifyapp.com"),
   alternates: {

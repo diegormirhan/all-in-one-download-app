@@ -8,9 +8,8 @@ import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
 export const metadata = {
-  title: "Instagram Reels, Stories and Posts | Best Video Download",
-  description: 'Download Reels, Stories, IGTV, Lives and Posts from Instagram fast and for free',
-  metadataBase: new URL("https://master.dt0c010mqhuhl.amplifyapp.com"),
+  title: "Instagram Reels, Stories and Posts Downloader | Best Video Download",
+  description: 'Download Reels, Stories, IGTV,Lives, Videos and Posts from Instagram fast and for free',
   alternates: {
     canonical: "/instagram"
   },

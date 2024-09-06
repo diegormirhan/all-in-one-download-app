@@ -7,6 +7,36 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: "Instagram Reels, Stories and Posts | Best Video Download",
+  description: 'Download Reels, Stories, IGTV, Lives and Posts from Instagram fast and for free',
+  applicationName: "Best Video Download",
+  referrer: "origin-when-cross-origin",
+  viewport: 'width=device-width, initial-scale=1.0',
+  themeColor: '#4044FC',
+  charset: "utf-8",
+  metadataBase: new URL("https://bestvideosdownload.com"),
+  alternates: {
+    canonical: "https://bestvideosdownload.com"
+  },
+  openGraph: {
+    title: "Instagram Reels, Stories and Posts | Best Video Download",
+    description: "Download Reels, Stories, IGTV, Lives and Posts from Instagram fast and for free.",
+    url: "https://bestvideosdownload.com/instagram",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/openGraph/opengraph-instagram.png",
+        width: 1200,
+        height: 630,
+        alt: "Instagram - Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
+  manifest: '/manifest.json',
+};
+
 export default function Instagram() {
   const socialMedia = "Instagram"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)
@@ -21,10 +51,10 @@ export default function Instagram() {
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
-            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-main-color">{socialMedia}</span></h1>
+            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#EE2A7B]">{socialMedia}</span></h1>
 
             {/* Campo de Input para link e Botão de Download */}
-            <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
+            <LinkInputwithBtn inputClasses="focus:ring-[#EE2A7B]" buttonClasses="text-[#EE2A7B] fill-[#EE2A7B] border-[#EE2A7B] hover:bg-[#EE2A7B]" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -36,7 +66,7 @@ export default function Instagram() {
             </div>
 
             {/* Botão para explorar mais */}
-            <SectionMenu classes="bg-main-color shadow-main-color" />
+            <SectionMenu classes="bg-[#EE2A7B] shadow-[#EE2A7B]" />
           </div>
 
           {/* Anúncios na lateral direita*/}
@@ -45,12 +75,12 @@ export default function Instagram() {
 
         {/* Card Section */}
         <section>
-          <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace={socialMedia} />
+          <CarouselCards classes="border-[#EE2A7B]" />
+          <ImportantTips classes="border-[#EE2A7B]" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace={socialMedia} />
-            <HowToUse classes="border-main-color" namespace={socialMedia} />
+            <FAQAccordion classes="border-[#EE2A7B]" namespace={socialMedia} />
+            <HowToUse classes="border-[#EE2A7B]" namespace={socialMedia} />
           </div>
 
         </section>

@@ -9,7 +9,7 @@ import { useRouter } from "@/navigation";
 import { useFormik } from "formik";
 import basicSchema from "./validationSchema";
 import { useSearchParams } from "next/navigation";
-import { Clipboard, Download } from 'lucide-react';
+import { Clipboard } from 'lucide-react';
 
 
 export function LinkInputwithBtn({ inputClasses, buttonClasses }) {

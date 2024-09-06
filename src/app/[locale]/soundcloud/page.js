@@ -7,6 +7,30 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: "SoundCloud Music Downloader | Best Video Download",
+  description: 'Download Music and Tracks from SoundCloud quickly and for free',
+  alternates: {
+    canonical: "/soundcloud"
+  },
+  openGraph: {
+    title: "SoundCloud Music Downloader | Best Video Download",
+    description: "Download Music and Tracks from SoundCloud quickly and for free",
+    url: "/soundcloud",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/openGraph/opengraph-soundcloud.png",
+        width: 1200,
+        height: 630,
+        alt: "SoundCloud - Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
+};
+
+
 export default function SoundCloud() {
   const socialMedia = "SoundCloud"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)

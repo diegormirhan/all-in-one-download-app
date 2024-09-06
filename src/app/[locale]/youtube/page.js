@@ -7,6 +7,30 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: "YouTube Video Downloader | Best Video Download",
+  description: 'Download Videos from YouTube quickly and for free',
+  alternates: {
+    canonical: "/youtube"
+  },
+  openGraph: {
+    title: "YouTube Video Downloader | Best Video Download",
+    description: "Download Videos from YouTube quickly and for free",
+    url: "/youtube",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/openGraph/opengraph-youtube.png",
+        width: 1200,
+        height: 630,
+        alt: "YouTube - Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
+};
+
+
 export default function Youtube() {
   const socialMedia = "Youtube"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)

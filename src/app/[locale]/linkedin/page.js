@@ -7,6 +7,30 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: "LinkedIn Video and Posts Downloader | Best Video Download",
+  description: 'Download Videos and Posts from LinkedIn quickly and for free',
+  alternates: {
+    canonical: "/linkedin"
+  },
+  openGraph: {
+    title: "LinkedIn Video and Posts Downloader | Best Video Download",
+    description: "Download Videos and Posts from LinkedIn quickly and for free",
+    url: "/linkedin",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/openGraph/opengraph-linkedin.png",
+        width: 1200,
+        height: 630,
+        alt: "LinkedIn - Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
+};
+
+
 export default function Linkedin() {
   const socialMedia = "Linkedin"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)

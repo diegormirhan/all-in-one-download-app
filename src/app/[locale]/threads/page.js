@@ -7,6 +7,30 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: "Threads Post Downloader | Best Video Download",
+  description: 'Download Posts from Threads quickly and for free',
+  alternates: {
+    canonical: "/threads"
+  },
+  openGraph: {
+    title: "Threads Post Downloader | Best Video Download",
+    description: "Download Posts from Threads quickly and for free",
+    url: "/threads",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/openGraph/opengraph-threads.png",
+        width: 1200,
+        height: 630,
+        alt: "Threads - Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
+};
+
+
 export default function Threads() {
   const socialMedia = "Threads"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)

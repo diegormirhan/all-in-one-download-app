@@ -7,6 +7,31 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+export const metadata = {
+  title: "Reddit Video and Posts Downloader | Best Video Download",
+  description: 'Download Videos and Posts from Reddit quickly and for free',
+  alternates: {
+    canonical: "/reddit"
+  },
+  openGraph: {
+    title: "Reddit Video and Posts Downloader | Best Video Download",
+    description: "Download Videos and Posts from Reddit quickly and for free",
+    url: "/reddit",
+    siteName: "Best Video Download",
+    images: [
+      {
+        url: "/openGraph/opengraph-reddit.png",
+        width: 1200,
+        height: 630,
+        alt: "Reddit - Best Video Download Card"
+      }
+    ],
+    type: "website"
+  },
+};
+
+
+
 export default function Reddit() {
   const socialMedia = "Reddit"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)

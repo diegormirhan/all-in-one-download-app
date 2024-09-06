@@ -45,11 +45,10 @@ export default function Youtube() {
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
-            <h1 className="text-4xl font-extrabold mb-2 md:text-5xl">{tDynamic('introduction-title')}</h1>
-            <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{socialMedia}</h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#EE2E24]">{socialMedia}</span></h1>
 
             {/* Campo de Input para link e Botão de Download */}
-            <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
+            <LinkInputwithBtn inputClasses="focus:ring-[#EE2E24]" buttonClasses="text-[#EE2E24] fill-[#EE2E24] border-[#EE2E24] hover:bg-[#EE2E24]" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -61,7 +60,7 @@ export default function Youtube() {
             </div>
 
             {/* Botão para explorar mais */}
-            <SectionMenu classes="bg-main-color shadow-main-color" />
+            <SectionMenu classes="bg-[#EE2E24] shadow-[#EE2E24]" />
           </div>
 
           {/* Anúncios na lateral direita*/}
@@ -70,12 +69,12 @@ export default function Youtube() {
 
         {/* Card Section */}
         <section>
-          <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace={socialMedia} />
+          <CarouselCards classes="border-[#EE2E24]" />
+          <ImportantTips classes="border-[#EE2E24]" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace={socialMedia} />
-            <HowToUse classes="border-main-color" namespace={socialMedia} />
+            <FAQAccordion classes="border-[#EE2E24]" namespace={socialMedia} />
+            <HowToUse classes="border-[#EE2E24]" namespace={socialMedia} />
           </div>
 
         </section>

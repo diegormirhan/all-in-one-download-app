@@ -45,10 +45,10 @@ export default function Twitter() {
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-main-color">{socialMedia}</span></h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#000000]">{socialMedia}</span></h1>
 
             {/* Campo de Input para link e Botão de Download */}
-            <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
+            <LinkInputwithBtn inputClasses="focus:ring-[#000000]" buttonClasses="text-[#000000] fill-[#000000] border-[#000000] hover:bg-[#000000]" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -60,7 +60,7 @@ export default function Twitter() {
             </div>
 
             {/* Botão para explorar mais */}
-            <SectionMenu classes="bg-main-color shadow-main-color" />
+            <SectionMenu classes="bg-[#000000] shadow-[#000000]" />
           </div>
 
           {/* Anúncios na lateral direita*/}
@@ -69,12 +69,12 @@ export default function Twitter() {
 
         {/* Card Section */}
         <section>
-          <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace={socialMedia} />
+          <CarouselCards classes="border-[#000000]" />
+          <ImportantTips classes="border-[#000000]" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace={socialMedia} />
-            <HowToUse classes="border-main-color" namespace={socialMedia} />
+            <FAQAccordion classes="border-[#000000]" namespace={socialMedia} />
+            <HowToUse classes="border-[#000000]" namespace={socialMedia} />
           </div>
 
         </section>

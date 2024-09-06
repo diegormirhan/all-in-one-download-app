@@ -45,9 +45,9 @@ export default function Threads() {
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-main-color">{socialMedia}</span></h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#636363]">{socialMedia}</span></h1>
             {/* Campo de Input para link e Botão de Download */}
-            <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
+            <LinkInputwithBtn inputClasses="focus:ring-[#636363]" buttonClasses="text-[#636363] fill-[#636363] border-[#636363] hover:bg-[#636363]" />
 
             {/* Anúncios no inferior */}
             <HorizontalAds />
@@ -59,7 +59,7 @@ export default function Threads() {
             </div>
 
             {/* Botão para explorar mais */}
-            <SectionMenu classes="bg-main-color shadow-main-color" />
+            <SectionMenu classes="bg-[#636363] shadow-[#636363]" />
           </div>
 
           {/* Anúncios na lateral direita*/}
@@ -68,12 +68,12 @@ export default function Threads() {
 
         {/* Card Section */}
         <section>
-          <CarouselCards classes="border-main-color" />
-          <ImportantTips classes="border-main-color" namespace={socialMedia} />
+          <CarouselCards classes="border-[#636363]" />
+          <ImportantTips classes="border-[#636363]" namespace={socialMedia} />
 
           <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0 items-start w-11/12 md:w-4/5 m-auto mb-14">
-            <FAQAccordion classes="border-main-color" namespace={socialMedia} />
-            <HowToUse classes="border-main-color" namespace={socialMedia} />
+            <FAQAccordion classes="border-[#636363]" namespace={socialMedia} />
+            <HowToUse classes="border-[#636363]" namespace={socialMedia} />
           </div>
 
         </section>

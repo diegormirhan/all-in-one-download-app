@@ -3,7 +3,7 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
 import { DownloadCards } from "@/components/downloadCards";
-import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
+import { AdsComponent } from "@/components/ads/ads";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
@@ -65,7 +65,7 @@ export default function DownloadPage() {
                 {/* Main Section */}
                 <section className="lg:w-full flex justify-between mb-4">
                     {/* Anúncios na lateral esquerda*/}
-                    <VerticalAds />
+                    <AdsComponent adSlot={5575897018}/>
 
                     {/* Conteúdo Principal */}
                     <div className="p-4 w-full max-w-3xl text-center">
@@ -109,14 +109,14 @@ export default function DownloadPage() {
                             {downloadButtons}
                         </div>
 
-                        <HorizontalAds />
+                        <AdsComponent adSlot={5378381076}/>
 
                         {/* Botão para explorar mais */}
                         <SectionMenu classes="bg-main-color shadow-main-color mt-10" />
                     </div>
 
                     {/* Anúncios na lateral direita*/}
-                    <VerticalAds />
+                    <AdsComponent adSlot={5575897018}/>
                 </section>
 
                 {/* Card Section */}

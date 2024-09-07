@@ -41,11 +41,11 @@ export const metadata = {
     type: "website"
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     noCache: false,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       noImageIndex: false,
       'max-video-review': -1,

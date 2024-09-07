@@ -63,7 +63,7 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <Head>
-        <Adsense />
+        <meta name="google-adsense-account" content="ca-pub-8038191677774356"></meta>
       </Head>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">

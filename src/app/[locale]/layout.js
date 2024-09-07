@@ -6,10 +6,10 @@ import { TranslationToggle } from "@/components/translationToggle";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Image from "next/image";
-import Head from "next/head";
 import GoogleAnalytics from "@/components/google/analytics";
-import { GoogleAdsense } from "@/components/google/adsense";
+import GoogleAdsense from "@/components/google/adsense";
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const viewport = {
   width: 'device-width',
@@ -64,8 +64,8 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <GoogleAnalytics />
-      <GoogleAdsense />
       <body className={inter.className}>
+      <GoogleAdsense/>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}
           <HeaderMenu />

@@ -6,17 +6,19 @@ import Script from 'next/script';
 export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
 
   useEffect(() => {
-    try {
-      (window).adsbygoogle = (window).adsbygoogle || [];
-      (window).adsbygoogle.push({});
-    } catch (e) {
-      console.error('Error loading ads:', e);
+    // Verifica se está no lado do cliente e se o adsbygoogle está disponível
+    if (typeof window !== 'undefined' && typeof window.adsbygoogle !== 'undefined') {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error('Erro ao carregar anúncios: ', e);
+      }
     }
   }, []);
 
   return (
     <>
-      <div>
+      <div className="min-w-52">
         <ins className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-8038191677774356"
@@ -28,9 +30,11 @@ export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
   )
 }
 
-export function GoogleAdsense() {
+export default function GoogleAdsense() {
   return (
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
-        crossorigin="anonymous"></Script>
+    <>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
+          crossOrigin="anonymous"/>
+    </>
   )
 }

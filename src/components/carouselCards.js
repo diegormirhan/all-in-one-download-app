@@ -129,7 +129,7 @@ export function CarouselCards({classes}) {
                                     <CardContent className="px-8 pt-6 pb-0 text-white flex">
                                         <div className="grid content-between">
                                             <div>
-                                                <h2 className="text-xl xl:text-3xl font-extrabold">Twitter</h2>
+                                                <h2 className="text-xl xl:text-3xl font-extrabold">X (Twitter)</h2>
                                                 <p className="text-sm lg:text-md">{tDefault('carousel-card-twitter')}</p>
                                             </div>
                                             <Image src="/icons/arrow_right.svg" alt='arrow right icon svg' width={40} height={40} className="mb-2 xl:mb-10 w-14 -ml-2 xl:-ml-3 group-hover:translate-x-2 duration-200"></Image>

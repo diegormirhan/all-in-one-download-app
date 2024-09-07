@@ -2,7 +2,7 @@ import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
 import { CarouselCards } from "@/components/carouselCards";
 import { HowToUse } from "@/components/howToUse";
-import { HorizontalAds, VerticalAds } from "@/components/ads/ads";
+import { AdsComponent } from "@/components/ads/ads";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
@@ -40,7 +40,7 @@ export default function Facebook() {
         {/* Main Section */}
         <section className="lg:w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}
-          <VerticalAds />
+          <AdsComponent adSlot={5575897018}/>
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
@@ -50,7 +50,7 @@ export default function Facebook() {
             <LinkInputwithBtn inputClasses="focus:ring-[#1977F3]" buttonClasses="text-[#1977F3] fill-[#1977F3] border-[#1977F3] hover:bg-[#1977F3]" />
 
             {/* Anúncios no inferior */}
-            <HorizontalAds />
+            <AdsComponent adSlot={5378381076}/>
 
             {/* Texto explicativo */}
             <div className="my-10 text-sm w-full mx-auto text-left font-semibold md:text-center md:w-4/5 md:font-medium space-y-4">
@@ -63,7 +63,7 @@ export default function Facebook() {
           </div>
 
           {/* Anúncios na lateral direita*/}
-          <VerticalAds />
+          <AdsComponent adSlot={5575897018}/>
         </section>
 
         {/* Card Section */}

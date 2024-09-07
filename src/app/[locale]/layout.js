@@ -2,12 +2,11 @@ import { Inter } from "next/font/google";
 import "../../styles/globals.css";
 import { HeaderMenu } from "@/components/menu/headerMenu"
 import { Link } from "@/navigation";
-import { Adsense } from "@/components/ads/adsense";
 import { TranslationToggle } from "@/components/translationToggle";
-import Head from "next/head";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Image from "next/image";
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
@@ -22,7 +21,7 @@ export const metadata = {
   applicationName: "Best Video Download",
   referrer: "origin-when-cross-origin",
   charset: "utf-8",
-  metadataBase: new URL("https://master.dt0c010mqhuhl.amplifyapp.com"),
+  metadataBase: new URL("https://bestvideosdownload.com"),
   alternates: {
     canonical: "/"
   },
@@ -42,11 +41,11 @@ export const metadata = {
     type: "website"
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     noCache: false,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       noImageIndex: false,
       'max-video-review': -1,
@@ -63,7 +62,8 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <Head>
-        <Adsense />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
+          crossorigin="anonymous"></script>
       </Head>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">

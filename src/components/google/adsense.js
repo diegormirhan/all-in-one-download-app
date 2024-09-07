@@ -18,7 +18,7 @@ export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
       <div>
         <ins className="adsbygoogle"
           style={{ display: 'block' }}
-          data-ad-client="ca-pub-XXXX"
+          data-ad-client={process.env.GOOGLE_ADSENSE_CLIENT}
           data-ad-slot={adSlot}
           data-ad-format={adFormat}
           data-ad-layout={adLayout}></ins>

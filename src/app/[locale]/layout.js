@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Image from "next/image";
 import Head from "next/head";
+import GoogleAnalytics from "@/components/google/analytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
@@ -62,9 +63,10 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
+        <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.GOOGLE_ADSENSE_CLIENT}`}
           crossorigin="anonymous"></script>
       </Head>
+      <GoogleAnalytics/>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}

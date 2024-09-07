@@ -33,17 +33,17 @@ export function TranslationToggle() {
                 </SelectTrigger>
                 <SelectContent>
                     <SelectItem value="en">English</SelectItem>
-                    <SelectItem value="es">Español</SelectItem>
-                    <SelectItem value="fr">Français</SelectItem>
-                    <SelectItem value="de">Deutsch</SelectItem>
-                    <SelectItem value="pt">Português</SelectItem>
-                    <SelectItem value="it">Italiano</SelectItem>
-                    <SelectItem value="zh">中文</SelectItem>
-                    <SelectItem value="ja">日本語</SelectItem>
-                    <SelectItem value="ko">한국어</SelectItem>
-                    <SelectItem value="ru">Русский</SelectItem>
-                    <SelectItem value="hi">हिन्दी</SelectItem>
-                    <SelectItem value="tr">Türkçe</SelectItem>
+                    <SelectItem value="es" className="hidden">Español</SelectItem>
+                    <SelectItem value="fr" className="hidden">Français</SelectItem>
+                    <SelectItem value="de" className="hidden">Deutsch</SelectItem>
+                    <SelectItem value="pt" className="hidden">Português</SelectItem>
+                    <SelectItem value="it" className="hidden">Italiano</SelectItem>
+                    <SelectItem value="zh" className="hidden">中文</SelectItem>
+                    <SelectItem value="ja" className="hidden">日本語</SelectItem>
+                    <SelectItem value="ko" className="hidden">한국어</SelectItem>
+                    <SelectItem value="ru" className="hidden">Русский</SelectItem>
+                    <SelectItem value="hi" className="hidden">हिन्दी</SelectItem>
+                    <SelectItem value="tr" className="hidden">Türkçe</SelectItem>
                     <SelectItem value="ar" className="hidden">العربية</SelectItem>
                     <SelectItem value="nl" className="hidden">Nederlands</SelectItem>
                     <SelectItem value="sv" className="hidden">Svenska</SelectItem>

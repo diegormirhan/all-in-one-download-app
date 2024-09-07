@@ -18,7 +18,7 @@ export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
 
   return (
     <>
-      <div className="min-w-52">
+      <div className="w-auto h-auto">
         <ins className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-8038191677774356"
@@ -33,8 +33,12 @@ export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
 export default function GoogleAdsense() {
   return (
     <>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
-          crossOrigin="anonymous"/>
+        <Script 
+        async 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356" 
+        crossOrigin="anonymous"
+        strategy="lazyOnload"
+        />
     </>
   )
 }

@@ -20,7 +20,7 @@ export const metadata = {
   applicationName: "Best Video Download",
   referrer: "origin-when-cross-origin",
   charset: "utf-8",
-  metadataBase: new URL("https://master.dt0c010mqhuhl.amplifyapp.com"),
+  metadataBase: new URL("https://bestvideosdownload.com"),
   alternates: {
     canonical: "/"
   },
@@ -40,11 +40,11 @@ export const metadata = {
     type: "website"
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
     noCache: false,
     googleBot: {
-      index: true,
+      index: false,
       follow: true,
       noImageIndex: false,
       'max-video-review': -1,

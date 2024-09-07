@@ -1,21 +1,28 @@
-export function VerticalAds() {
-    return (
-        <>
-            <div className="hidden lg:flex bg-gray-300 h-96 w-40 items-center justify-center rounded-lg font-semibold">
-                GOOGLE ADS
-            </div>
-        </>
-    )
-}
+"use client"
 
+import React, { useEffect } from 'react';
 
-export function HorizontalAds() {
+export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
+
+  useEffect(() => {
+    try {
+      (window).adsbygoogle = (window).adsbygoogle || [];
+      (window).adsbygoogle.push({});
+    } catch (e) {
+      console.error('Error loading ads:', e);
+    }
+  }, []);
 
   return (
     <>
-      <div className="flex bg-gray-300 h-32 w-4/5 items-center justify-center rounded-lg font-semibold m-auto">
-        GOOGLE ADS
+      <div>
+        <ins className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-XXXX"
+          data-ad-slot={adSlot}
+          data-ad-format={adFormat}
+          data-ad-layout={adLayout}></ins>
       </div>
     </>
-  );
+  )
 }

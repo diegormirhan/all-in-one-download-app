@@ -6,7 +6,7 @@ export default function GoogleAnalytics () {
         <>
           <Script
             strategy='lazyOnload'
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
+            src="https://www.googletagmanager.com/gtag/js?id=G-B65YS6ZRBK"
           />
     
           <Script id='' strategy='lazyOnload'>

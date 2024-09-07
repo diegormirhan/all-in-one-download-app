@@ -8,6 +8,7 @@ import { getMessages } from 'next-intl/server';
 import Image from "next/image";
 import Head from "next/head";
 import GoogleAnalytics from "@/components/google/analytics";
+import { GoogleAdsense } from "@/components/google/adsense";
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
@@ -62,11 +63,8 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <Head>
-        <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.GOOGLE_ADSENSE_CLIENT}`}
-          crossorigin="anonymous"></script>
-      </Head>
-      <GoogleAnalytics/>
+      <GoogleAnalytics />
+      <GoogleAdsense />
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}

@@ -3,6 +3,7 @@ import "../../styles/globals.css";
 import { HeaderMenu } from "@/components/menu/headerMenu"
 import { Link } from "@/navigation";
 import { Adsense } from "@/components/ads/adsense";
+import Script from "next/script";
 import { TranslationToggle } from "@/components/translationToggle";
 import Head from "next/head";
 import { NextIntlClientProvider } from 'next-intl';
@@ -63,6 +64,8 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
+          crossorigin="anonymous"></script>
         <meta name="google-adsense-account" content="ca-pub-8038191677774356"></meta>
       </Head>
       <body className={inter.className}>

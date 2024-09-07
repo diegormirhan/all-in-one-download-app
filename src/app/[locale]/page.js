@@ -2,7 +2,7 @@ import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
 import { CarouselCards } from "@/components/carouselCards";
 import { HowToUse } from "@/components/howToUse";
-import { AdsComponent } from "@/components/ads/ads";
+import { AdsComponent } from "@/components/google/adsense";
 import { ImportantTips } from "@/components/importantTips";
 import { TypeWriterWords } from "@/components/typeWriter";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
@@ -18,7 +18,7 @@ export default function Home() {
         {/* Main Section */}
         <section className="lg:w-full flex justify-between mb-4">
           {/* Anúncios na lateral esquerda*/}
-          <AdsComponent adSlot={5575897018}/>
+          <AdsComponent adSlot={5575897018} />
 
           {/* Conteúdo Principal */}
           <div className="p-4 w-full max-w-3xl text-center">
@@ -29,7 +29,7 @@ export default function Home() {
             <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
 
             {/* Anúncios no inferior */}
-            <AdsComponent adSlot={5378381076}/>
+            <AdsComponent adSlot={5378381076} />
 
             {/* Texto explicativo */}
             <div className="my-10 text-sm w-full mx-auto text-left font-semibold md:text-center md:w-4/5 md:font-medium space-y-4">
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
 
           {/* Anúncios na lateral direita*/}
-          <AdsComponent adSlot={5575897018}/>
+          <AdsComponent adSlot={5575897018} />
         </section>
 
         {/* Card Section */}

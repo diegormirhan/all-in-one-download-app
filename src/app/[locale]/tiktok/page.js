@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "Best Video Download",
     images: [
       {
-        url: "/openGraph/opengraph-tik.png",
+        url: "/openGraph/opengraph-tiktok.png",
         width: 1200,
         height: 630,
         alt: "TikTok - Best Video Download Card"

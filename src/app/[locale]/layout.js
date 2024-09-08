@@ -6,9 +6,9 @@ import { TranslationToggle } from "@/components/translationToggle";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Image from "next/image";
-import Head from "next/head";
+import GoogleAnalytics from "@/components/google/analytics";
+import GoogleAdsense from "@/components/google/adsense";
 const inter = Inter({ subsets: ["latin"] });
-
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "Best Video Download",
     images: [
       {
-        url: "/openGraph/opengraph-logo.png",
+        url: "/openGraph/opengraph-logo.jpg",
         width: 1200,
         height: 630,
         alt: "Best Video Download Card"
@@ -61,10 +61,8 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356"
-          crossorigin="anonymous"></script>
-      </Head>
+      <GoogleAdsense />
+      <GoogleAnalytics />
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}

@@ -77,7 +77,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="relative mb-8 w-11/12 md:w-2/3 mx-auto">
+        <div className="relative mb-8 w-11/12 md:w-4/5 mx-auto">
           <input
             type="text"
             id="link"
@@ -105,7 +105,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         <Button
           type="submit"
           disabled={isPending}
-          className={`flex items-center m-auto ${buttonClasses} bg-transparent active:bg-transparent text-lg font-semibold py-2 px-6 rounded-lg mb-10 border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}
+          className={`flex items-center m-auto ${buttonClasses} bg-transparent active:bg-transparent text-lg font-semibold py-2 px-6 rounded-lg border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}
         >
           {isPending ? (
             <>

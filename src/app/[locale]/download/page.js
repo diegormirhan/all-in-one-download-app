@@ -3,7 +3,7 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { CarouselCards } from "@/components/carouselCards";
 import { DownloadCards } from "@/components/downloadCards";
-import { AdsComponent } from "@/components/ads/ads";
+import { AdsComponent } from "@/components/google/adsense";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";
 import { useTranslations } from 'next-intl';
@@ -65,7 +65,7 @@ export default function DownloadPage() {
                 {/* Main Section */}
                 <section className="lg:w-full flex justify-between mb-4">
                     {/* Anúncios na lateral esquerda*/}
-                    <AdsComponent adSlot={5575897018}/>
+                    <AdsComponent adSlot={5575897018} />
 
                     {/* Conteúdo Principal */}
                     <div className="p-4 w-full max-w-3xl text-center">
@@ -73,34 +73,34 @@ export default function DownloadPage() {
                         <h2 className="text-lg font-semibold mb-10">{tDefault('download-subtitle')}</h2>
 
                         <div className="w-full flex flex-col items-center">
-                                    <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
-                                        {storedData?.data?.title || tDefault('download-thumbnail-title')}
-                                    </div>
-                                    <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
-                                        <div className="absolute inset-0 z-0">
-                                            <Image
-                                                src={thumbnail}
-                                                fill={true}
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                style={{ objectFit: "cover" }}
-                                                quality={100}
-                                                className="blur-sm"
-                                                alt="Thumbnail blur"
-                                                priority={true}
-                                            />
-                                        </div>
-                                        <div className="h-full relative">
-                                            <Image
-                                                src={thumbnail}
-                                                fill={true}
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                style={{ objectFit: "contain" }}
-                                                quality={100}
-                                                alt="Thumbnail"
-                                                priority={true}
-                                            />
-                                        </div>
-                                    </div>
+                            <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
+                                {storedData?.data?.title || tDefault('download-thumbnail-title')}
+                            </div>
+                            <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
+                                <div className="absolute inset-0 z-0">
+                                    <Image
+                                        src={thumbnail}
+                                        fill={true}
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        style={{ objectFit: "cover" }}
+                                        quality={100}
+                                        className="blur-sm"
+                                        alt="Thumbnail blur"
+                                        priority={true}
+                                    />
+                                </div>
+                                <div className="h-full relative">
+                                    <Image
+                                        src={thumbnail}
+                                        fill={true}
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        style={{ objectFit: "contain" }}
+                                        quality={100}
+                                        alt="Thumbnail"
+                                        priority={true}
+                                    />
+                                </div>
+                            </div>
                         </div>
 
                         <div className="text-center mt-5 mb-10 font-semibold text-md underline">{tDefault('download-description')}</div>
@@ -109,20 +109,20 @@ export default function DownloadPage() {
                             {downloadButtons}
                         </div>
 
-                        <AdsComponent adSlot={5378381076}/>
+                        <AdsComponent adSlot={5378381076} />
 
                         {/* Botão para explorar mais */}
                         <SectionMenu classes="bg-main-color shadow-main-color mt-10" />
                     </div>
 
                     {/* Anúncios na lateral direita*/}
-                    <AdsComponent adSlot={5575897018}/>
+                    <AdsComponent adSlot={5575897018} />
                 </section>
 
                 {/* Card Section */}
                 <section>
                     <CarouselCards classes="border-main-color" />
-                    <DownloadCards/>
+                    <DownloadCards />
                 </section>
             </main>
         </>

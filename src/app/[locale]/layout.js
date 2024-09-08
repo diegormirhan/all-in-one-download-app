@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "Best Video Download",
     images: [
       {
-        url: "/openGraph/opengraph-logo.png",
+        url: "/openGraph/opengraph-logo.jpg",
         width: 1200,
         height: 630,
         alt: "Best Video Download Card"

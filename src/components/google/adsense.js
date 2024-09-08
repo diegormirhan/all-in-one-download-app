@@ -7,18 +7,18 @@ export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
 
   useEffect(() => {
     // Verifica se está no lado do cliente e se o adsbygoogle está disponível
-    if (typeof window !== 'undefined' && typeof window.adsbygoogle !== 'undefined') {
       try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        if (window.adsbygoogle) {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
       } catch (e) {
         console.error('Erro ao carregar anúncios: ', e);
       }
-    }
   }, []);
 
   return (
     <>
-      <div className="w-auto h-auto">
+      <div className="min-w-[320px]">
         <ins className="adsbygoogle"
           style={{ display: 'block' }}
           data-ad-client="ca-pub-8038191677774356"

@@ -1,3 +1,4 @@
+
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
 import { CarouselCards } from "@/components/carouselCards";

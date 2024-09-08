@@ -8,10 +8,7 @@ import { getMessages } from 'next-intl/server';
 import Image from "next/image";
 import GoogleAnalytics from "@/components/google/analytics";
 import GoogleAdsense from "@/components/google/adsense";
-import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
-import Script from "next/script";
-
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -64,7 +61,7 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <GoogleAdsense/>
+      <GoogleAdsense />
       <GoogleAnalytics />
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">

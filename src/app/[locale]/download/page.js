@@ -61,11 +61,12 @@ export default function DownloadPage() {
 
     return (
         <>
-            <main className="min-h-screen flex flex-col items-center lg:px-4 py-4 pt-24">
+            <main className="w-full flex flex-col items-center py-20 space-y-8 px-4">
+
+                <section></section>
+
                 {/* Main Section */}
-                <section className="lg:w-full flex justify-between mb-4">
-                    {/* Anúncios na lateral esquerda*/}
-                    <AdsComponent adSlot={5575897018} />
+                <section className="max-w-3xl text-center">
 
                     {/* Conteúdo Principal */}
                     <div className="p-4 w-full max-w-3xl text-center">
@@ -109,14 +110,9 @@ export default function DownloadPage() {
                             {downloadButtons}
                         </div>
 
-                        <AdsComponent adSlot={5378381076} />
-
                         {/* Botão para explorar mais */}
                         <SectionMenu classes="bg-main-color shadow-main-color mt-10" />
                     </div>
-
-                    {/* Anúncios na lateral direita*/}
-                    <AdsComponent adSlot={5575897018} />
                 </section>
 
                 {/* Card Section */}

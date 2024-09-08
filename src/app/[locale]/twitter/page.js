@@ -10,7 +10,7 @@ export const metadata = {
   title: "Twitter (X) Video and Posts Downloader | Best Video Download",
   description: 'Download Videos and Posts from Twitter (X) quickly and for free',
   alternates: {
-    canonical: "/twitter"
+    canonical: "/twitter",
   },
   openGraph: {
     title: "Twitter (X) Video and Posts Downloader | Best Video Download",
@@ -43,7 +43,7 @@ export default function Twitter() {
         {/* Main Section */}
         <section className="max-w-3xl text-center">
           {/* Conteúdo Principal */}
-          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#000000]">{socialMedia}</span></h1>
+          <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#000000]">X (Twitter)</span></h1>
 
           {/* Campo de Input para link e Botão de Download */}
           <LinkInputwithBtn inputClasses="focus:ring-[#000000]" buttonClasses="text-[#000000] fill-[#000000] border-[#000000] hover:bg-[#000000]" />

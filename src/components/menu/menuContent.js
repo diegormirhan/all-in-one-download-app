@@ -31,6 +31,32 @@ export function MenuContent() {
 
               <MenuItem href="/threads" iconSrc="/socialMediaIcons/threads.svg" text="Threads" />
 
+              <MenuItem href="/xiaohongshu" iconSrc="/socialMediaIcons/xiaohongshu.svg" text="Xiaohongshu" />
+
+              <MenuItem href="/douyin" iconSrc="/socialMediaIcons/tiktok.svg" text="Douyin" />
+
+              <MenuItem href="/rumble" iconSrc="/socialMediaIcons/rumble.svg" text="Rumble" />
+
+              <MenuItem href="/dailymotion" iconSrc="/socialMediaIcons/dailymotion.svg" text="DailyMotion" />
+
+              <MenuItem href="/capcut" iconSrc="/socialMediaIcons/capcut.svg" text="Capcut" />
+
+              <MenuItem href="/tumblr" iconSrc="/socialMediaIcons/tumblr.svg" text="Tumblr" />
+
+              <MenuItem href="/weibo" iconSrc="/socialMediaIcons/weibo.svg" text="Weibo" />
+
+              <MenuItem href="/ifunny" iconSrc="/socialMediaIcons/ifunny.svg" text="Ifunny" />
+
+              <MenuItem href="/likee" iconSrc="/socialMediaIcons/likee.svg" text="Likee" />
+
+              <MenuItem href="/hipi" iconSrc="/socialMediaIcons/hipi.svg" text="Hipi" />
+
+              <MenuItem href="/ted" iconSrc="/socialMediaIcons/ted.svg" text="Ted" />
+
+              <MenuItem href="/9gag" iconSrc="/socialMediaIcons/9gag.svg" text="9Gag" />
+
+              <MenuItem href="/bilibili" iconSrc="/socialMediaIcons/bilibili.svg" text="BiliBili" />
+
             </ul>
           </div>
 

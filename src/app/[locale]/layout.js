@@ -54,7 +54,7 @@ export const metadata = {
       "uk": "/uk",
       "vi": "/vi",
       "bn": "/bn"
-    }    
+    }
   },
   openGraph: {
     title: "Best Video Download",
@@ -109,6 +109,12 @@ export default async function RootLayout({ children, params: { locale } }) {
           {children}
         </NextIntlClientProvider>
         <footer className="bg-main-color p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center text-center text-white text-md gap-3">
+          <p className="hover:underline col-span-2 md:col-span-1"><Link href="/">Homepage</Link></p>
+          <p className="hover:underline col-span-2 md:col-span-1"><Link href="/about">About</Link></p>
+          <p className="hover:underline col-span-2 md:col-span-1"><Link href="/privacy-policy">Privacy Policy</Link></p>
+          </div>
+          <div className="h-[1px] w-full bg-white mt-6 mb-3"></div>
           <p className="text-white text-center md:text-left">© 2024 Best Video Download. All Rights Reserved</p>
         </footer>
       </body>

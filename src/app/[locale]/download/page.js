@@ -10,27 +10,6 @@ import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import defaultThumbnail from "../../../../public/icons/logo/png/gradient-logo.png"
 
-export const metadata = {
-    title: "Download | Best Video Download",
-    description: "Download Page | Best Video Download",
-    alternates: {
-      canonical: "/download"
-    },
-    robots: {
-        index: false,
-        follow: false,
-        noCache: false,
-        googleBot: {
-          index: false,
-          follow: false,
-          noImageIndex: false,
-          'max-video-review': -1,
-          'max-image-preview': 'large',
-          'max-snippet': -1
-        }
-      },
-  };
-
 export default function DownloadPage() {
 
     const [downloadButtons, setDownloadButtons] = useState([]);

@@ -6,27 +6,34 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Facebook Stories and Posts Downloader | Best Video Download",
-  description: 'Download Stories, Lives, Videos and Posts from Facebook fast and for free',
-  alternates: {
-    canonical: "/facebook"
-  },
-  openGraph: {
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/facebook' : `/${langCode}/facebook`;
+
+  return {
     title: "Facebook Stories and Posts Downloader | Best Video Download",
-    description: "Download Stories, Lives, Videos and Posts from Facebook fast and for free",
-    url: "/facebook",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-facebook.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Facebook - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
+    description: 'Download Stories, Lives, Videos and Posts from Facebook fast and for free',
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Facebook Stories and Posts Downloader | Best Video Download",
+      description: "Download Stories, Lives, Videos and Posts from Facebook fast and for free",
+      url: "/facebook",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-facebook.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Facebook - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
 };
 
 export default function Facebook() {

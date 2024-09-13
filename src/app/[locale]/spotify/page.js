@@ -6,29 +6,35 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Spotify Music Downloader | Best Video Download",
-  description: 'Download Music and Podcasts from Spotify quickly and for free',
-  alternates: {
-    canonical: "/spotify"
-  },
-  openGraph: {
-    title: "Spotify Music Downloader | Best Video Download",
-    description: "Download Music and Podcasts from Spotify quickly and for free",
-    url: "/spotify",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-spotify.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Spotify - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
-};
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
 
+  const currentUrl = langCode === 'en' ? '/spotify' : `/${langCode}/spotify`;
+
+  return {
+    title: "Spotify Music Downloader | Best Video Download",
+    description: 'Download Music and Podcasts from Spotify quickly and for free',
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Spotify Music Downloader | Best Video Download",
+      description: "Download Music and Podcasts from Spotify quickly and for free",
+      url: "/spotify",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-spotify.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Spotify - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
+};
 
 export default function Spotify() {
   const socialMedia = "Spotify"

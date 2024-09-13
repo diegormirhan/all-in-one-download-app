@@ -49,13 +49,13 @@ export function MenuContent() {
 
               <MenuItem href="/likee" iconSrc="/socialMediaIcons/likee.svg" text="Likee" />
 
-              <MenuItem href="/hipi" iconSrc="/socialMediaIcons/hipi.svg" text="Hipi" />
+              {/* <MenuItem href="/hipi" iconSrc="/socialMediaIcons/hipi.svg" text="Hipi" /> */}
 
               <MenuItem href="/ted" iconSrc="/socialMediaIcons/ted.svg" text="Ted" />
 
               <MenuItem href="/9gag" iconSrc="/socialMediaIcons/9gag.svg" text="9Gag" />
 
-              <MenuItem href="/bilibili" iconSrc="/socialMediaIcons/bilibili.svg" text="BiliBili" />
+              {/* <MenuItem href="/bilibili" iconSrc="/socialMediaIcons/bilibili.svg" text="BiliBili" /> */}
 
             </ul>
           </div>

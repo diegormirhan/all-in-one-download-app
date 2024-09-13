@@ -6,27 +6,34 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Rumble Video Downloader | Best Video Download",
-  description: "Download videos from Rumble quickly and for free. Save and enjoy viral content, vlogs, and political discussions from the platform known for free speech.",
-  alternates: {
-    canonical: "/rumble"
-  },
-  openGraph: {
-    title: "Rumble Videos | Best Video Download",
-    description: "Download videos from Rumble fast and for free.",
-    url: "/rumble",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-rumble.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Rumble - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/rumble' : `/${langCode}/rumble`;
+
+  return {
+    title: "Rumble Video Downloader | Best Video Download",
+    description: "Download videos from Rumble quickly and for free. Save and enjoy viral content, vlogs, and political discussions from the platform known for free speech.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Rumble Videos | Best Video Download",
+      description: "Download videos from Rumble fast and for free.",
+      url: "/rumble",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-rumble.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Rumble - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
 };
 
 export default function Rumble() {

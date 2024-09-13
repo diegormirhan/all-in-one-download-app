@@ -6,27 +6,34 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Hipi Video Downloader | Best Video Download",
-  description: "Download videos from Hipi fast and for free. Save trending short videos and clips from India's growing platform for user-generated entertainment.",
-  alternates: {
-    canonical: "/hipi"
-  },
-  openGraph: {
-    title: "Hipi Videos | Best Video Download",
-    description: "Download videos from Hipi fast and for free.",
-    url: "/hipi",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-hipi.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Hipi - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/hipi' : `/${langCode}/hipi`;
+
+  return {
+    title: "Hipi Video Downloader | Best Video Download",
+    description: "Download videos from Hipi fast and for free. Save trending short videos and clips from India's growing platform for user-generated entertainment.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Hipi Videos | Best Video Download",
+      description: "Download videos from Hipi fast and for free.",
+      url: "/hipi",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-hipi.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Hipi - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
 };
 
 export default function Hipi() {

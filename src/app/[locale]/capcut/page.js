@@ -6,27 +6,34 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "CapCut Video Downloader | Best Video Download",
-  description: "Download videos edited with CapCut fast and for free. Save professionally edited content and share creative videos from this popular editing tool.",
-  alternates: {
-    canonical: "/capcut"
-  },
-  openGraph: {
-    title: "CapCut Videos | Best Video Download",
-    description: "Download videos edited with CapCut fast and for free.",
-    url: "/capcut",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-capcut.jpg",
-        width: 1200,
-        height: 630,
-        alt: "CapCut - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/capcut' : `/${langCode}/capcut`;
+
+  return {
+    title: "CapCut Video Downloader | Best Video Download",
+    description: "Download videos edited with CapCut fast and for free. Save professionally edited content and share creative videos from this popular editing tool.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "CapCut Videos | Best Video Download",
+      description: "Download videos edited with CapCut fast and for free.",
+      url: "/capcut",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-capcut.jpg",
+          width: 1200,
+          height: 630,
+          alt: "CapCut - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
 };
 
 export default function Capcut() {

@@ -6,29 +6,35 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Pinterest Pin Downloader | Best Video Download",
-  description: 'Download Pins, Videos, and Images from Pinterest quickly and for free',
-  alternates: {
-    canonical: "/pinterest"
-  },
-  openGraph: {
-    title: "Pinterest Pin Downloader | Best Video Download",
-    description: "Download Pins, Videos, and Images from Pinterest quickly and for free",
-    url: "/pinterest",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-pinterest.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Pinterest - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
-};
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
 
+  const currentUrl = langCode === 'en' ? '/pinterest' : `/${langCode}/pinterest`;
+
+  return {
+    title: "Pinterest Pin Downloader | Best Video Download",
+    description: 'Download Pins, Videos, and Images from Pinterest quickly and for free',
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Pinterest Pin Downloader | Best Video Download",
+      description: "Download Pins, Videos, and Images from Pinterest quickly and for free",
+      url: "/pinterest",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-pinterest.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Pinterest - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
+};
 
 export default function Pinterest() {
   const socialMedia = "Pinterest"

@@ -4,12 +4,19 @@ import { CheckCircle, Download, Share2 } from 'lucide-react'
 import { Link } from "@/navigation";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "About Us | Best Video Download",
-  description: "About Us - Best Videos Download page.",
-  alternates: {
-    canonical: "/about"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/about' : `/${langCode}/about`;
+
+  return {
+    title: "About Us | Best Video Download",
+    description: "About Us - Best Videos Download page.",
+    alternates: {
+      canonical: currentUrl
+    },
+  }
 };
 
 export default function About() {

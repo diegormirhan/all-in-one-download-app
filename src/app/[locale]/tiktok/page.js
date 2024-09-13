@@ -2,16 +2,21 @@ import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
 import { CarouselCards } from "@/components/carouselCards";
 import { HowToUse } from "@/components/howToUse";
-import { AdsComponent } from "@/components/google/adsense";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "TikTok Video Downloader | Best Video Download",
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/tiktok' : `/${langCode}/tiktok`;
+
+  return {
+    title: "TikTok Video Downloader | Best Video Download",
   description: 'Download Videos from TikTok quickly and for free',
   alternates: {
-    canonical: "/tiktok"
+    canonical: currentUrl
   },
   openGraph: {
     title: "TikTok Video Downloader | Best Video Download",
@@ -28,8 +33,8 @@ export const metadata = {
     ],
     type: "website"
   },
+  }
 };
-
 
 export default function Tiktok() {
   const socialMedia = "Tiktok"

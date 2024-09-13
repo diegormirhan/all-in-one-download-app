@@ -6,11 +6,17 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "SoundCloud Music Downloader | Best Video Download",
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/soundcloud' : `/${langCode}/soundcloud`;
+
+  return {
+    title: "SoundCloud Music Downloader | Best Video Download",
   description: 'Download Music and Tracks from SoundCloud quickly and for free',
   alternates: {
-    canonical: "/soundcloud"
+    canonical: currentUrl
   },
   openGraph: {
     title: "SoundCloud Music Downloader | Best Video Download",
@@ -27,8 +33,8 @@ export const metadata = {
     ],
     type: "website"
   },
+  }
 };
-
 
 export default function Soundcloud() {
   const socialMedia = "Soundcloud"

@@ -6,11 +6,17 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Threads Post Downloader | Best Video Download",
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/threads' : `/${langCode}/threads`;
+
+  return {
+    title: "Threads Post Downloader | Best Video Download",
   description: 'Download Posts from Threads quickly and for free',
   alternates: {
-    canonical: "/threads"
+    canonical: currentUrl
   },
   openGraph: {
     title: "Threads Post Downloader | Best Video Download",
@@ -27,8 +33,8 @@ export const metadata = {
     ],
     type: "website"
   },
+  }
 };
-
 
 export default function Threads() {
   const socialMedia = "Threads"

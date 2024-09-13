@@ -1,13 +1,18 @@
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import "../../styles/globals.css";
-import { HeaderMenu } from "@/components/menu/headerMenu"
-import { Link } from "@/navigation";
+
 import { TranslationToggle } from "@/components/translationToggle";
+import { HeaderMenu } from "@/components/menu/headerMenu"
+
+import { Link } from "@/navigation";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import Image from "next/image";
+import { idiomasExcluidos } from "@/components/utils/excludedLang";
+
 import GoogleAnalytics from "@/components/google/analytics";
 import GoogleAdsense from "@/components/google/adsense";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
@@ -18,9 +23,6 @@ export const viewport = {
 
 export async function generateMetadata({ params }) {
   const { locale } = params;
-
-  // Lista de idiomas que você deseja excluir da indexação
-  const idiomasExcluidos = ['es', 'fr', 'de', 'pt', 'it', 'zh', 'ja', 'ko', 'ru', 'ar', 'hi', 'nl', 'sv', 'no', 'da', 'fi', 'tr', 'el', 'pl', 'he', 'th', 'id', 'hu', 'cs', 'ro', 'uk', 'vi', 'bn']
 
   const isExcludedLanguage = idiomasExcluidos.includes(locale);
 

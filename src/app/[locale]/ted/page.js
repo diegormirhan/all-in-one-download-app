@@ -6,11 +6,17 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "TED Talk Downloader | Best Video Download",
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/ted' : `/${langCode}/ted`;
+
+  return {
+    title: "TED Talk Downloader | Best Video Download",
   description: "Download TED Talks fast and for free. Access inspiring and educational speeches covering a wide range of topics from thought leaders around the world.",
   alternates: {
-    canonical: "/ted"
+    canonical: currentUrl
   },
   openGraph: {
     title: "TED Talks | Best Video Download",
@@ -27,8 +33,8 @@ export const metadata = {
     ],
     type: "website"
   },
+  }
 };
-
 
 export default function Ted() {
   const socialMedia = "Ted"

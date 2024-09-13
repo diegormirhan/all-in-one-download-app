@@ -6,29 +6,35 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Weibo Video and Post Downloader | Best Video Download",
-  description: "Download videos and posts from Weibo fast and for free. Save the latest trends, news, and viral content from one of the most popular platforms in China.",
-  alternates: {
-    canonical: "/weibo"
-  },
-  openGraph: {
-    title: "Weibo Videos and Posts | Best Video Download",
-    description: "Download videos and posts from Weibo fast and for free.",
-    url: "/weibo",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-weibo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Weibo - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
-};
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
 
+  const currentUrl = langCode === 'en' ? '/weibo' : `/${langCode}/weibo`;
+
+  return {
+    title: "Weibo Video and Post Downloader | Best Video Download",
+    description: "Download videos and posts from Weibo fast and for free. Save the latest trends, news, and viral content from one of the most popular platforms in China.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Weibo Videos and Posts | Best Video Download",
+      description: "Download videos and posts from Weibo fast and for free.",
+      url: "/weibo",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-weibo.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Weibo - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
+};
 
 export default function Weibo() {
   const socialMedia = "Weibo"

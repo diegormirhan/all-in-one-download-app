@@ -6,11 +6,17 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Likee Video Downloader | Best Video Download",
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/likee' : `/${langCode}/likee`;
+
+  return {
+    title: "Likee Video Downloader | Best Video Download",
   description: "Download videos from Likee fast and for free. Save trending short videos, creative clips, and user-generated content directly to your device with ease.",
   alternates: {
-    canonical: "/likee"
+    canonical: currentUrl
   },
   openGraph: {
     title: "Likee Videos | Best Video Download",
@@ -27,8 +33,8 @@ export const metadata = {
     ],
     type: "website"
   },
+  }
 };
-
 
 export default function Likee() {
   const socialMedia = "Likee"

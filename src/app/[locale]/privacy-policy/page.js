@@ -3,12 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Link } from "@/navigation";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Privacy Policy | Best Video Download",
-  description: "Privacy policy from Best Videos Download page.",
-  alternates: {
-    canonical: "/privacy-policy"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/privacy-policy' : `/${langCode}/privacy-policy`;
+
+  return {
+    title: "Privacy Policy | Best Video Download",
+    description: "Privacy policy from Best Videos Download page.",
+    alternates: {
+      canonical: currentUrl
+    },
+  }
 };
 
 export default function PrivacyPolicy() {
@@ -17,7 +24,7 @@ export default function PrivacyPolicy() {
     <main className="w-full flex flex-col items-center py-28 space-y-8 px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-10 md:text-5xl text-center">{tDefault('privacy-policy-title')}</h1>
-        
+
         <Card className="mb-8 hover:ring-2 hover:ring-main-color transition-all ease-in-out">
           <CardHeader>
             <CardTitle>{tDefault('privacy-policy-top-card-title')}</CardTitle>

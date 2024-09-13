@@ -6,27 +6,34 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Xiaohongshu Video and Post Downloader | Best Video Download",
-  description: "Download videos and posts from Xiaohongshu quickly and for free. Save beauty tips, product reviews, and lifestyle content from this popular social platform.",
-  alternates: {
-    canonical: "/xiaohongshu"
-  },
-  openGraph: {
-    title: "Xiaohongshu Videos and Posts | Best Video Download",
-    description: "Download videos and posts from Xiaohongshu fast and for free.",
-    url: "/xiaohongshu",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-xiaohongshu.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Xiaohongshu - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/xiaohongshu' : `/${langCode}/xiaohongshu`;
+
+  return {
+    title: "Xiaohongshu Video and Post Downloader | Best Video Download",
+    description: "Download videos and posts from Xiaohongshu quickly and for free. Save beauty tips, product reviews, and lifestyle content from this popular social platform.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Xiaohongshu Videos and Posts | Best Video Download",
+      description: "Download videos and posts from Xiaohongshu fast and for free.",
+      url: "/xiaohongshu",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-xiaohongshu.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Xiaohongshu - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
 };
 
 export default function Xiaohongshu() {

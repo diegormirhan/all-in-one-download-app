@@ -6,29 +6,35 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Douyin Video Downloader | Best Video Download",
-  description: "Download videos from Douyin fast and for free. Save short viral clips and entertainment content from the popular Chinese version of TikTok.",
-  alternates: {
-    canonical: "/douyin"
-  },
-  openGraph: {
-    title: "Douyin Videos | Best Video Download",
-    description: "Download videos from Douyin fast and for free.",
-    url: "/douyin",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-tiktok.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Douyin - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
-};
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
 
+  const currentUrl = langCode === 'en' ? '/douyin' : `/${langCode}/douyin`;
+
+  return {
+    title: "Douyin Video Downloader | Best Video Download",
+    description: "Download videos from Douyin fast and for free. Save short viral clips and entertainment content from the popular Chinese version of TikTok.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Douyin Videos | Best Video Download",
+      description: "Download videos from Douyin fast and for free.",
+      url: "/douyin",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-tiktok.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Douyin - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
+};
 
 export default function Douyin() {
   const socialMedia = "Douyin"

@@ -6,29 +6,35 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Twitter (X) Video and Posts Downloader | Best Video Download",
-  description: 'Download Videos and Posts from Twitter (X) quickly and for free',
-  alternates: {
-    canonical: "/twitter",
-  },
-  openGraph: {
-    title: "Twitter (X) Video and Posts Downloader | Best Video Download",
-    description: "Download Videos and Posts from Twitter (X) quickly and for free",
-    url: "/twitter",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-twitter.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Twitter - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
-};
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
 
+  const currentUrl = langCode === 'en' ? '/twitter' : `/${langCode}/twitter`;
+
+  return {
+    title: "Twitter (X) Video and Posts Downloader | Best Video Download",
+    description: 'Download Videos and Posts from Twitter (X) quickly and for free',
+    alternates: {
+      canonical: currentUrl,
+    },
+    openGraph: {
+      title: "Twitter (X) Video and Posts Downloader | Best Video Download",
+      description: "Download Videos and Posts from Twitter (X) quickly and for free",
+      url: "/twitter",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-twitter.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Twitter - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
+};
 
 export default function Twitter() {
   const socialMedia = "Twitter"

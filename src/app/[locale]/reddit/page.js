@@ -6,11 +6,17 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Reddit Video and Posts Downloader | Best Video Download",
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/reddit' : `/${langCode}/reddit`;
+
+  return {
+    title: "Reddit Video and Posts Downloader | Best Video Download",
   description: 'Download Videos and Posts from Reddit quickly and for free',
   alternates: {
-    canonical: "/reddit"
+    canonical: currentUrl
   },
   openGraph: {
     title: "Reddit Video and Posts Downloader | Best Video Download",
@@ -27,9 +33,8 @@ export const metadata = {
     ],
     type: "website"
   },
+  }
 };
-
-
 
 export default function Reddit() {
   const socialMedia = "Reddit"

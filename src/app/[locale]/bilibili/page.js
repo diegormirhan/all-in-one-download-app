@@ -6,28 +6,36 @@ import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
-export const metadata = {
-  title: "Bilibili Video Downloader | Best Video Download",
-  description: "Download videos from Bilibili fast and for free. Save anime, gaming, and creative content from one of China's leading platforms for young digital creators.",
-  alternates: {
-    canonical: "/bilibili"
-  },
-  openGraph: {
-    title: "Bilibili Videos | Best Video Download",
-    description: "Download videos from Bilibili fast and for free.",
-    url: "/bilibili",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-bilibili.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Bilibili - Best Video Download Card"
-      }
-    ],
-    type: "website"
-  },
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+  const langCode = locale.split('-')[0];
+
+  const currentUrl = langCode === 'en' ? '/bilibili' : `/${langCode}/bilibili`;
+
+  return {
+    title: "Bilibili Video Downloader | Best Video Download",
+    description: "Download videos from Bilibili fast and for free. Save anime, gaming, and creative content from one of China's leading platforms for young digital creators.",
+    alternates: {
+      canonical: currentUrl
+    },
+    openGraph: {
+      title: "Bilibili Videos | Best Video Download",
+      description: "Download videos from Bilibili fast and for free.",
+      url: "/bilibili",
+      siteName: "Best Video Download",
+      images: [
+        {
+          url: "/openGraph/opengraph-bilibili.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Bilibili - Best Video Download Card"
+        }
+      ],
+      type: "website"
+    },
+  }
 };
+
 
 export default function Bilibili() {
   const socialMedia = "Bilibili"

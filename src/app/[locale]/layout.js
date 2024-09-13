@@ -9,83 +9,89 @@ import Image from "next/image";
 import GoogleAnalytics from "@/components/google/analytics";
 import GoogleAdsense from "@/components/google/adsense";
 const inter = Inter({ subsets: ["latin"] });
+
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: '#4044FC',
 }
 
-export const metadata = {
-  title: "Best Video Download",
-  description: 'Download videos, reels, stories, and posts from Instagram, TikTok, Facebook, Youtube, and more.',
-  applicationName: "Best Video Download",
-  referrer: "origin-when-cross-origin",
-  charset: "utf-8",
-  metadataBase: new URL("https://bestvideosdownload.com"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en": "/en",
-      "es": "/es",
-      "fr": "/fr",
-      "de": "/de",
-      "pt": "/pt",
-      "it": "/it",
-      "zh": "/zh",
-      "ja": "/ja",
-      "ko": "/ko",
-      "ru": "/ru",
-      "ar": "/ar",
-      "hi": "/hi",
-      "nl": "/nl",
-      "sv": "/sv",
-      "no": "/no",
-      "da": "/da",
-      "fi": "/fi",
-      "tr": "/tr",
-      "el": "/el",
-      "pl": "/pl",
-      "he": "/he",
-      "th": "/th",
-      "id": "/id",
-      "hu": "/hu",
-      "cs": "/cs",
-      "ro": "/ro",
-      "uk": "/uk",
-      "vi": "/vi",
-      "bn": "/bn"
-    }
-  },
-  openGraph: {
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+
+  // Lista de idiomas que você deseja excluir da indexação
+  const idiomasExcluidos = ['es', 'fr', 'de', 'pt', 'it', 'zh', 'ja', 'ko', 'ru', 'ar', 'hi', 'nl', 'sv', 'no', 'da', 'fi', 'tr', 'el', 'pl', 'he', 'th', 'id', 'hu', 'cs', 'ro', 'uk', 'vi', 'bn']
+
+  const isExcludedLanguage = idiomasExcluidos.includes(locale);
+
+  return {
     title: "Best Video Download",
-    description: "Download Videos, Musics and Images from any social media platforms.",
-    url: "/",
-    siteName: "Best Video Download",
-    images: [
-      {
-        url: "/openGraph/opengraph-logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Best Video Download Card"
+    description: 'Download videos, reels, stories, and posts from Instagram, TikTok, Facebook, Youtube, and more.',
+    applicationName: "Best Video Download",
+    referrer: "origin-when-cross-origin",
+    charset: "utf-8",
+    metadataBase: new URL("https://bestvideosdownload.com"),
+    alternates: {
+      canonical: "/",
+      languages: {
+        "en": "/en",
+        "es": "/es",
+        "fr": "/fr",
+        "de": "/de",
+        "pt": "/pt",
+        "it": "/it",
+        "zh": "/zh",
+        "ja": "/ja",
+        "ko": "/ko",
+        "ru": "/ru",
+        "ar": "/ar",
+        "hi": "/hi",
+        "nl": "/nl",
+        "sv": "/sv",
+        "no": "/no",
+        "da": "/da",
+        "fi": "/fi",
+        "tr": "/tr",
+        "el": "/el",
+        "pl": "/pl",
+        "he": "/he",
+        "th": "/th",
+        "id": "/id",
+        "hu": "/hu",
+        "cs": "/cs",
+        "ro": "/ro",
+        "uk": "/uk",
+        "vi": "/vi",
+        "bn": "/bn"
       }
-    ],
-    type: "website"
-  },
-  robots: {
-    index: true,
-    follow: true,
-    noCache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noImageIndex: false,
-      'max-video-review': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1
-    }
-  },
-  manifest: '/manifest.json',
-};
+    },
+    robots: isExcludedLanguage
+      ? {
+        index: false,
+        follow: false,
+      }
+      : {
+        index: true,
+        follow: true,
+      },
+      openGraph: {
+        title: "Best Video Download",
+        description: "Download Videos, Musics and Images from any social media platforms.",
+        url: "/",
+        siteName: "Best Video Download",
+        images: [
+          {
+            url: "/openGraph/opengraph-logo.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Best Video Download Card"
+          }
+        ],
+        type: "website"
+      },
+      manifest: '/manifest.json',
+  };
+}
 
 export default async function RootLayout({ children, params: { locale } }) {
   const messages = await getMessages();
@@ -110,9 +116,9 @@ export default async function RootLayout({ children, params: { locale } }) {
         </NextIntlClientProvider>
         <footer className="bg-main-color p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center text-center text-white text-md gap-3">
-          <p className="hover:underline col-span-2 md:col-span-1"><Link href="/">Homepage</Link></p>
-          <p className="hover:underline col-span-2 md:col-span-1"><Link href="/about">About</Link></p>
-          <p className="hover:underline col-span-2 md:col-span-1"><Link href="/privacy-policy">Privacy Policy</Link></p>
+            <p className="hover:underline col-span-2 md:col-span-1"><Link href="/">Homepage</Link></p>
+            <p className="hover:underline col-span-2 md:col-span-1"><Link href="/about">About</Link></p>
+            <p className="hover:underline col-span-2 md:col-span-1"><Link href="/privacy-policy">Privacy Policy</Link></p>
           </div>
           <div className="h-[1px] w-full bg-white mt-6 mb-3"></div>
           <p className="text-white text-center md:text-left">© 2024 Best Video Download. All Rights Reserved</p>

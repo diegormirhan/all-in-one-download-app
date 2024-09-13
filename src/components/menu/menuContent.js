@@ -31,7 +31,7 @@ export function MenuContent() {
 
               <MenuItem href="/threads" iconSrc="/socialMediaIcons/threads.svg" text="Threads" />
 
-              <MenuItem href="/xiaohongshu" iconSrc="/socialMediaIcons/xiaohongshu.svg" text="Xiaohongshu" />
+              {/* <MenuItem href="/xiaohongshu" iconSrc="/socialMediaIcons/xiaohongshu.svg" text="Xiaohongshu" /> */}
 
               <MenuItem href="/douyin" iconSrc="/socialMediaIcons/tiktok.svg" text="Douyin" />
 
@@ -39,7 +39,7 @@ export function MenuContent() {
 
               <MenuItem href="/dailymotion" iconSrc="/socialMediaIcons/dailymotion.svg" text="DailyMotion" />
 
-              <MenuItem href="/capcut" iconSrc="/socialMediaIcons/capcut.svg" text="Capcut" />
+              {/* <MenuItem href="/capcut" iconSrc="/socialMediaIcons/capcut.svg" text="Capcut" /> */}
 
               <MenuItem href="/tumblr" iconSrc="/socialMediaIcons/tumblr.svg" text="Tumblr" />
 

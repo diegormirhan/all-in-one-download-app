@@ -37,9 +37,10 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
 
   const submitHandler = (values) => {
     const link = values.link;
+    const formattedLink = link.split("?")[0] || link;
 
     startTransition(async () => {
-      const response = await fetchData(link);
+      const response = await fetchData(formattedLink);
       if (response.error) return;
 
       // Generate a unique UUID

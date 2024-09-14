@@ -49,7 +49,7 @@ export function MenuContent() {
 
               <MenuItem href="/likee" iconSrc="/socialMediaIcons/likee.svg" text="Likee" />
 
-              {/* <MenuItem href="/hipi" iconSrc="/socialMediaIcons/hipi.svg" text="Hipi" /> */}
+              <MenuItem href="/hipi" iconSrc="/socialMediaIcons/hipi.svg" text="Hipi" />
 
               <MenuItem href="/ted" iconSrc="/socialMediaIcons/ted.svg" text="Ted" />
 

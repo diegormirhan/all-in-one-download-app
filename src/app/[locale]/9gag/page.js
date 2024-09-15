@@ -38,7 +38,7 @@ export async function generateMetadata({ params }) {
 
 
 export default function Gag() {
-  const socialMedia = "9Gag"
+  const socialMedia = '9Gag'
   const tDynamic = useTranslations(`Translations-${socialMedia}`)
 
   return (

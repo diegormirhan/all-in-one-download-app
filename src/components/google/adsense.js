@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import Script from 'next/script';
 
-export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
+/* export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
 
   useEffect(() => {
     // Verifica se está no lado do cliente e se o adsbygoogle está disponível
@@ -28,7 +28,7 @@ export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
       </div>
     </>
   )
-}
+} */
 
 export default function GoogleAdsense() {
   return (
@@ -37,7 +37,7 @@ export default function GoogleAdsense() {
         async 
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356" 
         crossOrigin="anonymous"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         />
     </>
   )

@@ -56,7 +56,7 @@ export default function DownloadPage() {
         ))
 
         setDownloadButtons(buttons)
-    }, [router, searchParams])
+    }, [router, searchParams, tDefault])
 
     return (
         <>

@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
             <p>
               Best Videos Download<br />
               Email: <a href="mailto:mirhan.diego@gmail.com" className="text-blue-500 hover:underline">mirhan.diego@gmail.com</a><br />
-              Website: <Link href="/" className="text-blue-500 hover:underline">https://bestvideosdownload.com</Link>
+              Website: <Link href="/" className="text-blue-500 hover:underline">bestvideosdownload.com</Link>
             </p>
           </CardContent>
         </Card>

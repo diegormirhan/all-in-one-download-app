@@ -3,13 +3,20 @@ import Image from "next/image";
 import { useTransition, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { fetchData } from "@/app/api/server.js";
-import { Loader2 } from "lucide-react";
+import { Loader2, TriangleAlert } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "@/navigation";
 import { useFormik } from "formik";
 import basicSchema from "./validationSchema";
 import { useSearchParams } from "next/navigation";
 import { Clipboard } from 'lucide-react';
+
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+import { Link } from "@/navigation";
 
 
 export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
@@ -94,7 +101,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
               }`}
           />
           <div className="absolute right-3 top-0 bottom-0 flex items-center">
-            
+
             <Clipboard
               onClick={() => handlePasteLink(setFieldValue)}
               className="cursor-pointer active:scale-90 size-6"
@@ -106,7 +113,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         <Button
           type="submit"
           disabled={isPending}
-          className={`flex items-center m-auto ${buttonClasses} bg-transparent active:bg-transparent text-lg font-semibold py-2 px-6 rounded-lg border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}
+          className={`flex items-center m-auto ${buttonClasses} bg-transparent active:bg-transparent text-lg font-semibold py-2 mb-2 px-6 rounded-lg border-2 duration-600 transform transition-all active:scale-90 group relative overflow-hidden`}
         >
           {isPending ? (
             <>
@@ -129,6 +136,15 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
           )}
         </Button>
       </form>
+      <HoverCard>
+        <HoverCardTrigger className="bg-yellow-200 font-semibold px-2 py-1 rounded-md text-xs inline-flex">
+        <TriangleAlert className="size-3 mr-1 mt-[2px]"/>
+        {tDefault("disclaimer-title")}
+          </HoverCardTrigger>
+        <HoverCardContent className="text-xs text-left p-3">
+        {tDefault("disclaimer-content-part1")} <Link href="/terms-and-conditions" className="underline hover:text-blue-500">{tDefault("disclaimer-content-part2")}</Link> {tDefault("disclaimer-content-part3")} <Link href="/privacy-policy" className="underline hover:text-blue-500">{tDefault("disclaimer-content-part4")}</Link>.
+        </HoverCardContent>
+      </HoverCard>
     </>
   );
 }

@@ -6,6 +6,12 @@
     "introduction-input": "Insert your link here",
     "introduction-button": "Download",
 
+    "disclaimer-title": "Disclaimer",
+    "disclaimer-content-part1": "By clicking in the download button, you agree with the",
+    "disclaimer-content-part2": "Terms And Conditions",
+    "disclaimer-content-part3": "and the",
+    "disclaimer-content-part4": "Privacy Policy",
+
     "explore-button": "Explore All Social Media We Support",
 
     "carousel-title": "Most Popular Platforms",
@@ -100,7 +106,27 @@
     "privacy-policy-accordion-content-4-part1": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.",
 
     "privacy-policy-bottom-card-title": "Contact Us",
-    "privacy-policy-bottom-card-description": "If you have any questions or concerns about our Privacy Policy or use of cookies, please contact us at:"
+    "privacy-policy-bottom-card-description": "If you have any questions or concerns about our Privacy Policy or use of cookies, please contact us at:",
+
+    "terms-and-conditions-title": "Terms and Conditions",
+
+    "terms-and-conditions-item1-title": "1. Acceptance of Terms",
+    "terms-and-conditions-item2-title": "2. Use of the Website",
+    "terms-and-conditions-item3-title": "3. Prohibited Activities",
+    "terms-and-conditions-item4-title": "4. Intellectual Property",
+    "terms-and-conditions-item5-title": "5. Limitation of Liability",
+    "terms-and-conditions-item6-title": "6. Changes to Terms",
+    "terms-and-conditions-item7-title": "7. Governing Law",
+    "terms-and-conditions-item8-title": "8. Agreement to Terms",
+
+    "terms-and-conditions-item1-content": "By accessing or using our website, you agree to be bound by these Terms and Conditions. If you do not agree to all the terms and conditions, then you may not access the website or use any services.",
+    "terms-and-conditions-item2-content": "You agree to use the website for lawful purposes only and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the website.",
+    "terms-and-conditions-item3-content": "You are strictly prohibited from using the website or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to download any harmful or illegal content; (d) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances.",
+    "terms-and-conditions-item4-content": "The website and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, patent, trade secret, and other intellectual property orproprietary rights laws.",
+    "terms-and-conditions-item5-content": "In no event shall we be liable for any direct, indirect, incidental, consequential, special or exemplary damages arising out of or in connection with your access or use of, or inability to access or use, the website and any third party content and services, whether or not the damages were foreseeable and whether or not we were advised of the possibility of such damages.",
+    "terms-and-conditions-item6-content": "We reserve the right to modify these terms from time to time at our sole discretion. Therefore, you should review these pages periodically. Your continued use of the website after any such change constitutes your acceptance of the new Terms and Conditions.",
+    "terms-and-conditions-item7-content": "These Terms shall be governed and construed in accordance with the laws of United States, without regard to its conflict of law provisions.",
+    "terms-and-conditions-item8-content": "By using this website, you acknowledge that you have read and understood these Terms and Conditions and agree to be bound by them. If you do not agree to these terms, please do not use our website."
   },
   "Translations-Home": {
     "introduction-title": "Download any media from",

@@ -118,7 +118,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         </NextIntlClientProvider>
         <footer className="bg-main-color p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center text-center text-white text-md gap-3">
-            <p className="hover:underline col-span-2 md:col-span-1"><Link href="/">Homepage</Link></p>
+            <p className="hover:underline col-span-2 md:col-span-1"><Link href="/terms-and-conditions">Terms and Conditions</Link></p>
             <p className="hover:underline col-span-2 md:col-span-1"><Link href="/about">About</Link></p>
             <p className="hover:underline col-span-2 md:col-span-1"><Link href="/privacy-policy">Privacy Policy</Link></p>
           </div>

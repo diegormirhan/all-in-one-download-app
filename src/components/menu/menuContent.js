@@ -27,8 +27,6 @@ export function MenuContent() {
 
               <MenuItem href="/linkedin" iconSrc="/socialMediaIcons/linkedin.svg" text="LinkedIn" />
 
-              <MenuItem href="/spotify" iconSrc="/socialMediaIcons/spotify.svg" text="Spotify" />
-
               <MenuItem href="/soundcloud" iconSrc="/socialMediaIcons/soundcloud.svg" text="SoundCloud" />
 
               <MenuItem href="/threads" iconSrc="/socialMediaIcons/threads.svg" text="Threads" />

@@ -142,6 +142,7 @@ export function CarouselCards({classes}) {
                             </Link>
                         </CarouselItem>
 
+                        {/*
                         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                             <Link href="/spotify">
                                 <Card className="border-none active:scale-90 transition-transform rounded-2xl bg-gradient-spotify cursor-pointer lg:hover:scale-95 group shadow-inner">
@@ -159,7 +160,8 @@ export function CarouselCards({classes}) {
                                     </CardContent>
                                 </Card>
                             </Link>
-                        </CarouselItem>
+                        </CarouselItem> 
+                        */}
 
                         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                             <Link href="/reddit">

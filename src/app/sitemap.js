@@ -180,5 +180,11 @@ export default function sitemap() {
         changeFrequency: 'yearly',
         priority: 0.6,
       },
+      {
+        url: 'https://bestvideosdownload.com/terms-and-conditions',
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0.6,
+      },
     ]
   }

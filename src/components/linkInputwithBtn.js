@@ -12,10 +12,10 @@ import { useSearchParams } from "next/navigation";
 import { Clipboard } from 'lucide-react';
 
 import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 import { Link } from "@/navigation";
 import { AdsBanner } from "./google/adsense";
 
@@ -139,15 +139,15 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
           )}
         </Button>
       </form>
-      <HoverCard>
-        <HoverCardTrigger className="bg-yellow-200 font-semibold px-2 py-1 rounded-md text-xs inline-flex">
+      <Popover>
+        <PopoverTrigger className="bg-yellow-200 font-semibold px-2 py-1 rounded-md text-xs inline-flex select-none cursor-pointer">
         <TriangleAlert className="size-3 mr-1 mt-[2px]"/>
         {tDefault("disclaimer-title")}
-          </HoverCardTrigger>
-        <HoverCardContent className="text-xs text-left p-3">
+          </PopoverTrigger>
+        <PopoverContent className="text-xs text-left p-3">
         {tDefault("disclaimer-content-part1")} <Link href="/terms-and-conditions" className="underline hover:text-blue-500">{tDefault("disclaimer-content-part2")}</Link> {tDefault("disclaimer-content-part3")} <Link href="/privacy-policy" className="underline hover:text-blue-500">{tDefault("disclaimer-content-part4")}</Link>.
-        </HoverCardContent>
-      </HoverCard>
+        </PopoverContent>
+      </Popover>
     </>
   );
 }

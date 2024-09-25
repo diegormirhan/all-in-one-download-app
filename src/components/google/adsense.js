@@ -1,44 +1,28 @@
 "use client"
+import { useEffect, useRef } from 'react'
 
-// import React, { useEffect } from 'react';
-import Script from 'next/script';
+export function AdsBanner() {
+  const banner = useRef()
 
-/* export function AdsComponent({ adSlot, adFormat = 'auto', adLayout = '' }) {
-
+  const atOptions = {
+      key: 'd5a2afd458e99a60cd1a38281b199144',
+      format: 'iframe',
+      height: 300,
+      width: 250,
+      params: {},
+  }
   useEffect(() => {
-    // Verifica se está no lado do cliente e se o adsbygoogle está disponível
-      try {
-        if (window.adsbygoogle) {
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-        }
-      } catch (e) {
-        console.error('Erro ao carregar anúncios: ', e);
-      }
-  }, []);
+  if (banner.current && !banner.current.firstChild) {
+      const conf = document.createElement('script')
+      const script = document.createElement('script')
+      script.type = 'text/javascript'
+      script.src = `//www.topcreativeformat.com/${atOptions.key}/invoke.js`
+      conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`
 
-  return (
-    <>
-      <div className="min-w-[320px]">
-        <ins className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-8038191677774356"
-          data-ad-slot={adSlot}
-          data-ad-format={adFormat}
-          data-ad-layout={adLayout}></ins>
-      </div>
-    </>
-  )
-} */
+      banner.current.append(conf)
+      banner.current.append(script)
+  }
+}, [banner])
 
-export default function GoogleAdsense() {
-  return (
-    <>
-        <Script 
-        async 
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8038191677774356" 
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-        />
-    </>
-  )
+  return <div className="mx-auto flex my-5 flex-row justify-center items-center" ref={banner}></div>
 }

@@ -20,6 +20,7 @@ import {
 import Image from "next/image";
 
 import { useTranslations } from 'next-intl';
+import { AdsBanner } from "../google/adsense";
 
 const menuContent = MenuContent()
 

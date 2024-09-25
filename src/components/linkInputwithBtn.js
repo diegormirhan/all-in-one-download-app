@@ -17,6 +17,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 import { Link } from "@/navigation";
+import { AdsBanner } from "./google/adsense";
 
 
 export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
@@ -109,6 +110,8 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
           </div>
           {errors.link && touched.link && <p className={`absolute mt-1 ml-1 text-red-500`}>{errors.link}</p>}
         </div>
+
+        <AdsBanner></AdsBanner>
 
         <Button
           type="submit"

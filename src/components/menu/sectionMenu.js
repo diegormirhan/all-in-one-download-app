@@ -62,6 +62,7 @@ export function SectionMenu({ classes }) {
           {menuContent}
         </SheetContent>
       </Sheet>
+      <AdsBanner adKey='d5a2afd458e99a60cd1a38281b199144'/>
     </>
   );
 }

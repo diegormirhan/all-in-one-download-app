@@ -1,6 +1,6 @@
-"use client"
-import { useEffect, useRef } from 'react'
-
+// "use client"
+// import { useEffect, useRef } from 'react'
+/*
 export function AdsBanner() {
   const banner = useRef()
 
@@ -26,4 +26,20 @@ export function AdsBanner() {
   }, [banner])
 
   return <div className="mx-auto flex my-5 flex-row justify-center items-center" ref={banner}></div>
-}
+} */
+
+import React from 'react';
+
+export function AdsBanner ({ adWidth = 300, adHeight = 250, adKey }) {
+  return (
+    <iframe
+      src={`//www.topcreativeformat.com/watchnew?key=${adKey}`}
+      width={adWidth}
+      height={adHeight}
+      frameBorder="0"
+      scrolling="no"
+      className='mx-auto flex my-5 flex-row justify-center items-center'
+      allowTransparency="true"
+    ></iframe>
+  );
+};

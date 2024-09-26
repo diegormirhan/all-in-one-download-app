@@ -26,7 +26,6 @@ export default function Home() {
 
           {/* Campo de Input para link e Botão de Download */}
           <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
-          <AdsBanner/>
         </section>
         
         <section className="max-w-3xl text-center">

@@ -5,14 +5,15 @@ export function AdsBanner() {
   const banner = useRef()
 
   const atOptions = {
-      key: 'd5a2afd458e99a60cd1a38281b199144',
-      format: 'iframe',
-      height: 300,
-      width: 250,
-      params: {},
+    key: 'd5a2afd458e99a60cd1a38281b199144',
+    format: 'iframe',
+    height: 300,
+    width: 250,
+    params: {},
   }
+  
   useEffect(() => {
-  if (banner.current && !banner.current.firstChild) {
+    if (banner.current && !banner.current.firstChild) {
       const conf = document.createElement('script')
       const script = document.createElement('script')
       script.type = 'text/javascript'
@@ -21,8 +22,8 @@ export function AdsBanner() {
 
       banner.current.append(conf)
       banner.current.append(script)
-  }
-}, [banner])
+    }
+  }, [banner])
 
   return <div className="mx-auto flex my-5 flex-row justify-center items-center" ref={banner}></div>
 }

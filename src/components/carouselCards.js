@@ -14,7 +14,6 @@ import Autoplay from "embla-carousel-autoplay"
 import { useTranslations } from 'next-intl';
 import Image from "next/image"
 import { Link } from "@/navigation"
-import { AdsBanner } from "./google/adsense";
 
 export function CarouselCards({classes}) {
     const tDefault = useTranslations('Translations-Default');

@@ -2,6 +2,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Info } from "lucide-react"
 import { useTranslations } from "next-intl"
 
+
 export function ImportantTips({classes, namespace}) {
     const tDynamic = useTranslations(`Translations-${namespace}`)
     const tDefault = useTranslations('Translations-Default')

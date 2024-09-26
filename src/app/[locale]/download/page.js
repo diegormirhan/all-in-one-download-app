@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import defaultThumbnail from "../../../../public/icons/logo/png/gradient-logo.png"
+import { AdsBanner } from "@/components/google/adsense";
 
 export default function DownloadPage() {
 
@@ -105,6 +106,7 @@ export default function DownloadPage() {
 
                         <div className="text-center mt-5 mb-10 font-semibold text-md underline">{tDefault('download-description')}</div>
 
+                        <AdsBanner/>
                         <div className="flex flex-wrap justify-center mb-10 gap-5">
                             {downloadButtons}
                         </div>

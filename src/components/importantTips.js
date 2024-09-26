@@ -22,7 +22,7 @@ export function ImportantTips({classes, namespace}) {
                 </AlertDescription>
             </Alert>
 
-            <AdsBanner adKey='d5a2afd458e99a60cd1a38281b199144'/>
+            <AdsBanner/>
         </>
     )
 }

@@ -111,8 +111,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
           {errors.link && touched.link && <p className={`absolute mt-1 ml-1 text-red-500`}>{errors.link}</p>}
         </div>
 
-        <AdsBanner adKey='d5a2afd458e99a60cd1a38281b199144'/>
-        {/*<AdsBanner adKey='2b8449095686397ec0980c5a6b4f8edd' adWidth={728} adHeight={90} /> */}
+        <AdsBanner/>
 
         <Button
           type="submit"

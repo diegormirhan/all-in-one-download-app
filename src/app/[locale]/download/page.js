@@ -104,9 +104,12 @@ export default function DownloadPage() {
                             </div>
                         </div>
 
+                        <AdsBanner/>
+
                         <div className="text-center mt-5 mb-10 font-semibold text-md underline">{tDefault('download-description')}</div>
 
                         <AdsBanner/>
+
                         <div className="flex flex-wrap justify-center mb-10 gap-5">
                             {downloadButtons}
                         </div>

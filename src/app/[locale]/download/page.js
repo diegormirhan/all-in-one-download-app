@@ -73,7 +73,7 @@ export default function DownloadPage() {
                         <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">{tDefault('download-title')}</h1>
                         <h2 className="text-lg font-semibold mb-10">{tDefault('download-subtitle')}</h2>
 
-                        <div className="w-full flex flex-col items-center mb-8">
+                        <div className="w-full flex flex-col items-center">
                             <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
                                 {storedData?.data?.title || tDefault('download-thumbnail-title')}
                             </div>
@@ -103,8 +103,6 @@ export default function DownloadPage() {
                                 </div>
                             </div>
                         </div>
-
-                        <AdsBanner/>
 
                         <div className="text-center mt-5 mb-10 font-semibold text-md underline">{tDefault('download-description')}</div>
 

@@ -33,7 +33,7 @@ export function TranslationToggle() {
                 </SelectTrigger>
                 <SelectContent>
                     <SelectItem value="en">English</SelectItem>
-                    <SelectItem value="es" className="hidden">Español</SelectItem>
+                    <SelectItem value="es">Español</SelectItem>
                     <SelectItem value="fr" className="hidden">Français</SelectItem>
                     <SelectItem value="de" className="hidden">Deutsch</SelectItem>
                     <SelectItem value="pt" className="hidden">Português</SelectItem>

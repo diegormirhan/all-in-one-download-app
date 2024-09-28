@@ -1,6 +1,6 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
-import { CarouselCards } from "@/components/carouselCards";
+import { CarouselCards } from "@/components/carousel/carouselCards";
 import { HowToUse } from "@/components/howToUse";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";

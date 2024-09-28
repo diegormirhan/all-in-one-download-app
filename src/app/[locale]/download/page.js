@@ -1,7 +1,7 @@
 "use client"
 
 import { SectionMenu } from "@/components/menu/sectionMenu";
-import { CarouselCards } from "@/components/carouselCards";
+import { CarouselCards } from "@/components/carousel/carouselCards";
 import { DownloadCards } from "@/components/downloadCards";
 import { useEffect, useState } from "react";
 import { useRouter } from "@/navigation";

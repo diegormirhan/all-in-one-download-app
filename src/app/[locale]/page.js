@@ -1,12 +1,11 @@
 import { SectionMenu } from "@/components/menu/sectionMenu";
 import { FAQAccordion } from "@/components/FaqAccordion";
-import { CarouselCards } from "@/components/carouselCards";
+import { CarouselCards } from "@/components/carousel/carouselCards";
 import { HowToUse } from "@/components/howToUse";
 import { ImportantTips } from "@/components/importantTips";
 import { TypeWriterWords } from "@/components/typeWriter";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
-import { AdsBanner } from "@/components/google/adsense";
 
 export default function Home() {
   const socialMedia = "Home"

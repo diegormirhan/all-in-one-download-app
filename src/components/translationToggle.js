@@ -37,8 +37,8 @@ export function TranslationToggle() {
                     <SelectItem value="fr">Français</SelectItem>
                     <SelectItem value="de">Deutsch</SelectItem>
                     <SelectItem value="pt">Português</SelectItem>
-                    <SelectItem value="it" className="hidden">Italiano</SelectItem>
-                    <SelectItem value="zh" className="hidden">中文</SelectItem>
+                    <SelectItem value="it">Italiano</SelectItem>
+                    <SelectItem value="zh">中文</SelectItem>
                     <SelectItem value="ja" className="hidden">日本語</SelectItem>
                     <SelectItem value="ko" className="hidden">한국어</SelectItem>
                     <SelectItem value="ru" className="hidden">Русский</SelectItem>

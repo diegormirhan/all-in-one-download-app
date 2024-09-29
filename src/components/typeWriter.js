@@ -25,7 +25,7 @@ export function TypeWriterWords() {
                 2000,
                 "SoundCloud",
                 2000,
-                "LinkedIn",
+                "Linkedin",
                 2000,
                 "Threads",
                 2000,

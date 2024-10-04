@@ -41,26 +41,25 @@ export function TranslationToggle() {
                     <SelectItem value="zh">中文</SelectItem>
                     <SelectItem value="ja">日本語</SelectItem>
                     <SelectItem value="ko">한국어</SelectItem>
-                    <SelectItem value="ru" className="hidden">Русский</SelectItem>
+                    <SelectItem value="ru">Русский</SelectItem>
                     <SelectItem value="hi">हिन्दी</SelectItem>
-                    <SelectItem value="tr" className="hidden">Türkçe</SelectItem>
+                    <SelectItem value="tr">Türkçe</SelectItem>
                     <SelectItem value="ar">العربية</SelectItem>
-                    <SelectItem value="nl" className="hidden">Nederlands</SelectItem>
-                    <SelectItem value="sv" className="hidden">Svenska</SelectItem>
-                    <SelectItem value="no" className="hidden">Norsk</SelectItem>
-                    <SelectItem value="da" className="hidden">Dansk</SelectItem>
-                    <SelectItem value="fi" className="hidden">Suomi</SelectItem> 
-                    <SelectItem value="el" className="hidden">Ελληνικά</SelectItem>
-                    <SelectItem value="pl" className="hidden">Polski</SelectItem>
-                    <SelectItem value="he" className="hidden">עברית</SelectItem>
-                    <SelectItem value="id" className="hidden">Bahasa Indonesia</SelectItem>
-                    <SelectItem value="th" className="hidden">ภาษาไทย</SelectItem>
-                    <SelectItem value="hu" className="hidden">Magyar</SelectItem>
-                    <SelectItem value="cs" className="hidden">Čeština</SelectItem>
-                    <SelectItem value="ro" className="hidden">Română</SelectItem>
-                    <SelectItem value="uk" className="hidden">Українська</SelectItem>
-                    <SelectItem value="vi" className="hidden">Tiếng Việt</SelectItem>
-                    <SelectItem value="bn" className="hidden">বাংলা</SelectItem>
+                    <SelectItem value="sv">Svenska</SelectItem>
+                    <SelectItem value="no">Norsk</SelectItem>
+                    <SelectItem value="da">Dansk</SelectItem>
+                    <SelectItem value="fi">Suomi</SelectItem> 
+                    <SelectItem value="el">Ελληνικά</SelectItem>
+                    <SelectItem value="pl">Polski</SelectItem>
+                    <SelectItem value="he">עברית</SelectItem>
+                    <SelectItem value="id">Bahasa Indonesia</SelectItem>
+                    <SelectItem value="th">ภาษาไทย</SelectItem>
+                    <SelectItem value="hu">Magyar</SelectItem>
+                    <SelectItem value="cs">Čeština</SelectItem>
+                    <SelectItem value="ro">Română</SelectItem>
+                    <SelectItem value="uk">Українська</SelectItem>
+                    <SelectItem value="vi">Tiếng Việt</SelectItem>
+                    <SelectItem value="bn">বাংলা</SelectItem>
                 </SelectContent>
             </Select>
         </>

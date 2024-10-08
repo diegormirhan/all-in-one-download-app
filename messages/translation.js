@@ -43,7 +43,7 @@ async function translateFile(srcLang, targetLang, filePath) {
 }
 
 // Traduzir múltiplos arquivos
-const files = ['fi.json', 'el.json', 'pl.json', 'he.json', 'id.json', 'th.json', 'hu.json', 'cs.json', 'ro.json', 'uk.json', 'vi.json', 'bn.json'] 
+const files = ['tr.json', 'ru.json'] 
 files.forEach(file => {
     const lang = file.replace('.json', '');
     translateFile('en', lang, `./messages/${file}`)

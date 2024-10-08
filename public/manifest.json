@@ -1,29 +1,31 @@
-{ 
-    "name": "Best Video Download",
-    "short_name": "Video Download",
-    "start_url": "/?utm_source=pwa",
-    "theme_color": "#4044FC",
-    "display": "standalone",
-    "description": "Download videos, images, and music from all social media platforms instantly and for free.",
-    "orientation": "portrait",
-    "lang": "en",
-    "scope": "/",
-    "icons": [
-      {
-        "src": "/icons/logo/png/logo-500.png",
-        "sizes": "500x500",
-        "type": "image/png"
-      },
-      {
-        "src": "/icons/logo/png/logo-375.png",
-        "sizes": "375x375",
-        "type": "image/png"
-      },
-      {
-        "src": "/icons/logo/png/logo-250.png",
-        "sizes": "250x250",
-        "type": "image/png"
-      }
-    ]
-  }
-  
+{
+  "name": "Best Video Download",
+  "short_name": "Video Download",
+  "start_url": "/?utm_source=pwa",
+  "theme_color": "#4044FC",
+  "display": "standalone",
+  "description": "Download videos, images, and music from all social media platforms instantly and for free.",
+  "orientation": "portrait",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/logo/png/logo-500.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo/png/logo-375.png",
+      "sizes": "375x375",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo/png/logo-250.png",
+      "sizes": "250x250",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#0b0b0b",
+  "id": "unique-manifest",
+  "dir": "auto"
+}

@@ -44,6 +44,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/ads.txt',
+        destination: 'https://srv.adstxtmanager.com/71522/bestvideosdownload.com',
+        permanent: true,
+      }
+    ]
+  }
 };
 
 const withBundleAnalyzer = BundleAnalyzer({

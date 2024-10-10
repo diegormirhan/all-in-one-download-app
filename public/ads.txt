@@ -58,3 +58,5 @@ rubiconproject.com, 21152, DIRECT, 0bfd66d529a55807
 sharethrough.com, 226d318d, DIRECT, d53b998a7bd4ecd2
 google.com, pub-6396844742497208, RESELLER, f08c47fec0942fa0
 improvedigital.com, 2254, DIRECT
+rubiconproject.com, 21152, DIRECT, 0bfd66d529a55807
+rubiconproject.com, 21152, DIRECT, 0bfd66d529a55807

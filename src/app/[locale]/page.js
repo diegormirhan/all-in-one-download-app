@@ -27,7 +27,6 @@ export default function Home() {
           {/* Campo de Input para link e Botão de Download */}
           <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
         </section>
-        <AdPage/>
         <section className="max-w-3xl text-center">
           {/* Texto explicativo */}
           <div className="text-sm mb-10 mx-auto font-semibold text-center md:w-4/5 space-y-4">

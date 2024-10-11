@@ -112,7 +112,6 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         </div>
 
         <AdsBanner/>
-        <AdPage/>
 
         <Button
           type="submit"

@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export function AdsBanner ({ adWidth = 300, adHeight = 250 }) {
   return (
     <>
@@ -17,6 +19,18 @@ export function AdsBanner ({ adWidth = 300, adHeight = 250 }) {
 export function AdCash() {
   return (
     <>
+    <Script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></Script>
     </>
   )
+}
+
+export function AdPage() {
+  <Script type="text/javascript" dangerouslySetInnerHTML={{
+    __html: `
+      aclib.runAutoTag({
+        zoneId: 'in7tope7mf',
+      });
+    `,
+  }}
+  />
 }

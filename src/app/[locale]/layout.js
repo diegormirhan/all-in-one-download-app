@@ -11,6 +11,7 @@ import { getMessages } from 'next-intl/server';
 import { idiomasExcluidos } from "@/components/utils/excludedLang";
 
 import GoogleAnalytics from "@/components/google/analytics";
+import { AdCash } from "@/components/google/adsense";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -100,6 +101,7 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <GoogleAnalytics />
+      <AdCash/>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}

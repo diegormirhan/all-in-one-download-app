@@ -17,7 +17,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Link } from "@/navigation";
-import { AdsBanner } from "./google/adsense";
+import { AdPage, AdsBanner } from "./google/adsense";
 
 
 export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
@@ -112,6 +112,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         </div>
 
         <AdsBanner/>
+        <AdPage/>
 
         <Button
           type="submit"

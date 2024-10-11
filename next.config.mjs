@@ -7,7 +7,7 @@ const withPWA = withPWAInit({
   dest: "public",
   cacheOnFrontEndNav: true,
   reloadOnOnline: true,
-  disable: false,
+  disable: true,
   workboxOptions: {
     disableDevLogs: true,
     runtimeCaching: [

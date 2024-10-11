@@ -25,7 +25,7 @@ export function AdCash() {
 }
 
 export function AdPage() {
-  <Script type="text/javascript" dangerouslySetInnerHTML={{
+  <Script id="adpage" type="text/javascript" dangerouslySetInnerHTML={{
     __html: `
       aclib.runAutoTag({
         zoneId: 'in7tope7mf',

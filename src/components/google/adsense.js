@@ -1,5 +1,7 @@
-import Script from "next/script";
+"use client"
 
+import Script from "next/script";
+import { useEffect } from "react";
 export function AdsBanner ({ adWidth = 300, adHeight = 250 }) {
   return (
     <>
@@ -25,12 +27,25 @@ export function AdCash() {
 }
 
 export function AdPage() {
-  <Script id="adpage" type="text/javascript" dangerouslySetInnerHTML={{
-    __html: `
+  useEffect(() => {
+    // Cria um novo elemento de script
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = `
       aclib.runAutoTag({
         zoneId: 'in7tope7mf',
       });
-    `,
-  }}
-  />
+    `;
+
+    // Adiciona o script ao body
+    document.body.appendChild(script);
+
+  }, []);
+
+  return (
+    <div>
+      {/* Aqui você pode renderizar qualquer conteúdo relacionado ao anúncio */}
+      <p>Anúncio Adcash</p>
+    </div>
+  );
 }

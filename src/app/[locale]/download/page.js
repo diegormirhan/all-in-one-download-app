@@ -77,7 +77,7 @@ export default function DownloadPage() {
                             <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
                                 {storedData?.data?.title || tDefault('download-thumbnail-title')}
                             </div>
-                            <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg">
+                            <div className="relative mx-auto w-full lg:w-2/3 h-60 z-10 bg-black overflow-hidden rounded-b-lg mb-10">
                                 <div className="absolute inset-0 z-0">
                                     <Image
                                         src={thumbnail}

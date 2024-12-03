@@ -1,6 +1,6 @@
 {
-  "name": "Best Video Download",
-  "short_name": "Video Download",
+  "name": "Best Media Tool",
+  "short_name": "Best Media Tool",
   "start_url": "/?utm_source=pwa",
   "theme_color": "#4044FC",
   "display": "standalone",

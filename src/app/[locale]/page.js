@@ -35,9 +35,9 @@ export default function Home() {
             slotId="9735256965"
             layout="display"
           />
-          
+
           {/* Texto explicativo */}
-          <div className="text-sm mb-10 mx-auto font-semibold text-center md:w-4/5 space-y-4">
+          <div className="text-sm mb-10 mt-10 mx-auto font-semibold text-center md:w-4/5 space-y-4">
             <p>{tDynamic('description-item1')}</p>
             <p>{tDynamic('description-item2')}</p>
           </div>

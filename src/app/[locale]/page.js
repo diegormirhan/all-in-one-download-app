@@ -7,6 +7,8 @@ import { TypeWriterWords } from "@/components/typeWriter";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
 
+import { AdUnit } from "next-google-adsense";
+
 export default function Home() {
   const socialMedia = "Home"
   const tDynamic = useTranslations(`Translations-${socialMedia}`)
@@ -32,6 +34,12 @@ export default function Home() {
             <p>{tDynamic('description-item1')}</p>
             <p>{tDynamic('description-item2')}</p>
           </div>
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
 
           {/* Botão para explorar mais */}
           <SectionMenu classes="bg-main-color shadow-main-color" />

@@ -29,17 +29,18 @@ export default function Home() {
           <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
         </section>
         <section className="max-w-3xl text-center">
-          {/* Texto explicativo */}
-          <div className="text-sm mb-10 mx-auto font-semibold text-center md:w-4/5 space-y-4">
-            <p>{tDynamic('description-item1')}</p>
-            <p>{tDynamic('description-item2')}</p>
-          </div>
 
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+          
+          {/* Texto explicativo */}
+          <div className="text-sm mb-10 mx-auto font-semibold text-center md:w-4/5 space-y-4">
+            <p>{tDynamic('description-item1')}</p>
+            <p>{tDynamic('description-item2')}</p>
+          </div>
 
           {/* Botão para explorar mais */}
           <SectionMenu classes="bg-main-color shadow-main-color" />

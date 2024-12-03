@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/youtube' : `/${langCode}/youtube`;
 
   return {
-    title: "YouTube Video Downloader | Best Video Download",
+    title: "YouTube Video Downloader | Best Media Tool",
     description: 'Download Videos from YouTube quickly and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "YouTube Video Downloader | Best Video Download",
+      title: "YouTube Video Downloader | Best Media Tool",
       description: "Download Videos from YouTube quickly and for free",
       url: "/youtube",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-youtube.jpg",
           width: 1200,
           height: 630,
-          alt: "YouTube - Best Video Download Card"
+          alt: "YouTube - Best Media Tool Card"
         }
       ],
       type: "website"

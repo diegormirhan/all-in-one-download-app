@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/rumble' : `/${langCode}/rumble`;
 
   return {
-    title: "Rumble Video Downloader | Best Video Download",
+    title: "Rumble Video Downloader | Best Media Tool",
     description: "Download videos from Rumble quickly and for free. Save and enjoy viral content, vlogs, and political discussions from the platform known for free speech.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Rumble Videos | Best Video Download",
+      title: "Rumble Videos | Best Media Tool",
       description: "Download videos from Rumble fast and for free.",
       url: "/rumble",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-rumble.jpg",
           width: 1200,
           height: 630,
-          alt: "Rumble - Best Video Download Card"
+          alt: "Rumble - Best Media Tool Card"
         }
       ],
       type: "website"

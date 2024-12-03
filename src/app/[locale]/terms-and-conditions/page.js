@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
     const currentUrl = langCode === 'en' ? '/terms-and-conditions' : `/${langCode}/terms-and-conditions`;
 
     return {
-        title: "Terms and Conditions | Best Video Download",
+        title: "Terms and Conditions | Best Media Tool",
         description: "Terms and Conditions from Best Videos Download page.",
         alternates: {
             canonical: currentUrl

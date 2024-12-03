@@ -1,7 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Info } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { AdsBanner } from "./google/adsense"
 
 
 export function ImportantTips({classes, namespace}) {
@@ -21,8 +20,6 @@ export function ImportantTips({classes, namespace}) {
                     </ul>
                 </AlertDescription>
             </Alert>
-
-            <AdsBanner/>
         </>
     )
 }

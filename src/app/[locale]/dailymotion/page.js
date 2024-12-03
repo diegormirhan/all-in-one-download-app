@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/dailymotion' : `/${langCode}/dailymotion`;
 
   return {
-    title: "Dailymotion Video Downloader | Best Video Download",
+    title: "Dailymotion Video Downloader | Best Media Tool",
     description: "Download videos from Dailymotion quickly and for free. Save high-quality videos from a wide range of genres, including news, entertainment, and vlogs.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Dailymotion Videos | Best Video Download",
+      title: "Dailymotion Videos | Best Media Tool",
       description: "Download videos from Dailymotion fast and for free.",
       url: "/dailymotion",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-dailymotion.jpg",
           width: 1200,
           height: 630,
-          alt: "Dailymotion - Best Video Download Card"
+          alt: "Dailymotion - Best Media Tool Card"
         }
       ],
       type: "website"

@@ -7,23 +7,7 @@ const withPWA = withPWAInit({
   dest: "public",
   cacheOnFrontEndNav: true,
   reloadOnOnline: true,
-  disable: false,
-  workboxOptions: {
-    disableDevLogs: true,
-    runtimeCaching: [
-      {
-        urlPattern: /^https:\/\/www\.topcreativeformat\.com\/.*/,
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'adsterra-cache',
-          expiration: {
-            maxEntries: 50,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
-          },
-        },
-      },
-    ],
-  },
+  disable: true,
 });
 
 /** @type {import('next').NextConfig} */

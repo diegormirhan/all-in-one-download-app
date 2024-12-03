@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/capcut' : `/${langCode}/capcut`;
 
   return {
-    title: "CapCut Video Downloader | Best Video Download",
+    title: "CapCut Video Downloader | Best Media Tool",
     description: "Download videos edited with CapCut fast and for free. Save professionally edited content and share creative videos from this popular editing tool.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "CapCut Videos | Best Video Download",
+      title: "CapCut Videos | Best Media Tool",
       description: "Download videos edited with CapCut fast and for free.",
       url: "/capcut",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-capcut.jpg",
           width: 1200,
           height: 630,
-          alt: "CapCut - Best Video Download Card"
+          alt: "CapCut - Best Media Tool Card"
         }
       ],
       type: "website"

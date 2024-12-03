@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/ifunny' : `/${langCode}/ifunny`;
 
   return {
-    title: "iFunny Meme and Video Downloader | Best Video Download",
+    title: "iFunny Meme and Video Downloader | Best Media Tool",
     description: "Download memes, GIFs, and videos from iFunny quickly and for free. Save hilarious and trending content from one of the top humor-sharing platforms.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "iFunny Memes and Videos | Best Video Download",
+      title: "iFunny Memes and Videos | Best Media Tool",
       description: "Download memes, GIFs, and videos from iFunny fast and for free.",
       url: "/ifunny",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-ifunny.jpg",
           width: 1200,
           height: 630,
-          alt: "iFunny - Best Video Download Card"
+          alt: "iFunny - Best Media Tool Card"
         }
       ],
       type: "website"

@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/pinterest' : `/${langCode}/pinterest`;
 
   return {
-    title: "Pinterest Pin Downloader | Best Video Download",
+    title: "Pinterest Pin Downloader | Best Media Tool",
     description: 'Download Pins, Videos, and Images from Pinterest quickly and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Pinterest Pin Downloader | Best Video Download",
+      title: "Pinterest Pin Downloader | Best Media Tool",
       description: "Download Pins, Videos, and Images from Pinterest quickly and for free",
       url: "/pinterest",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-pinterest.jpg",
           width: 1200,
           height: 630,
-          alt: "Pinterest - Best Video Download Card"
+          alt: "Pinterest - Best Media Tool Card"
         }
       ],
       type: "website"

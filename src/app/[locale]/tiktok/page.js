@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/tiktok' : `/${langCode}/tiktok`;
 
   return {
-    title: "TikTok Video Downloader | Best Video Download",
+    title: "TikTok Video Downloader | Best Media Tool",
   description: 'Download Videos from TikTok quickly and for free',
   alternates: {
     canonical: currentUrl
   },
   openGraph: {
-    title: "TikTok Video Downloader | Best Video Download",
+    title: "TikTok Video Downloader | Best Media Tool",
     description: "Download Videos from TikTok quickly and for free",
     url: "/tiktok",
-    siteName: "Best Video Download",
+    siteName: "Best Media Tool",
     images: [
       {
         url: "/openGraph/opengraph-tiktok.jpg",
         width: 1200,
         height: 630,
-        alt: "TikTok - Best Video Download Card"
+        alt: "TikTok - Best Media Tool Card"
       }
     ],
     type: "website"

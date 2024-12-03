@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/likee' : `/${langCode}/likee`;
 
   return {
-    title: "Likee Video Downloader | Best Video Download",
+    title: "Likee Video Downloader | Best Media Tool",
   description: "Download videos from Likee fast and for free. Save trending short videos, creative clips, and user-generated content directly to your device with ease.",
   alternates: {
     canonical: currentUrl
   },
   openGraph: {
-    title: "Likee Videos | Best Video Download",
+    title: "Likee Videos | Best Media Tool",
     description: "Download videos from Likee fast and for free.",
     url: "/likee",
-    siteName: "Best Video Download",
+    siteName: "Best Media Tool",
     images: [
       {
         url: "/openGraph/opengraph-likee.jpg",
         width: 1200,
         height: 630,
-        alt: "Likee - Best Video Download Card"
+        alt: "Likee - Best Media Tool Card"
       }
     ],
     type: "website"

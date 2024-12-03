@@ -11,8 +11,8 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/about' : `/${langCode}/about`;
 
   return {
-    title: "About Us | Best Video Download",
-    description: "About Us - Best Videos Download page.",
+    title: "About Us | Best Media Tool",
+    description: "About Us - Best Media Tool page.",
     alternates: {
       canonical: currentUrl
     },

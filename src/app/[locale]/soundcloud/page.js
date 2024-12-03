@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/soundcloud' : `/${langCode}/soundcloud`;
 
   return {
-    title: "SoundCloud Music Downloader | Best Video Download",
+    title: "SoundCloud Music Downloader | Best Media Tool",
   description: 'Download Music and Tracks from SoundCloud quickly and for free',
   alternates: {
     canonical: currentUrl
   },
   openGraph: {
-    title: "SoundCloud Music Downloader | Best Video Download",
+    title: "SoundCloud Music Downloader | Best Media Tool",
     description: "Download Music and Tracks from SoundCloud quickly and for free",
     url: "/soundcloud",
-    siteName: "Best Video Download",
+    siteName: "Best Media Tool",
     images: [
       {
         url: "/openGraph/opengraph-soundcloud.jpg",
         width: 1200,
         height: 630,
-        alt: "SoundCloud - Best Video Download Card"
+        alt: "SoundCloud - Best Media Tool Card"
       }
     ],
     type: "website"

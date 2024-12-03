@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/reddit' : `/${langCode}/reddit`;
 
   return {
-    title: "Reddit Video and Posts Downloader | Best Video Download",
+    title: "Reddit Video and Posts Downloader | Best Media Tool",
   description: 'Download Videos and Posts from Reddit quickly and for free',
   alternates: {
     canonical: currentUrl
   },
   openGraph: {
-    title: "Reddit Video and Posts Downloader | Best Video Download",
+    title: "Reddit Video and Posts Downloader | Best Media Tool",
     description: "Download Videos and Posts from Reddit quickly and for free",
     url: "/reddit",
-    siteName: "Best Video Download",
+    siteName: "Best Media Tool",
     images: [
       {
         url: "/openGraph/opengraph-reddit.jpg",
         width: 1200,
         height: 630,
-        alt: "Reddit - Best Video Download Card"
+        alt: "Reddit - Best Media Tool Card"
       }
     ],
     type: "website"

@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/threads' : `/${langCode}/threads`;
 
   return {
-    title: "Threads Post Downloader | Best Video Download",
+    title: "Threads Post Downloader | Best Media Tool",
   description: 'Download Posts from Threads quickly and for free',
   alternates: {
     canonical: currentUrl
   },
   openGraph: {
-    title: "Threads Post Downloader | Best Video Download",
+    title: "Threads Post Downloader | Best Media Tool",
     description: "Download Posts from Threads quickly and for free",
     url: "/threads",
-    siteName: "Best Video Download",
+    siteName: "Best Media Tool",
     images: [
       {
         url: "/openGraph/opengraph-threads.jpg",
         width: 1200,
         height: 630,
-        alt: "Threads - Best Video Download Card"
+        alt: "Threads - Best Media Tool Card"
       }
     ],
     type: "website"

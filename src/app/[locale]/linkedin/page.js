@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/linkedin' : `/${langCode}/linkedin`;
 
   return {
-    title: "LinkedIn Video and Posts Downloader | Best Video Download",
+    title: "LinkedIn Video and Posts Downloader | Best Media Tool",
     description: 'Download Videos and Posts from LinkedIn quickly and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "LinkedIn Video and Posts Downloader | Best Video Download",
+      title: "LinkedIn Video and Posts Downloader | Best Media Tool",
       description: "Download Videos and Posts from LinkedIn quickly and for free",
       url: "/linkedin",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-linkedin.jpg",
           width: 1200,
           height: 630,
-          alt: "LinkedIn - Best Video Download Card"
+          alt: "LinkedIn - Best Media Tool Card"
         }
       ],
       type: "website"

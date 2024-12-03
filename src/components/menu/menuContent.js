@@ -45,7 +45,7 @@ export function MenuContent() {
 
               <MenuItem href="/weibo" iconSrc="/socialMediaIcons/weibo.svg" text="Weibo" />
 
-              <MenuItem href="/ifunny" iconSrc="/socialMediaIcons/ifunny.svg" text="Ifunny" />
+              {/* <MenuItem href="/ifunny" iconSrc="/socialMediaIcons/ifunny.svg" text="Ifunny" />
 
               <MenuItem href="/likee" iconSrc="/socialMediaIcons/likee.svg" text="Likee" />
 
@@ -53,7 +53,7 @@ export function MenuContent() {
 
               <MenuItem href="/ted" iconSrc="/socialMediaIcons/ted.svg" text="Ted" />
 
-              <MenuItem href="/9gag" iconSrc="/socialMediaIcons/9gag.svg" text="9Gag" />
+              <MenuItem href="/9gag" iconSrc="/socialMediaIcons/9gag.svg" text="9Gag" /> */}
 
               {/* <MenuItem href="/bilibili" iconSrc="/socialMediaIcons/bilibili.svg" text="BiliBili" /> */}
 

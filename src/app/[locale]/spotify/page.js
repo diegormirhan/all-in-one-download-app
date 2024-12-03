@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/spotify' : `/${langCode}/spotify`;
 
   return {
-    title: "Spotify Music Downloader | Best Video Download",
+    title: "Spotify Music Downloader | Best Media Tool",
     description: 'Download Music and Podcasts from Spotify quickly and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Spotify Music Downloader | Best Video Download",
+      title: "Spotify Music Downloader | Best Media Tool",
       description: "Download Music and Podcasts from Spotify quickly and for free",
       url: "/spotify",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-spotify.jpg",
           width: 1200,
           height: 630,
-          alt: "Spotify - Best Video Download Card"
+          alt: "Spotify - Best Media Tool Card"
         }
       ],
       type: "website"

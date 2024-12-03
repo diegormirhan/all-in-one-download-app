@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/ted' : `/${langCode}/ted`;
 
   return {
-    title: "TED Talk Downloader | Best Video Download",
+    title: "TED Talk Downloader | Best Media Tool",
   description: "Download TED Talks fast and for free. Access inspiring and educational speeches covering a wide range of topics from thought leaders around the world.",
   alternates: {
     canonical: currentUrl
   },
   openGraph: {
-    title: "TED Talks | Best Video Download",
+    title: "TED Talks | Best Media Tool",
     description: "Download TED Talks fast and for free.",
     url: "/ted",
-    siteName: "Best Video Download",
+    siteName: "Best Media Tool",
     images: [
       {
         url: "/openGraph/opengraph-ted.jpg",
         width: 1200,
         height: 630,
-        alt: "TED - Best Video Download Card"
+        alt: "TED - Best Media Tool Card"
       }
     ],
     type: "website"

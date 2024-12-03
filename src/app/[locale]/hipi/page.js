@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/hipi' : `/${langCode}/hipi`;
 
   return {
-    title: "Hipi Video Downloader | Best Video Download",
+    title: "Hipi Video Downloader | Best Media Tool",
     description: "Download videos from Hipi fast and for free. Save trending short videos and clips from India's growing platform for user-generated entertainment.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Hipi Videos | Best Video Download",
+      title: "Hipi Videos | Best Media Tool",
       description: "Download videos from Hipi fast and for free.",
       url: "/hipi",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-hipi.jpg",
           width: 1200,
           height: 630,
-          alt: "Hipi - Best Video Download Card"
+          alt: "Hipi - Best Media Tool Card"
         }
       ],
       type: "website"

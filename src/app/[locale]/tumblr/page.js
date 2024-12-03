@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/tumblr' : `/${langCode}/tumblr`;
 
   return {
-    title: "Tumblr Video, GIF and Post Downloader | Best Video Download",
+    title: "Tumblr Video, GIF and Post Downloader | Best Media Tool",
     description: "Download videos, GIFs, and posts from Tumblr fast and for free. Save creative, artistic, and fan content from one of the most popular blogging platforms.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Tumblr Videos, GIFs and Posts | Best Video Download",
+      title: "Tumblr Videos, GIFs and Posts | Best Media Tool",
       description: "Download videos, GIFs and posts from Tumblr fast and for free.",
       url: "/tumblr",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-tumblr.jpg",
           width: 1200,
           height: 630,
-          alt: "Tumblr - Best Video Download Card"
+          alt: "Tumblr - Best Media Tool Card"
         }
       ],
       type: "website"

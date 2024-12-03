@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/weibo' : `/${langCode}/weibo`;
 
   return {
-    title: "Weibo Video and Post Downloader | Best Video Download",
+    title: "Weibo Video and Post Downloader | Best Media Tool",
     description: "Download videos and posts from Weibo fast and for free. Save the latest trends, news, and viral content from one of the most popular platforms in China.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Weibo Videos and Posts | Best Video Download",
+      title: "Weibo Videos and Posts | Best Media Tool",
       description: "Download videos and posts from Weibo fast and for free.",
       url: "/weibo",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-weibo.jpg",
           width: 1200,
           height: 630,
-          alt: "Weibo - Best Video Download Card"
+          alt: "Weibo - Best Media Tool Card"
         }
       ],
       type: "website"

@@ -11,7 +11,7 @@ import { getMessages } from 'next-intl/server';
 import { idiomasExcluidos } from "@/components/utils/excludedLang";
 
 import GoogleAnalytics from "@/components/google/analytics";
-import { AdCash } from "@/components/google/adsense";
+import { AdSense } from "@/components/google/adsense";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,12 +27,12 @@ export async function generateMetadata({ params }) {
   const isExcludedLanguage = idiomasExcluidos.includes(locale);
 
   return {
-    title: "Best Video Download",
+    title: "Best Media Tool",
     description: 'Download videos, reels, stories, and posts from Instagram, TikTok, Facebook, Youtube, and more.',
-    applicationName: "Best Video Download",
+    applicationName: "Best Media Tool",
     referrer: "origin-when-cross-origin",
     charset: "utf-8",
-    metadataBase: new URL("https://bestvideosdownload.com"),
+    metadataBase: new URL("https://bestmediatool.com"),
     alternates: {
       canonical: "/",
       languages: {
@@ -77,16 +77,16 @@ export async function generateMetadata({ params }) {
         follow: true,
       },
       openGraph: {
-        title: "Best Video Download",
+        title: "Best Media Tool",
         description: "Download Videos, Musics and Images from any social media platforms.",
         url: "/",
-        siteName: "Best Video Download",
+        siteName: "Best Media Tool",
         images: [
           {
             url: "/openGraph/opengraph-logo.jpg",
             width: 1200,
             height: 630,
-            alt: "Best Video Download Card"
+            alt: "Best Media Tool Card"
           }
         ],
         type: "website"
@@ -101,13 +101,14 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <GoogleAnalytics />
+      <AdSense/>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-main-color p-3 rounded-b-2xl w-full shadow-xl">
           {/* Ícone do Menu */}
           <HeaderMenu />
           {/* Título do Meio */}
           <Link href="/">
-            <Image alt="Best Video Download logo image" src="/icons/logo/webp/logo-outline-white-500.webp" width={32} height={32} className="md:w-8 md:h-8"></Image>
+            <Image alt="Best Media Tool logo image" src="/icons/logo/webp/logo-outline-white-500.webp" width={32} height={32} className="md:w-8 md:h-8"></Image>
           </Link>
           {/* Ícone da direita */}
           <TranslationToggle />
@@ -122,7 +123,7 @@ export default async function RootLayout({ children, params: { locale } }) {
             <p className="hover:underline col-span-2 md:col-span-1"><Link href="/privacy-policy">Privacy Policy</Link></p>
           </div>
           <div className="h-[1px] w-full bg-white mt-6 mb-3"></div>
-          <p className="text-white text-center md:text-left">© 2024 Best Video Download. All Rights Reserved</p>
+          <p className="text-white text-center md:text-left">© 2024 Best Media Tool. All Rights Reserved</p>
         </footer>
       </body>
     </html>

@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/9gag' : `/${langCode}/9gag`;
 
   return {
-    title: "9GAG Meme, GIF and Video Downloader | Best Video Download",
+    title: "9GAG Meme, GIF and Video Downloader | Best Media Tool",
     description: 'Download memes, GIFs, and videos from 9GAG quickly and for free. Save the funniest content and enjoy endless humor, laughter, and entertainment.',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "9GAG Memes, GIFs and Videos | Best Video Download",
+      title: "9GAG Memes, GIFs and Videos | Best Media Tool",
       description: 'Download memes, GIFs, and videos from 9GAG quickly and for free.',
       url: "/9gag",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-9gag.jpg",
           width: 1200,
           height: 630,
-          alt: "9GAG - Best Video Download Card"
+          alt: "9GAG - Best Media Tool Card"
         }
       ],
       type: "website"

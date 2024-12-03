@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/douyin' : `/${langCode}/douyin`;
 
   return {
-    title: "Douyin Video Downloader | Best Video Download",
+    title: "Douyin Video Downloader | Best Media Tool",
     description: "Download videos from Douyin fast and for free. Save short viral clips and entertainment content from the popular Chinese version of TikTok.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Douyin Videos | Best Video Download",
+      title: "Douyin Videos | Best Media Tool",
       description: "Download videos from Douyin fast and for free.",
       url: "/douyin",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-tiktok.jpg",
           width: 1200,
           height: 630,
-          alt: "Douyin - Best Video Download Card"
+          alt: "Douyin - Best Media Tool Card"
         }
       ],
       type: "website"

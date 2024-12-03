@@ -5,6 +5,6 @@ export default function robots() {
         allow: '/',
         
       },
-      sitemap: 'https://bestvideosdownload.com/sitemap.xml',
+      sitemap: 'https://bestmediatool.com/sitemap.xml',
     }
   }

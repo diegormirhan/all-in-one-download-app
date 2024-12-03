@@ -54,7 +54,7 @@
 
     "about-title": "私たちについて",
     "about-intro-card-title": "究極のソーシャルメディアコンテンツダウンローダー",
-    "about-intro-card-description": "Best Video Downloadは、あらゆるお気に入りのソーシャルメディアサイトから簡単に動画、音楽、画像をダウンロードできるプラットフォームです。私たちの使命は、素早く、無料で、使いやすいサービスを提供し、コンテンツをあなたの手元に届けることです。",
+    "about-intro-card-description": "Best Media Toolは、あらゆるお気に入りのソーシャルメディアサイトから簡単に動画、音楽、画像をダウンロードできるプラットフォームです。私たちの使命は、素早く、無料で、使いやすいサービスを提供し、コンテンツをあなたの手元に届けることです。",
     "about-intro-card-button": "今すぐダウンロードを開始",
 
     "about-feature-card-title-1": "使いやすい",
@@ -67,24 +67,24 @@
 
     "about-platforms-title": "対応している最も人気のあるプラットフォーム",
 
-    "about-bottom-card-title": "なぜBest Video Downloadを選ぶのか?",
+    "about-bottom-card-title": "なぜBest Media Toolを選ぶのか?",
     "about-bottom-card-content-1": "登録不要ですぐにダウンロードを開始",
     "about-bottom-card-content-2": "完全無料で隠れた料金は一切ありません",
     "about-bottom-card-content-3": "待ち時間なしで迅速なダウンロード",
     "about-bottom-card-content-4": "最新のプラットフォーム変更に対応するための定期的な更新",
     "about-bottom-card-content-5": "迅速なカスタマーサポートであらゆる問題に対応します",
-    "about-bottom-button": "今すぐBest Video Downloadを試してください",
+    "about-bottom-button": "今すぐBest Media Toolを試してください",
 
     "privacy-policy-title": "プライバシーポリシー",
     "privacy-policy-top-card-title": "プライバシー保護への取り組み",
-    "privacy-policy-top-card-content": "Best Videos Downloadでは、お客様のプライバシー保護に努めています。このプライバシーポリシーでは、当社のサービスを利用する際やウェブサイトにアクセスする際のクッキーの使用およびデータ収集に関する当社の方針を説明しています。",
+    "privacy-policy-top-card-content": "Best Media Toolでは、お客様のプライバシー保護に努めています。このプライバシーポリシーでは、当社のサービスを利用する際やウェブサイトにアクセスする際のクッキーの使用およびデータ収集に関する当社の方針を説明しています。",
 
     "privacy-policy-accordion-title-1": "データ収集ポリシー",
     "privacy-policy-accordion-title-2": "クッキーの使用",
     "privacy-policy-accordion-title-3": "お客様の権利と選択肢",
     "privacy-policy-accordion-title-4": "このポリシーの変更",
 
-    "privacy-policy-accordion-content-1-part1": "Best Videos Downloadでは、ユーザーからの個人データを一切収集していません。私たちはお客様のプライバシーを尊重し、個人情報を危険にさらすことなくサービスを提供することを信じています。",
+    "privacy-policy-accordion-content-1-part1": "Best Media Toolでは、ユーザーからの個人データを一切収集していません。私たちはお客様のプライバシーを尊重し、個人情報を危険にさらすことなくサービスを提供することを信じています。",
     "privacy-policy-accordion-content-1-part2": "私たちのプライバシー保護の取り組みとして、以下のことを行っていません:",
     "privacy-policy-accordion-content-1-part3": "個人情報(例:氏名、メールアドレス、電話番号)の収集",
     "privacy-policy-accordion-content-1-part4": "使用データの追跡",
@@ -131,7 +131,7 @@
   "Translations-Home": {
     "introduction-title": "メディアをダウンロード",
 
-    "description-item1": "Best Video Downloaderは、今日存在するほとんどのソーシャルメディアプラットフォームから、任意のビデオ、画像、または音楽をダウンロードできるツールを提供します。",
+    "description-item1": "Best Media Toolerは、今日存在するほとんどのソーシャルメディアプラットフォームから、任意のビデオ、画像、または音楽をダウンロードできるツールを提供します。",
     "description-item2": "上記のボックスにメディアのリンクを挿入するか、右のアイコンをクリックしてボックスに直接ペーストし、完全に無料でダウンロードを開始しましょう!",
 
     "tips-item1-key": "ソーシャルメディアのプロフィールが公開されていることを確認:",
@@ -142,28 +142,28 @@
     "tips-item2-value": "接続が不安定な場合、ダウンロードが失敗する可能性があります。",
     "tips-item3-value": "ダウンロードしたメディアは個人使用のみで使用し、許可なしに再配布しないでください。",
 
-    "faq-item1-title": "Best Video Downloadとは何ですか?",
+    "faq-item1-title": "Best Media Toolとは何ですか?",
     "faq-item2-title": "メディアをダウンロードするにはアカウントを作成する必要がありますか?",
     "faq-item3-title": "プライベートソーシャルメディアアカウントからメディアをダウンロードできますか?",
     "faq-item4-title": "ソーシャルメディアからメディアをダウンロードするのは合法ですか?",
-    "faq-item5-title": "Best Video Downloadはどのデバイスで使用できますか?",
+    "faq-item5-title": "Best Media Toolはどのデバイスで使用できますか?",
     "faq-item6-title": "ダウンロードしたメディアはどこに保存されますか?",
     "faq-item7-title": "どのフォーマットでダウンロードできますか?",
     "faq-item8-title": "何個のメディアをダウンロードできますか?",
     "faq-item9-title": "他のソーシャルメディアプラットフォームからメディアをダウンロードできますか?",
-    "faq-item10-title": "Best Video Downloadは無料ですか?",
+    "faq-item10-title": "Best Media Toolは無料ですか?",
     "faq-item11-title": "問題が発生した場合、サポートに連絡する方法は?",
 
-    "faq-item1-content": "Best Video Downloadは、ソーシャルメディアのメディアを直接デバイスにダウンロードできる無料のオンラインツールです。オフライン視聴のためにメディアを保存したり、個人使用のためにコピーを保管したりすることが簡単で迅速に行えます。",
-    "faq-item2-content": "いいえ、Best Video Downloadを使用するにはアカウントを作成する必要はありません。このサービスは完全に無料で、サインアップや個人情報の入力は不要です。",
-    "faq-item3-content": "いいえ、Best Video Downloadでは公開されているソーシャルメディアアカウントからのみメディアをダウンロードできます。プライベートアカウントのメディアはプライバシー制限のためアクセスできません。",
+    "faq-item1-content": "Best Media Toolは、ソーシャルメディアのメディアを直接デバイスにダウンロードできる無料のオンラインツールです。オフライン視聴のためにメディアを保存したり、個人使用のためにコピーを保管したりすることが簡単で迅速に行えます。",
+    "faq-item2-content": "いいえ、Best Media Toolを使用するにはアカウントを作成する必要はありません。このサービスは完全に無料で、サインアップや個人情報の入力は不要です。",
+    "faq-item3-content": "いいえ、Best Media Toolでは公開されているソーシャルメディアアカウントからのみメディアをダウンロードできます。プライベートアカウントのメディアはプライバシー制限のためアクセスできません。",
     "faq-item4-content": "個人使用のためにソーシャルメディアからメディアをダウンロードすることは一般的に許可されていますが、著作権法やソーシャルメディアの利用規約を尊重することが重要です。ダウンロードしたメディアを無断で再配布したり、商業目的で使用したりしないでください。",
-    "faq-item5-content": "Best Video Downloadは、スマートフォン、タブレット、デスクトップなど、すべてのデバイスで互換性があります。任意のウェブブラウザで動作するため、自宅や外出先でメディアをダウンロードできます。",
+    "faq-item5-content": "Best Media Toolは、スマートフォン、タブレット、デスクトップなど、すべてのデバイスで互換性があります。任意のウェブブラウザで動作するため、自宅や外出先でメディアをダウンロードできます。",
     "faq-item6-content": "ダウンロードされたメディアは通常、デバイスのデフォルトのダウンロードフォルダに保存されます。モバイルデバイスでは、ギャラリーやドキュメントアプリに保存される場合があります。",
-    "faq-item7-content": "Best Video Downloadでは、ほとんどのデバイスやメディアプレーヤーと互換性のあるフォーマットでメディアをダウンロードできます。オリジナルのメディア品質を維持した高品質のダウンロードを提供することを重視しています。",
-    "faq-item8-content": "Best Video Downloadでは、ダウンロードできるメディアの数に制限はありません。好きなだけメディアをダウンロードしてください。",
+    "faq-item7-content": "Best Media Toolでは、ほとんどのデバイスやメディアプレーヤーと互換性のあるフォーマットでメディアをダウンロードできます。オリジナルのメディア品質を維持した高品質のダウンロードを提供することを重視しています。",
+    "faq-item8-content": "Best Media Toolでは、ダウンロードできるメディアの数に制限はありません。好きなだけメディアをダウンロードしてください。",
     "faq-item9-content": "はい、メニューバーの左上のアイコンをクリックすると、対応しているすべてのソーシャルメディアプラットフォームを表示して他のプラットフォームからもメディアをダウンロードできます。",
-    "faq-item10-content": "はい、Best Video Downloadは無料です。隠れた料金はなく、好きなだけメディアをダウンロードできます。",
+    "faq-item10-content": "はい、Best Media Toolは無料です。隠れた料金はなく、好きなだけメディアをダウンロードできます。",
     "faq-item11-content": "問題が発生したり、FAQで解決できない質問がある場合は、[support@bestvideosdownload.com]にメールを送ってサポートチームに連絡してください。",
 
     "howToUse-step1-title": "ステップ 1: ソーシャルメディアでメディアを探す",

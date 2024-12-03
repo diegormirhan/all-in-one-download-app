@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/instagram' : `/${langCode}/instagram`;
 
   return {
-    title: "Instagram Reels, Stories and Posts Downloader | Best Video Download",
+    title: "Instagram Reels, Stories and Posts Downloader | Best Media Tool",
     description: 'Download Reels, Stories, IGTV,Lives, Videos and Posts from Instagram fast and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Instagram Reels, Stories and Posts | Best Video Download",
+      title: "Instagram Reels, Stories and Posts | Best Media Tool",
       description: "Download Reels, Stories, IGTV, Lives and Posts from Instagram fast and for free.",
       url: "/instagram",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-instagram.jpg",
           width: 1200,
           height: 630,
-          alt: "Instagram - Best Video Download Card"
+          alt: "Instagram - Best Media Tool Card"
         }
       ],
       type: "website"

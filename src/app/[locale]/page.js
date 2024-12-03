@@ -6,7 +6,6 @@ import { ImportantTips } from "@/components/importantTips";
 import { TypeWriterWords } from "@/components/typeWriter";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
-import { AdPage } from "@/components/google/adsense";
 
 export default function Home() {
   const socialMedia = "Home"

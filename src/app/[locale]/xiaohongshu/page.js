@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/xiaohongshu' : `/${langCode}/xiaohongshu`;
 
   return {
-    title: "Xiaohongshu Video and Post Downloader | Best Video Download",
+    title: "Xiaohongshu Video and Post Downloader | Best Media Tool",
     description: "Download videos and posts from Xiaohongshu quickly and for free. Save beauty tips, product reviews, and lifestyle content from this popular social platform.",
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Xiaohongshu Videos and Posts | Best Video Download",
+      title: "Xiaohongshu Videos and Posts | Best Media Tool",
       description: "Download videos and posts from Xiaohongshu fast and for free.",
       url: "/xiaohongshu",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-xiaohongshu.jpg",
           width: 1200,
           height: 630,
-          alt: "Xiaohongshu - Best Video Download Card"
+          alt: "Xiaohongshu - Best Media Tool Card"
         }
       ],
       type: "website"

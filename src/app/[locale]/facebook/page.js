@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/facebook' : `/${langCode}/facebook`;
 
   return {
-    title: "Facebook Stories and Posts Downloader | Best Video Download",
+    title: "Facebook Stories and Posts Downloader | Best Media Tool",
     description: 'Download Stories, Lives, Videos and Posts from Facebook fast and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Facebook Stories and Posts Downloader | Best Video Download",
+      title: "Facebook Stories and Posts Downloader | Best Media Tool",
       description: "Download Stories, Lives, Videos and Posts from Facebook fast and for free",
       url: "/facebook",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-facebook.jpg",
           width: 1200,
           height: 630,
-          alt: "Facebook - Best Video Download Card"
+          alt: "Facebook - Best Media Tool Card"
         }
       ],
       type: "website"

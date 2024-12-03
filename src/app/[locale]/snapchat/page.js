@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/snapchat' : `/${langCode}/snapchat`;
 
   return {
-    title: "Snapchat Stories and Snaps Downloader | Best Video Download",
+    title: "Snapchat Stories and Snaps Downloader | Best Media Tool",
     description: 'Download Stories and Snaps from Snapchat quickly and for free',
     alternates: {
       canonical: currentUrl
     },
     openGraph: {
-      title: "Snapchat Stories and Snaps Downloader | Best Video Download",
+      title: "Snapchat Stories and Snaps Downloader | Best Media Tool",
       description: "Download Stories and Snaps from Snapchat quickly and for free",
       url: "/snapchat",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-snapchat.jpg",
           width: 1200,
           height: 630,
-          alt: "Snapchat - Best Video Download Card"
+          alt: "Snapchat - Best Media Tool Card"
         }
       ],
       type: "website"

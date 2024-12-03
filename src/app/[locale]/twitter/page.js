@@ -13,22 +13,22 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/twitter' : `/${langCode}/twitter`;
 
   return {
-    title: "Twitter (X) Video and Posts Downloader | Best Video Download",
+    title: "Twitter (X) Video and Posts Downloader | Best Media Tool",
     description: 'Download Videos and Posts from Twitter (X) quickly and for free',
     alternates: {
       canonical: currentUrl,
     },
     openGraph: {
-      title: "Twitter (X) Video and Posts Downloader | Best Video Download",
+      title: "Twitter (X) Video and Posts Downloader | Best Media Tool",
       description: "Download Videos and Posts from Twitter (X) quickly and for free",
       url: "/twitter",
-      siteName: "Best Video Download",
+      siteName: "Best Media Tool",
       images: [
         {
           url: "/openGraph/opengraph-twitter.jpg",
           width: 1200,
           height: 630,
-          alt: "Twitter - Best Video Download Card"
+          alt: "Twitter - Best Media Tool Card"
         }
       ],
       type: "website"

@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const currentUrl = langCode === 'en' ? '/privacy-policy' : `/${langCode}/privacy-policy`;
 
   return {
-    title: "Privacy Policy | Best Video Download",
+    title: "Privacy Policy | Best Media Tool",
     description: "Privacy policy from Best Videos Download page.",
     alternates: {
       canonical: currentUrl
@@ -87,9 +87,9 @@ export default function PrivacyPolicy() {
           <CardContent>
             <p className="text-muted-foreground mb-4">{tDefault('privacy-policy-bottom-card-description')}</p>
             <p>
-              Best Videos Download<br />
+              Best Media Tool<br />
               Email: <a href="mailto:mirhan.diego@gmail.com" className="text-blue-500 hover:underline">mirhan.diego@gmail.com</a><br />
-              Website: <Link href="/" className="text-blue-500 hover:underline">bestvideosdownload.com</Link>
+              Website: <Link href="/" className="text-blue-500 hover:underline">bestmediatool.com</Link>
             </p>
           </CardContent>
         </Card>

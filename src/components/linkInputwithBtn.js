@@ -137,7 +137,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
         </Button>
       </form>
       <Popover>
-        <PopoverTrigger className="bg-yellow-200 font-semibold px-2 py-1 rounded-md text-xs inline-flex select-none cursor-pointer">
+        <PopoverTrigger className="bg-yellow-200 font-semibold px-2 py-1 rounded-md text-xs inline-flex select-none cursor-pointer mb-10">
         <TriangleAlert className="size-3 mr-1 mt-[2px]"/>
         {tDefault("disclaimer-title")}
           </PopoverTrigger>

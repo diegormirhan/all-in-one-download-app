@@ -73,12 +73,6 @@ export default function DownloadPage() {
                         <h1 className="text-4xl font-extrabold mb-4 md:text-5xl">{tDefault('download-title')}</h1>
                         <h2 className="text-lg font-semibold mb-10">{tDefault('download-subtitle')}</h2>
 
-                        <AdUnit
-                            publisherId="pub-8038191677774356"
-                            slotId="9735256965"
-                            layout="display"
-                        />
-
                         <div className="w-full flex flex-col items-center">
                             <div className="bg-white w-full lg:w-2/3 px-4 h-10 rounded-t-lg font-semibold overflow-hidden text-ellipsis text-center leading-[2.5rem]">
                                 {storedData?.data?.title || tDefault('download-thumbnail-title')}
@@ -110,6 +104,12 @@ export default function DownloadPage() {
                             </div>
                         </div>
 
+                        <AdUnit
+                            publisherId="pub-8038191677774356"
+                            slotId="9735256965"
+                            layout="display"
+                        />
+
                         <div className="text-center mt-5 mb-10 font-semibold text-md underline">{tDefault('download-description')}</div>
 
 
@@ -118,14 +118,14 @@ export default function DownloadPage() {
                             {downloadButtons}
                         </div>
 
+                        {/* Botão para explorar mais */}
+                        <SectionMenu classes="bg-main-color shadow-main-color mt-10" />
+
                         <AdUnit
                             publisherId="pub-8038191677774356"
                             slotId="9735256965"
                             layout="display"
                         />
-
-                        {/* Botão para explorar mais */}
-                        <SectionMenu classes="bg-main-color shadow-main-color mt-10" />
                     </div>
                 </section>
 

@@ -5,6 +5,7 @@ import { HowToUse } from "@/components/howToUse";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
+import { AdUnit } from "next-google-adsense";
 
 export async function generateMetadata({ params }) {
   const { locale } = params;
@@ -53,6 +54,12 @@ export default function Hipi() {
 
           {/* Campo de Input para link e Botão de Download */}
           <LinkInputwithBtn inputClasses="focus:ring-[#D21404]" buttonClasses="text-[#D21404] fill-[#D21404] border-[#D21404] hover:bg-[#D21404]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         <section className="max-w-3xl text-center">
@@ -64,6 +71,12 @@ export default function Hipi() {
 
           {/* Botão para explorar mais */}
           <SectionMenu classes="bg-[#D21404] shadow-[#D21404]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         {/* Card Section */}

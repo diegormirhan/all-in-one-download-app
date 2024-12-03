@@ -5,6 +5,7 @@ import { HowToUse } from "@/components/howToUse";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
+import { AdUnit } from "next-google-adsense";
 
 export async function generateMetadata({ params }) {
   const { locale } = params;
@@ -53,6 +54,12 @@ export default function Instagram() {
 
           {/* Campo de Input para link e Botão de Download */}
           <LinkInputwithBtn inputClasses="focus:ring-[#EE2A7B]" buttonClasses="text-[#EE2A7B] fill-[#EE2A7B] border-[#EE2A7B] hover:bg-[#EE2A7B]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         <section className="max-w-3xl text-center">
@@ -64,6 +71,12 @@ export default function Instagram() {
 
           {/* Botão para explorar mais */}
           <SectionMenu classes="bg-[#EE2A7B] shadow-[#EE2A7B]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         {/* Card Section */}

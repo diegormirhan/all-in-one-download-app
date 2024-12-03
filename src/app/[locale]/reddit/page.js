@@ -5,6 +5,7 @@ import { HowToUse } from "@/components/howToUse";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
+import { AdUnit } from "next-google-adsense";
 
 export async function generateMetadata({ params }) {
   const { locale } = params;
@@ -53,6 +54,12 @@ export default function Reddit() {
 
           {/* Campo de Input para link e Botão de Download */}
           <LinkInputwithBtn inputClasses="focus:ring-[#FF4500]" buttonClasses="text-[#FF4500] fill-[#FF4500] border-[#FF4500] hover:bg-[#FF4500]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         <section className="max-w-3xl text-center">
@@ -64,6 +71,12 @@ export default function Reddit() {
 
           {/* Botão para explorar mais */}
           <SectionMenu classes="bg-[#FF4500] shadow-[#FF4500]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         {/* Card Section */}

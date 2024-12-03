@@ -5,6 +5,7 @@ import { HowToUse } from "@/components/howToUse";
 import { ImportantTips } from "@/components/importantTips";
 import { LinkInputwithBtn } from "@/components/linkInputwithBtn";
 import { useTranslations } from 'next-intl';
+import { AdUnit } from "next-google-adsense";
 
 export async function generateMetadata({ params }) {
   const { locale } = params;
@@ -56,6 +57,13 @@ export default function Youtube() {
         </section>
 
         <section className="max-w-3xl text-center">
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
+
           {/* Texto explicativo */}
           <div className="text-sm mb-10 mx-auto font-semibold text-center md:w-4/5 space-y-4">
             <p>{tDynamic('description-item1')}</p>
@@ -64,6 +72,12 @@ export default function Youtube() {
 
           {/* Botão para explorar mais */}
           <SectionMenu classes="bg-[#EE2E24] shadow-[#EE2E24]" />
+
+          <AdUnit
+            publisherId="pub-8038191677774356"
+            slotId="9735256965"
+            layout="display"
+          />
         </section>
 
         {/* Card Section */}

@@ -44,7 +44,9 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
 
   const submitHandler = (values) => {
     const link = values.link;
-    const formattedLink = link.split("?")[0] || link;
+    let formattedLink;
+    if (!link.includes('youtube.com') || !link.includes('youtu.be')) formattedLink = link.split("?")[0] || link;
+    formattedLink = link;
 
     startTransition(async () => {
       const response = await fetchData(formattedLink);

@@ -25,14 +25,14 @@ export default function Home() {
           <h1 className="text-4xl font-extrabold mb-2 md:text-5xl">{tDynamic('introduction-title')}</h1>
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl"><TypeWriterWords /></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
-          
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+          
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-main-color" buttonClasses="text-main-color fill-main-color border-main-color hover:bg-secondary-bg-color" />
         </section>
         <section className="max-w-3xl text-center">
 

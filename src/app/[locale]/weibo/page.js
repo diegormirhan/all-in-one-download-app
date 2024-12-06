@@ -52,14 +52,14 @@ export default function Weibo() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#F23348]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#F23348]" buttonClasses="text-[#F23348] fill-[#F23348] border-[#F23348] hover:bg-[#F23348]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#F23348]" buttonClasses="text-[#F23348] fill-[#F23348] border-[#F23348] hover:bg-[#F23348]" />
         </section>
 
         <section className="max-w-3xl text-center">

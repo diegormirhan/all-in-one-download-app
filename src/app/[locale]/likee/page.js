@@ -52,14 +52,14 @@ export default function Likee() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FF5F29]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#FF5F29]" buttonClasses="text-[#FF5F29] fill-[#FF5F29] border-[#FF5F29] hover:bg-[#FF5F29]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#FF5F29]" buttonClasses="text-[#FF5F29] fill-[#FF5F29] border-[#FF5F29] hover:bg-[#FF5F29]" />
         </section>
 
         <section className="max-w-3xl text-center">

@@ -52,14 +52,14 @@ export default function Pinterest() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#CC2127]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#CC2127]" buttonClasses="text-[#CC2127] fill-[#CC2127] border-[#CC2127] hover:bg-[#CC2127]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#CC2127]" buttonClasses="text-[#CC2127] fill-[#CC2127] border-[#CC2127] hover:bg-[#CC2127]" />
         </section>
 
         <section className="max-w-3xl text-center">

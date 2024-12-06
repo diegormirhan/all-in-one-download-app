@@ -52,14 +52,14 @@ export default function Soundcloud() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FF4200]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#FF4200]" buttonClasses="text-[#FF4200] fill-[#FF4200] border-[#FF4200] hover:bg-[#FF4200]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#FF4200]" buttonClasses="text-[#FF4200] fill-[#FF4200] border-[#FF4200] hover:bg-[#FF4200]" />
         </section>
 
         <section className="max-w-3xl text-center">

@@ -52,14 +52,14 @@ export default function Reddit() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FF4500]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#FF4500]" buttonClasses="text-[#FF4500] fill-[#FF4500] border-[#FF4500] hover:bg-[#FF4500]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#FF4500]" buttonClasses="text-[#FF4500] fill-[#FF4500] border-[#FF4500] hover:bg-[#FF4500]" />
         </section>
 
         <section className="max-w-3xl text-center">

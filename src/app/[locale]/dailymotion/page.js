@@ -52,14 +52,14 @@ export default function Dailymotion() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#0064DD]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#0064DD]" buttonClasses="text-[#0064DD] fill-[#0064DD] border-[#0064DD] hover:bg-[#0064DD]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#0064DD]" buttonClasses="text-[#0064DD] fill-[#0064DD] border-[#0064DD] hover:bg-[#0064DD]" />
         </section>
 
         <section className="max-w-3xl text-center">

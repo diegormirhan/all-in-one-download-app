@@ -52,14 +52,14 @@ export default function Tumblr() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#001935]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#001935]" buttonClasses="text-[#001935] fill-[#001935] border-[#001935] hover:bg-[#001935]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#001935]" buttonClasses="text-[#001935] fill-[#001935] border-[#001935] hover:bg-[#001935]" />
         </section>
 
         <section className="max-w-3xl text-center">

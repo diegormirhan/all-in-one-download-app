@@ -52,14 +52,14 @@ export default function Instagram() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#EE2A7B]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#EE2A7B]" buttonClasses="text-[#EE2A7B] fill-[#EE2A7B] border-[#EE2A7B] hover:bg-[#EE2A7B]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#EE2A7B]" buttonClasses="text-[#EE2A7B] fill-[#EE2A7B] border-[#EE2A7B] hover:bg-[#EE2A7B]" />
         </section>
 
         <section className="max-w-3xl text-center">

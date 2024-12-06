@@ -52,14 +52,14 @@ export default function Tiktok() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FF004F]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#FF004F]" buttonClasses="text-[#FF004F] fill-[#FF004F] border-[#FF004F] hover:bg-[#FF004F]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#FF004F]" buttonClasses="text-[#FF004F] fill-[#FF004F] border-[#FF004F] hover:bg-[#FF004F]" />
         </section>
 
         <section className="max-w-3xl text-center">

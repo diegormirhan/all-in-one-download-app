@@ -52,14 +52,14 @@ export default function Xiaohongshu() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#FF3049]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#FF3049]" buttonClasses="text-[#FF3049] fill-[#FF3049] border-[#FF3049] hover:bg-[#FF3049]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#FF3049]" buttonClasses="text-[#FF3049] fill-[#FF3049] border-[#FF3049] hover:bg-[#FF3049]" />
         </section>
 
         <section className="max-w-3xl text-center">

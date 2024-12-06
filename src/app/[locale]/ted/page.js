@@ -52,14 +52,14 @@ export default function Ted() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#E62B1E]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#E62B1E]" buttonClasses="text-[#E62B1E] fill-[#E62B1E] border-[#E62B1E] hover:bg-[#E62B1E]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#E62B1E]" buttonClasses="text-[#E62B1E] fill-[#E62B1E] border-[#E62B1E] hover:bg-[#E62B1E]" />
         </section>
 
         <section className="max-w-3xl text-center">

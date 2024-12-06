@@ -52,14 +52,14 @@ export default function Douyin() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#00F2FE]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#00F2FE]" buttonClasses="text-[#00F2FE] fill-[#00F2FE] border-[#00F2FE] hover:bg-[#00F2FE]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#00F2FE]" buttonClasses="text-[#00F2FE] fill-[#00F2FE] border-[#00F2FE] hover:bg-[#00F2FE]" />
         </section>
 
         <section className="max-w-3xl text-center">

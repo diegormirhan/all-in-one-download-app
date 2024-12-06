@@ -52,14 +52,14 @@ export default function Hipi() {
           {/* Conteúdo Principal */}
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#D21404]">{socialMedia}</span></h1>
 
-          {/* Campo de Input para link e Botão de Download */}
-          <LinkInputwithBtn inputClasses="focus:ring-[#D21404]" buttonClasses="text-[#D21404] fill-[#D21404] border-[#D21404] hover:bg-[#D21404]" />
-
           <AdUnit
             publisherId="pub-8038191677774356"
             slotId="9735256965"
             layout="display"
           />
+
+          {/* Campo de Input para link e Botão de Download */}
+          <LinkInputwithBtn inputClasses="focus:ring-[#D21404]" buttonClasses="text-[#D21404] fill-[#D21404] border-[#D21404] hover:bg-[#D21404]" />
         </section>
 
         <section className="max-w-3xl text-center">

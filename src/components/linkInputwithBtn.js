@@ -87,7 +87,7 @@ export function LinkInputwithBtn({ inputClasses, buttonClasses }) {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="relative mb-8 w-11/12 md:w-4/5 mx-auto">
+        <div className="relative mb-8 w-11/12 md:w-4/5 mx-auto mt-10">
           <input
             type="text"
             id="link"

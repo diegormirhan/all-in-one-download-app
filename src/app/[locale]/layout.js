@@ -5,6 +5,8 @@ import "../../styles/globals.css";
 import { TranslationToggle } from "@/components/translationToggle";
 import { HeaderMenu } from "@/components/menu/headerMenu"
 
+import ShareButtons from '@/components/shareButtons'
+
 import { Link } from "@/navigation";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -115,6 +117,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         </header>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <ShareButtons />
         </NextIntlClientProvider>
         <footer className="bg-main-color p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center text-center text-white text-md gap-3">

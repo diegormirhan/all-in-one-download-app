@@ -24,11 +24,11 @@ const ShareButtons = () => {
   ]
 
   return (
-    <div className="fixed right-5 top-1/2 transform -translate-y-1/2 z-50">
+    <div className="fixed right-1 sm:right-5 top-1/2 transform -translate-y-1/2 z-50">
       <Button
         variant="outline"
         size="icon"
-        className="bg-primary size-12 bg-white text-primary-foreground hover:bg-secondary-bg-color hover:text-white rounded-full ring-2 border-none ring-black p-2"
+        className="bg-primary size-8 sm:size-12 bg-white text-primary-foreground hover:bg-secondary-bg-color hover:text-white rounded-full ring-2 border-none ring-black p-2"
         onClick={toggleButtons}
       >
         <Share2 className="size-20" />
@@ -40,7 +40,7 @@ const ShareButtons = () => {
               key={link.name}
               variant="outline"
               size="icon"
-              className="bg-primary size-12 text-primary-foreground bg-white hover:bg-secondary-bg-color hover:text-white rounded-full ring-2 border-none ring-black p-2"
+              className="bg-primary size-8 sm:size-12 text-primary-foreground bg-white hover:bg-secondary-bg-color hover:text-white rounded-full ring-2 border-none ring-black p-2"
               onClick={() => window.open(link.url, '_blank', 'noopener,noreferrer')}
             >
               <link.icon className="size-20" />

@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.bestmediatool.twa",
+        "sha256_cert_fingerprints": ["0C:2C:73:72:97:AB:06:74:F9:88:C4:79:20:67:51:CF:1C:F5:A3:45:76:23:5A:F2:9B:C4:2E:AA:63:C0:F9:0D"]
+      }
+    }]

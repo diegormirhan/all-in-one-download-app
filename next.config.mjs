@@ -7,7 +7,21 @@ const withPWA = withPWAInit({
   dest: "public",
   cacheOnFrontEndNav: true,
   reloadOnOnline: true,
-  disable: true,
+  disableDevLogs: true,
+  disable: false,
+  runtimeCaching: [
+    {
+      urlPattern: /^https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js$/,
+      handler: 'NetworkOnly',
+      options: {
+        cacheName: 'adsense-cache',
+          expiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+          },
+      },
+    },
+  ]
 });
 
 /** @type {import('next').NextConfig} */

@@ -8,7 +8,7 @@ const withPWA = withPWAInit({
   cacheOnFrontEndNav: true,
   reloadOnOnline: true,
   disableDevLogs: true,
-  disable: false,
+  disable: true,
   runtimeCaching: [
     {
       urlPattern: /^https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js$/,

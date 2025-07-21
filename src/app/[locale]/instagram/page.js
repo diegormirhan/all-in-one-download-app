@@ -53,7 +53,7 @@ export default function Instagram() {
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#EE2A7B]">{socialMedia}</span></h1>
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />
@@ -73,7 +73,7 @@ export default function Instagram() {
           <SectionMenu classes="bg-[#EE2A7B] shadow-[#EE2A7B]" />
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />

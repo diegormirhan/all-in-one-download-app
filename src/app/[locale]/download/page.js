@@ -105,7 +105,7 @@ export default function DownloadPage() {
                         </div>
 
                         <AdUnit
-                            publisherId="pub-8038191677774356"
+                            publisherId="pub-2168652361480633"
                             slotId="9735256965"
                             layout="display"
                         />
@@ -122,7 +122,7 @@ export default function DownloadPage() {
                         <SectionMenu classes="bg-main-color shadow-main-color mt-10" />
 
                         <AdUnit
-                            publisherId="pub-8038191677774356"
+                            publisherId="pub-2168652361480633"
                             slotId="9735256965"
                             layout="display"
                         />

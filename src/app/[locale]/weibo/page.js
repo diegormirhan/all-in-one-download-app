@@ -53,7 +53,7 @@ export default function Weibo() {
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#F23348]">{socialMedia}</span></h1>
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />
@@ -73,7 +73,7 @@ export default function Weibo() {
           <SectionMenu classes="bg-[#F23348] shadow-[#F23348]" />
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />

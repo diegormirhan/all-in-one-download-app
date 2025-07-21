@@ -53,7 +53,7 @@ export default function Dailymotion() {
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#0064DD]">{socialMedia}</span></h1>
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />
@@ -73,7 +73,7 @@ export default function Dailymotion() {
           <SectionMenu classes="bg-[#0064DD] shadow-[#0064DD]" />
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />

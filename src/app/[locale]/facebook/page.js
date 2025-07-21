@@ -53,7 +53,7 @@ export default function Facebook() {
           <h1 className="text-4xl font-extrabold mb-10 md:text-5xl">{tDynamic('introduction-title')} <span className="text-[#1977F3]">{socialMedia}</span></h1>
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />
@@ -73,7 +73,7 @@ export default function Facebook() {
           <SectionMenu classes="bg-[#1977F3] shadow-[#1977F3]" />
 
           <AdUnit
-            publisherId="pub-8038191677774356"
+            publisherId="pub-2168652361480633"
             slotId="9735256965"
             layout="display"
           />

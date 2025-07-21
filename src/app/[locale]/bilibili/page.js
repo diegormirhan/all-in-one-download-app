@@ -55,7 +55,7 @@ export default function Bilibili() {
 
           <AdUnit
             publisherId="pub-2168652361480633"
-            slotId="9735256965"
+            slotId="7188274542"
             layout="display"
           />
 
@@ -75,7 +75,7 @@ export default function Bilibili() {
 
           <AdUnit
             publisherId="pub-2168652361480633"
-            slotId="9735256965"
+            slotId="7188274542"
             layout="display"
           />
         </section>

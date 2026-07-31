@@ -8,11 +8,14 @@
 
 ## 📸 Screenshots
 
-> *(Replace the placeholders below with actual screenshots of your app)*
+### HomePage
+![Home Page](https://i.imgur.com/nlXSyjJ.png) 
 
-| Home Page | Download Results |
-| :---: | :---: |
-| ![Home Page](docs/screenshots/home.png) | ![Download](docs/screenshots/download.png) |
+### Faq Section
+![Faq Section](https://i.imgur.com/ulLTeZR.png) 
+
+### Left Bar 
+![Left Bar](https://i.imgur.com/chQE5Qp.png) 
 
 ---
 
